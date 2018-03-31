@@ -59,5 +59,12 @@ namespace vk_bot
             }
 
         }
+
+        private void ya_Click(object sender, EventArgs e)
+        {
+            FormYa frm = new FormYa();
+            frm.Access_token = access_token;
+            frm.Show();
+        }
     }
 }

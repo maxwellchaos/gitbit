@@ -16,3 +16,4 @@ C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projec
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
+\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormYa.resources

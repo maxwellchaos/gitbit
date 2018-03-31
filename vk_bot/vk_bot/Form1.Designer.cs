@@ -34,6 +34,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.spam = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
+            this.ya = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,14 +92,25 @@
             this.delete_wall_post.Text = "Удаление записай со стены";
             this.delete_wall_post.UseVisualStyleBackColor = true;
             // 
+            // ya
+            // 
+            this.ya.Location = new System.Drawing.Point(420, 224);
+            this.ya.Name = "ya";
+            this.ya.Size = new System.Drawing.Size(159, 36);
+            this.ya.TabIndex = 6;
+            this.ya.Text = "я";
+            this.ya.UseVisualStyleBackColor = true;
+            this.ya.Click += new System.EventHandler(this.ya_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 502);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.ya);
             this.Controls.Add(this.delete_wall_post);
             this.Controls.Add(this.spam);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.pictureBoxAvatar);
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.labelFirstName);
@@ -119,6 +131,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button spam;
         private System.Windows.Forms.Button delete_wall_post;
+        private System.Windows.Forms.Button ya;
     }
 }
 
