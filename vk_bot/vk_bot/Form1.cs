@@ -12,7 +12,7 @@ namespace vk_bot
 {
     public partial class Form1 : Form
     {
-        string access_token;
+        public string access_token;
         public Form1()
         {
             InitializeComponent();
@@ -58,6 +58,14 @@ namespace vk_bot
                 webBrowser1.Visible = false;
             }
 
+        }
+
+        private void buttonChangeStatus_Click(object sender, EventArgs e)
+        {
+            FormChangeStatus FRM3 = new FormChangeStatus();
+            FRM3.ACT2 = access_token;
+            FRM3.Show();
+            
         }
     }
 }
