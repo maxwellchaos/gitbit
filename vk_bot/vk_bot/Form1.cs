@@ -59,5 +59,11 @@ namespace vk_bot
             }
 
         }
+
+        private void SlovaIstini_Click(object sender, EventArgs e)
+        {
+            SLOVA sl = new SLOVA();
+            sl.Show();
+        }
     }
 }
