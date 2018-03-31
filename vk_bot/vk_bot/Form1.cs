@@ -21,8 +21,7 @@ namespace vk_bot
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends&response_type=token&v=5.73");
-       
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=2+8+4096&response_type=token&v=5.73");       
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -44,7 +43,7 @@ namespace vk_bot
                 
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
-                doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
+                doc.Load("https://api.vk.com/method/messages.send.xml?user_id=56929156&message=qwerty&access_token=" + access_token + "&v=5.73");
                 XmlNode response = doc.SelectSingleNode("response");
                 XmlNode user = response.SelectSingleNode("user");
 
@@ -58,6 +57,17 @@ namespace vk_bot
                 webBrowser1.Visible = false;
             }
 
+        }
+
+        private void spam_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDR q = new FormDR();
+            q.Show();
         }
     }
 }
