@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonChangeStatusOK = new System.Windows.Forms.Button();
             this.webBrowserCST = new System.Windows.Forms.WebBrowser();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // textBox1
@@ -49,6 +51,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(317, 20);
             this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 4, 5, 0, 0, 0, 0);
             // 
             // labelFirstName
             // 
@@ -88,18 +91,22 @@
             // 
             // webBrowserCST
             // 
-            this.webBrowserCST.Location = new System.Drawing.Point(365, 131);
+            this.webBrowserCST.Location = new System.Drawing.Point(339, 14);
             this.webBrowserCST.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserCST.Name = "webBrowserCST";
-            this.webBrowserCST.Size = new System.Drawing.Size(20, 20);
+            this.webBrowserCST.Size = new System.Drawing.Size(259, 137);
             this.webBrowserCST.TabIndex = 8;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormChangeStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(397, 157);
+            this.ClientSize = new System.Drawing.Size(621, 157);
             this.Controls.Add(this.webBrowserCST);
             this.Controls.Add(this.buttonChangeStatusOK);
             this.Controls.Add(this.label1);
@@ -122,5 +129,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonChangeStatusOK;
         private System.Windows.Forms.WebBrowser webBrowserCST;
+        private System.Windows.Forms.Timer timer1;
     }
 }
