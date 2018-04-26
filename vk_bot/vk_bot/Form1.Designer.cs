@@ -43,7 +43,7 @@
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelFirstName.Location = new System.Drawing.Point(349, 9);
+            this.labelFirstName.Location = new System.Drawing.Point(348, 12);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(41, 23);
             this.labelFirstName.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelLastName.Location = new System.Drawing.Point(342, 32);
+            this.labelLastName.Location = new System.Drawing.Point(345, 35);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(165, 37);
             this.labelLastName.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // pictureBoxAvatar
             // 
-            this.pictureBoxAvatar.Location = new System.Drawing.Point(182, 6);
+            this.pictureBoxAvatar.Location = new System.Drawing.Point(168, 12);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
             this.pictureBoxAvatar.Size = new System.Drawing.Size(157, 169);
             this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -84,9 +84,9 @@
             this.spam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.spam.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.spam.Location = new System.Drawing.Point(182, 211);
+            this.spam.Location = new System.Drawing.Point(12, 303);
             this.spam.Name = "spam";
-            this.spam.Size = new System.Drawing.Size(287, 36);
+            this.spam.Size = new System.Drawing.Size(150, 150);
             this.spam.TabIndex = 4;
             this.spam.Text = "Спам";
             this.spam.UseVisualStyleBackColor = false;
@@ -97,9 +97,9 @@
             this.delete_wall_post.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_wall_post.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delete_wall_post.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.delete_wall_post.Location = new System.Drawing.Point(182, 175);
+            this.delete_wall_post.Location = new System.Drawing.Point(12, 158);
             this.delete_wall_post.Name = "delete_wall_post";
-            this.delete_wall_post.Size = new System.Drawing.Size(287, 36);
+            this.delete_wall_post.Size = new System.Drawing.Size(150, 150);
             this.delete_wall_post.TabIndex = 5;
             this.delete_wall_post.Text = "Удаление записей со стены";
             this.delete_wall_post.UseVisualStyleBackColor = false;
@@ -110,9 +110,9 @@
             this.buttonChangeStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChangeStatus.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChangeStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonChangeStatus.Location = new System.Drawing.Point(182, 247);
+            this.buttonChangeStatus.Location = new System.Drawing.Point(12, 12);
             this.buttonChangeStatus.Name = "buttonChangeStatus";
-            this.buttonChangeStatus.Size = new System.Drawing.Size(287, 36);
+            this.buttonChangeStatus.Size = new System.Drawing.Size(150, 150);
             this.buttonChangeStatus.TabIndex = 6;
             this.buttonChangeStatus.Text = "Авто-смена статуса";
             this.buttonChangeStatus.UseVisualStyleBackColor = false;

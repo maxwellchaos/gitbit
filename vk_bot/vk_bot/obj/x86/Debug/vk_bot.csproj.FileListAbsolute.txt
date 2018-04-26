@@ -25,3 +25,4 @@ C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resource
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
+C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config

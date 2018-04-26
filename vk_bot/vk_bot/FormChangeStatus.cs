@@ -11,9 +11,15 @@ namespace vk_bot
 {
     public partial class FormChangeStatus : Form
     {
-
+        //access_token
         public string ACT2;
+        //статусы расписаний
         public string CST;
+        public string CST2;
+        public string CST3;
+        public string CST4;
+        public string CST5;
+
         public string ID;
         public FormChangeStatus()
         {
@@ -22,6 +28,30 @@ namespace vk_bot
 
         private void FormChangeStatus_Load(object sender, EventArgs e)
         {
+
+
+
+            CSTinter.Text = Properties.Settings.Default.ST1;
+            textBox1.Text = Properties.Settings.Default.ST2;
+            textBox2.Text = Properties.Settings.Default.ST3;
+            textBox3.Text = Properties.Settings.Default.ST4;
+            textBox4.Text = Properties.Settings.Default.ST5;
+
+
+            CSTdatatimer.Value = Properties.Settings.Default.TIME1;
+            dateTimePicker1.Value = Properties.Settings.Default.TIME2;
+            dateTimePicker2.Value = Properties.Settings.Default.TIME3;
+            dateTimePicker3.Value = Properties.Settings.Default.TIME4;
+            dateTimePicker4.Value = Properties.Settings.Default.TIME5;
+
+
+
+
+       
+       
+      
+           
+
             XmlDocument doc = new XmlDocument();
             doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token=" + ACT2 + "&v=5.73");
             XmlNode response = doc.SelectSingleNode("response");
@@ -32,18 +62,101 @@ namespace vk_bot
 
         private void buttonChangeStatusOK_Click(object sender, EventArgs e)
         {
+            timer2.Enabled = true;
             timer1.Enabled = true;
+            timer3.Enabled = true;
+            timer4.Enabled = true;
+            timer5.Enabled = true;
+            Properties.Settings.Default.Save();
+
+
+
         }
+
+
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            textBox1.Text = CST;
-            if (dateTimePicker1.Value == DateTime.Today)
+            CST = CSTinter.Text;
+            Properties.Settings.Default.ST1 = CST;
+            Properties.Settings.Default.TIME1 = CSTdatatimer.Value;
+
+         
+            if (CSTdatatimer.Value == DateTime.Today)
             {
                 webBrowserCST.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST + "&access_token="+ ACT2 +"&v=5.52");
                 timer1.Enabled = false;
+             
+
+            }
+
+
+
+
+        }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            CST2 = textBox1.Text;
+
+            Properties.Settings.Default.ST2 = CST2;
+            Properties.Settings.Default.TIME2 = dateTimePicker1.Value;
+
+
+
+
+
+
+            if (dateTimePicker1.Value == DateTime.Today)
+            {
+                webBrowser1.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST2 + "&access_token=" + ACT2 + "&v=5.52");
+                timer2.Enabled = false;
 
             }
         }
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            CST3 = textBox2.Text;
+            Properties.Settings.Default.ST3 = CST3;
+            Properties.Settings.Default.TIME3 = dateTimePicker2.Value;
+
+
+            if (dateTimePicker2.Value == DateTime.Today)
+            {
+                webBrowser2.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST3 + "&access_token=" + ACT2 + "&v=5.52");
+                timer3.Enabled = false;
+
+            }
+        }
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            CST4 = textBox3.Text;
+            Properties.Settings.Default.ST4 = CST4;
+            Properties.Settings.Default.TIME4 = dateTimePicker3.Value;
+
+
+            if (dateTimePicker3.Value == DateTime.Today)
+            {
+                webBrowser3.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST4 + "&access_token=" + ACT2 + "&v=5.52");
+                timer4.Enabled = false;
+
+            }
+        }
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            CST5 = textBox3.Text;
+            Properties.Settings.Default.ST5 = CST5;
+            Properties.Settings.Default.TIME5 = dateTimePicker4.Value;
+
+
+            if (dateTimePicker3.Value == DateTime.Today)
+
+                webBrowser4.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST5 + "&access_token=" + ACT2 + "&v=5.52");
+                timer5.Enabled = false;
+
+            }
+
+        }
     }
-}
+
+
