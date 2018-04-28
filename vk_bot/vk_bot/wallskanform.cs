@@ -32,6 +32,7 @@ namespace vk_bot
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            
             string url = e.Url.ToString();
             if (url.Contains("error"))
             {
@@ -45,33 +46,24 @@ namespace vk_bot
                 int IndexAmp = access_token.IndexOf("&");
                 access_token = access_token.Remove(IndexAmp);
 
-                //добираюсь до id 1
+                //добираюсь до id
                 XmlDocument tags = new XmlDocument();
                 tags.Load("https://api.vk.com/method/wall.get.xml?owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
                 XmlNode response = tags.SelectSingleNode("response");
                 XmlNode tager = response.SelectSingleNode("items");
-                XmlNode post = tager.SelectSingleNode("post");
-                XmlNode id = post.SelectSingleNode("id");
-                textbox = id.InnerXml;
-
-                //добираюсь до id 2
-                XmlDocument tags1 = new XmlDocument();
-                tags1.Load("https://api.vk.com/method/wall.get.xml?owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
-                XmlNode response1 = tags1.SelectSingleNode("response");
-                XmlNode tager1 = response1.SelectSingleNode("items");
-                XmlNode post1 = tager1.SelectSingleNode("post");
-                XmlNode id1 = post1.SelectSingleNode("id");
-                id1 = post1.SelectSingleNode("id");
-                id2postlist = id1.InnerXml;
                 
-                
+                foreach(XmlNode post in tager.SelectNodes("post"))
+                {
+                    tags.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textbox + "&access_token=" + access_token + "&v=5.73");
+                    XmlNode id = post.SelectSingleNode("id");
+                    textbox = id.InnerXml;
+                }
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textbox + "&access_token=" + access_token + "&v=5.73");
-            webBrowser1.Navigate("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + id2postlist + "&access_token=" + access_token + "&v=5.73");
         }
     }
 }
