@@ -156,6 +156,11 @@ namespace vk_bot
 
             }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Reset();
+        }
+
         }
     }
 
