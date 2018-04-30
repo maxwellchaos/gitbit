@@ -70,5 +70,45 @@ namespace vk_bot
             FRM3.Show();
             
         }
+
+        private void pictureBoxAvatar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delete_wall_post_MouseEnter(object sender, EventArgs e)
+        {
+            delete_wall_post.FlatAppearance.BorderSize = 2;
+        }
+
+        private void delete_wall_post_MouseLeave(object sender, EventArgs e)
+        {
+            delete_wall_post.FlatAppearance.BorderSize = 0;
+
+        }
+
+        private void spam_MouseEnter(object sender, EventArgs e)
+        {
+            spam.FlatAppearance.BorderSize = 2;
+
+        }
+
+        private void spam_MouseLeave(object sender, EventArgs e)
+        {
+            spam.FlatAppearance.BorderSize = 0;
+
+        }
+
+        private void buttonChangeStatus_MouseEnter(object sender, EventArgs e)
+        {
+            buttonChangeStatus.FlatAppearance.BorderSize = 2;
+
+        }
+
+        private void buttonChangeStatus_MouseLeave(object sender, EventArgs e)
+        {
+            buttonChangeStatus.FlatAppearance.BorderSize = 0;
+
+        }
     }
 }
