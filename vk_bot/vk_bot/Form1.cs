@@ -63,6 +63,7 @@ namespace vk_bot
 
         }
 
+<<<<<<< HEAD
         private void buttonChangeStatus_Click(object sender, EventArgs e)
         {
             FormChangeStatus FRM3 = new FormChangeStatus();
@@ -109,6 +110,13 @@ namespace vk_bot
         {
             buttonChangeStatus.FlatAppearance.BorderSize = 0;
 
+=======
+        private void ya_Click(object sender, EventArgs e)
+        {
+            FormYa frm = new FormYa();
+            frm.Access_token = access_token;
+            frm.Show();
+>>>>>>> master
         }
     }
 }

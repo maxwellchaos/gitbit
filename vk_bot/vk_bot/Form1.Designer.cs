@@ -33,9 +33,13 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.buttonChangeStatus = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
             this.ORG = new System.Windows.Forms.Label();
+=======
+            this.ya = new System.Windows.Forms.Button();
+>>>>>>> master
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,16 +160,32 @@
             this.ORG.TabIndex = 7;
             this.ORG.Text = "VK_TUMBOCHKA";
             // 
+            // ya
+            // 
+            this.ya.Location = new System.Drawing.Point(420, 224);
+            this.ya.Name = "ya";
+            this.ya.Size = new System.Drawing.Size(159, 36);
+            this.ya.TabIndex = 6;
+            this.ya.Text = "я";
+            this.ya.UseVisualStyleBackColor = true;
+            this.ya.Click += new System.EventHandler(this.ya_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.buttonChangeStatus);
+=======
+            this.ClientSize = new System.Drawing.Size(610, 502);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.ya);
+>>>>>>> master
             this.Controls.Add(this.delete_wall_post);
             this.Controls.Add(this.spam);
             this.Controls.Add(this.pictureBoxAvatar);
@@ -187,8 +207,12 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button spam;
         private System.Windows.Forms.Button delete_wall_post;
+<<<<<<< HEAD
         private System.Windows.Forms.Button buttonChangeStatus;
         private System.Windows.Forms.Label ORG;
+=======
+        private System.Windows.Forms.Button ya;
+>>>>>>> master
     }
 }
 

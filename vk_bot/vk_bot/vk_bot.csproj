@@ -53,19 +53,32 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FormChangeStatus.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormChangeStatus.Designer.cs">
       <DependentUpon>FormChangeStatus.cs</DependentUpon>
+=======
+    <Compile Include="FormYa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYa.Designer.cs">
+      <DependentUpon>FormYa.cs</DependentUpon>
+>>>>>>> master
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FormChangeStatus.resx">
       <DependentUpon>FormChangeStatus.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FormYa.resx">
+      <DependentUpon>FormYa.cs</DependentUpon>
+>>>>>>> master
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
