@@ -24,3 +24,4 @@ C:\Users\YA\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
 C:\Users\YA\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 C:\Users\YA\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.SLOVA.resources
 C:\Users\YA\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
+C:\Users\YA\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache

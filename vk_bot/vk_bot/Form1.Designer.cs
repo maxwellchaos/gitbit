@@ -91,6 +91,7 @@
             this.delete_wall_post.TabIndex = 5;
             this.delete_wall_post.Text = "Удаление записай со стены";
             this.delete_wall_post.UseVisualStyleBackColor = true;
+            this.delete_wall_post.Click += new System.EventHandler(this.delete_wall_post_Click);
             // 
             // SlovaIstini
             // 

@@ -28,87 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.CITY = new System.Windows.Forms.RadioButton();
-            this.NAMEEEEEEE = new System.Windows.Forms.RadioButton();
-            this.START = new System.Windows.Forms.Button();
-            this.IGRULKI = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.Vremia = new System.Windows.Forms.Timer(this.components);
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
-            // panel1
+            // Vremia
             // 
-            this.panel1.Controls.Add(this.NAMEEEEEEE);
-            this.panel1.Controls.Add(this.CITY);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(536, 79);
-            this.panel1.TabIndex = 0;
+            this.Vremia.Enabled = true;
+            this.Vremia.Interval = 10000;
+            this.Vremia.Tick += new System.EventHandler(this.Vremia_Tick);
             // 
-            // CITY
+            // webBrowser1
             // 
-            this.CITY.Checked = true;
-            this.CITY.Location = new System.Drawing.Point(12, 25);
-            this.CITY.Name = "CITY";
-            this.CITY.Size = new System.Drawing.Size(104, 24);
-            this.CITY.TabIndex = 0;
-            this.CITY.TabStop = true;
-            this.CITY.Text = "Города";
-            this.CITY.UseVisualStyleBackColor = true;
-            // 
-            // NAMEEEEEEE
-            // 
-            this.NAMEEEEEEE.Dock = System.Windows.Forms.DockStyle.Right;
-            this.NAMEEEEEEE.Location = new System.Drawing.Point(451, 0);
-            this.NAMEEEEEEE.Name = "NAMEEEEEEE";
-            this.NAMEEEEEEE.Size = new System.Drawing.Size(85, 79);
-            this.NAMEEEEEEE.TabIndex = 1;
-            this.NAMEEEEEEE.Text = "Имена";
-            this.NAMEEEEEEE.UseVisualStyleBackColor = true;
-            this.NAMEEEEEEE.CheckedChanged += new System.EventHandler(this.NAMEEEEEEE_CheckedChanged);
-            // 
-            // START
-            // 
-            this.START.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.START.Location = new System.Drawing.Point(0, 262);
-            this.START.Name = "START";
-            this.START.Size = new System.Drawing.Size(536, 23);
-            this.START.TabIndex = 1;
-            this.START.Text = "Старт";
-            this.START.UseVisualStyleBackColor = true;
-            // 
-            // IGRULKI
-            // 
-            this.IGRULKI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IGRULKI.Location = new System.Drawing.Point(0, 79);
-            this.IGRULKI.Multiline = true;
-            this.IGRULKI.Name = "IGRULKI";
-            this.IGRULKI.Size = new System.Drawing.Size(536, 183);
-            this.IGRULKI.TabIndex = 2;
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(279, 285);
+            this.webBrowser1.TabIndex = 0;
             // 
             // SLOVA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 285);
-            this.Controls.Add(this.IGRULKI);
-            this.Controls.Add(this.START);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(279, 285);
+            this.Controls.Add(this.webBrowser1);
             this.Name = "SLOVA";
             this.Text = "SLOVA";
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.SLOVA_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton NAMEEEEEEE;
-        private System.Windows.Forms.RadioButton CITY;
-        private System.Windows.Forms.Button START;
-        private System.Windows.Forms.TextBox IGRULKI;
+        private System.Windows.Forms.Timer Vremia;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
