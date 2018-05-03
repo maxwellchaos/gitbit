@@ -36,11 +36,12 @@
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
             this.ORG = new System.Windows.Forms.Label();
+>>>>>>> pr/2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // labelFirstName
-            // 
+            //
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -49,9 +50,9 @@
             this.labelFirstName.Size = new System.Drawing.Size(47, 24);
             this.labelFirstName.TabIndex = 0;
             this.labelFirstName.Text = "имя";
-            // 
+            //
             // labelLastName
-            // 
+            //
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -60,18 +61,18 @@
             this.labelLastName.Size = new System.Drawing.Size(165, 37);
             this.labelLastName.TabIndex = 1;
             this.labelLastName.Text = "фамилия";
-            // 
+            //
             // webBrowser1
-            // 
+            //
             this.webBrowser1.Location = new System.Drawing.Point(284, 62);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(20, 142);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
-            // 
+            //
             // buttonChangeStatus
-            // 
+            //
             this.buttonChangeStatus.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonChangeStatus.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonChangeStatus.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
@@ -92,9 +93,9 @@
             this.buttonChangeStatus.Click += new System.EventHandler(this.buttonChangeStatus_Click);
             this.buttonChangeStatus.MouseEnter += new System.EventHandler(this.buttonChangeStatus_MouseEnter);
             this.buttonChangeStatus.MouseLeave += new System.EventHandler(this.buttonChangeStatus_MouseLeave);
-            // 
+            //
             // delete_wall_post
-            // 
+            //
             this.delete_wall_post.BackColor = System.Drawing.Color.SteelBlue;
             this.delete_wall_post.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.delete_wall_post.FlatAppearance.BorderSize = 0;
@@ -113,9 +114,9 @@
             this.delete_wall_post.UseVisualStyleBackColor = false;
             this.delete_wall_post.MouseEnter += new System.EventHandler(this.delete_wall_post_MouseEnter);
             this.delete_wall_post.MouseLeave += new System.EventHandler(this.delete_wall_post_MouseLeave);
-            // 
+            //
             // spam
-            // 
+            //
             this.spam.BackColor = System.Drawing.Color.SteelBlue;
             this.spam.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.spam.FlatAppearance.BorderSize = 0;
@@ -134,9 +135,9 @@
             this.spam.UseVisualStyleBackColor = false;
             this.spam.MouseEnter += new System.EventHandler(this.spam_MouseEnter);
             this.spam.MouseLeave += new System.EventHandler(this.spam_MouseLeave);
-            // 
+            //
             // pictureBoxAvatar
-            // 
+            //
             this.pictureBoxAvatar.Location = new System.Drawing.Point(4, 54);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
             this.pictureBoxAvatar.Size = new System.Drawing.Size(300, 300);
@@ -144,9 +145,30 @@
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
             this.pictureBoxAvatar.Click += new System.EventHandler(this.pictureBoxAvatar_Click);
-            // 
+            //
             // ORG
-            // 
+            //
+            this.ORG.AutoSize = true;
+            this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ORG.Location = new System.Drawing.Point(12, 9);
+            this.ORG.Name = "ORG";
+            this.ORG.Size = new System.Drawing.Size(266, 40);
+            this.ORG.TabIndex = 7;
+            this.ORG.Text = "VK_TUMBOCHKA";
+            //
+            // pictureBoxAvatar
+            //
+            this.pictureBoxAvatar.Location = new System.Drawing.Point(4, 54);
+            this.pictureBoxAvatar.Name = "pictureBoxAvatar";
+            this.pictureBoxAvatar.Size = new System.Drawing.Size(300, 300);
+            this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAvatar.TabIndex = 2;
+            this.pictureBoxAvatar.TabStop = false;
+            this.pictureBoxAvatar.Click += new System.EventHandler(this.pictureBoxAvatar_Click);
+            //
+            // ORG
+            //
             this.ORG.AutoSize = true;
             this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -156,9 +178,9 @@
             this.ORG.TabIndex = 7;
             this.ORG.Text = "VK_TUMBOCHKA";
 
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -167,6 +189,11 @@
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.buttonChangeStatus);
+
+            this.ClientSize = new System.Drawing.Size(610, 502);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.ya);
+
             this.Controls.Add(this.delete_wall_post);
             this.Controls.Add(this.spam);
             this.Controls.Add(this.pictureBoxAvatar);
@@ -192,4 +219,3 @@
         private System.Windows.Forms.Label ORG;
     }
 }
-

@@ -23,7 +23,7 @@ namespace vk_bot
         {
             webBrowser1.Dock = DockStyle.Fill;
             webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+status&response_type=token&v=5.73");
-       
+
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -42,18 +42,18 @@ namespace vk_bot
                 access_token = access_token.Remove(IndexAmp);
 
                 //Зпрашиваю информацию о пользователе
-                
+
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
                 doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
                 XmlNode response = doc.SelectSingleNode("response");
                 XmlNode user = response.SelectSingleNode("user");
 
-                
+
 
                 XmlNode FirstName = user.SelectSingleNode("first_name");
                 labelFirstName.Text = FirstName.InnerText;
-             
+
                 XmlNode LastName = user.SelectSingleNode("last_name");
                 labelLastName.Text = LastName.InnerText;
 
@@ -68,7 +68,7 @@ namespace vk_bot
             FormChangeStatus FRM3 = new FormChangeStatus();
             FRM3.ACT2 = access_token;
             FRM3.Show();
-            
+
         }
 
         private void pictureBoxAvatar_Click(object sender, EventArgs e)
@@ -108,7 +108,6 @@ namespace vk_bot
         private void buttonChangeStatus_MouseLeave(object sender, EventArgs e)
         {
             buttonChangeStatus.FlatAppearance.BorderSize = 0;
-
         }
     }
 }
