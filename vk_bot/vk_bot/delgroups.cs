@@ -50,20 +50,24 @@ namespace vk_bot
                     + access_token + "&v=5.73");
 
                 XmlNode response = doo.SelectSingleNode("response");
+                XmlNode groups = response.SelectSingleNode("items");
 
-                foreach (XmlNode groups in response.SelectNodes("items"))
+                foreach (XmlNode groupsid in groups.SelectNodes("gid"))
                 {
                     doo.Load("https://api.vk.com/method/groups.get.xml?&access_token=" 
                         + access_token + "&v=5.73");
 
                     XmlNode id = groups.SelectSingleNode("gid");
-                    index = id.InnerXml;
+                    index = groupsid.InnerXml;
 
                     XmlDocument dop = new XmlDocument();
 
                     dop.Load("https://api.vk.com/method/groups.leave.xml?group_id="
                 + index + "&access_token=" + access_token + "&v=5.73");
 
+                    Thread.Sleep(1000);
+                    Application.DoEvents();
+                    
                 }
 
                     //считаю кол-во записей в группе

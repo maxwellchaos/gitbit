@@ -29,7 +29,7 @@ namespace vk_bot
         {
             textbox = textBox1.Text;
 
-            webBrowser1.Navigate("https://api.vk.com/method/wall.get.xml?count=100&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+            webBrowser1.Navigate("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -50,20 +50,29 @@ namespace vk_bot
             }
                 //добираюсь до id
                 XmlDocument tags = new XmlDocument();
-                tags.Load("https://api.vk.com/method/wall.get.xml?count=100&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+                tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
                 XmlNode response = tags.SelectSingleNode("response");
                 XmlNode tager = response.SelectSingleNode("items");
                 
-                foreach(XmlNode post in tager.SelectNodes("post"))
+
+                foreach(XmlNode postid in tager.SelectNodes("id"))
                 {
-                    XmlNode id = post.SelectSingleNode("id");
-                    textbox = id.InnerXml;
-                    tags.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textbox + "&access_token=" + access_token + "&v=5.73");
+                   
+                    tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+
+                    textbox = postid.InnerXml;
+
+                    XmlDocument dopdoo = new XmlDocument();
+
+                    dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textbox + "&access_token=" + access_token + "&v=5.73");
+
+                    Thread.Sleep(1000);
+                    Application.DoEvents();
                     
                 }
 
                 //считаю кол-во
-                tags.Load("https://api.vk.com/method/wall.get.xml?count=100&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+                tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
                 response = tags.SelectSingleNode("response");
                 tager = response.SelectSingleNode("count");
 
