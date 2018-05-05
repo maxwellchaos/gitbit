@@ -22,7 +22,7 @@ namespace vk_bot
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+status&response_type=token&v=5.73");
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+status+wall&response_type=token&v=5.73");
        
         }
 
@@ -63,7 +63,6 @@ namespace vk_bot
 
         }
 
-<<<<<<< HEAD
         private void buttonChangeStatus_Click(object sender, EventArgs e)
         {
             FormChangeStatus FRM3 = new FormChangeStatus();
@@ -72,51 +71,11 @@ namespace vk_bot
             
         }
 
-        private void pictureBoxAvatar_Click(object sender, EventArgs e)
+        private void RepFromGroupBTN_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void delete_wall_post_MouseEnter(object sender, EventArgs e)
-        {
-            delete_wall_post.FlatAppearance.BorderSize = 2;
-        }
-
-        private void delete_wall_post_MouseLeave(object sender, EventArgs e)
-        {
-            delete_wall_post.FlatAppearance.BorderSize = 0;
-
-        }
-
-        private void spam_MouseEnter(object sender, EventArgs e)
-        {
-            spam.FlatAppearance.BorderSize = 2;
-
-        }
-
-        private void spam_MouseLeave(object sender, EventArgs e)
-        {
-            spam.FlatAppearance.BorderSize = 0;
-
-        }
-
-        private void buttonChangeStatus_MouseEnter(object sender, EventArgs e)
-        {
-            buttonChangeStatus.FlatAppearance.BorderSize = 2;
-
-        }
-
-        private void buttonChangeStatus_MouseLeave(object sender, EventArgs e)
-        {
-            buttonChangeStatus.FlatAppearance.BorderSize = 0;
-
-=======
-        private void ya_Click(object sender, EventArgs e)
-        {
-            FormYa frm = new FormYa();
-            frm.Access_token = access_token;
-            frm.Show();
->>>>>>> master
+            RepFromGroupForm FRM4 = new RepFromGroupForm();
+            FRM4.ACT3 = access_token;
+            FRM4.Show();
         }
     }
 }

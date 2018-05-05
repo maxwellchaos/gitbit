@@ -16,7 +16,6 @@ C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projec
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-<<<<<<< HEAD
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
 C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe
@@ -27,17 +26,4 @@ C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateReso
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
 C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.CoreCompileInputs.cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-=======
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormYa.resources
->>>>>>> master
+C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupForm.resources
