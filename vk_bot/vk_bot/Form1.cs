@@ -12,7 +12,8 @@ namespace vk_bot
 {
     public partial class Form1 : Form
     {
-        string access_token;
+        
+        public string access_token;
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace vk_bot
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=2+8+4096&response_type=token&v=5.73");       
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+messages&response_type=token&v=5.74");       
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -43,17 +44,16 @@ namespace vk_bot
                 
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
-                doc.Load("https://api.vk.com/method/messages.send.xml?user_id=56929156&message=qwerty&access_token=" + access_token + "&v=5.73");
+                doc.Load("https://api.vk.com/method/account.getProfileInfo.xml?access_token=" + access_token + "&v=5.74");
                 XmlNode response = doc.SelectSingleNode("response");
-                XmlNode user = response.SelectSingleNode("user");
 
-                XmlNode FirstName = user.SelectSingleNode("first_name");
+                XmlNode FirstName = response.SelectSingleNode("first_name");
                 labelFirstName.Text = FirstName.InnerText;
-             
-                XmlNode LastName = user.SelectSingleNode("last_name");
+
+                XmlNode LastName = response.SelectSingleNode("last_name");
                 labelLastName.Text = LastName.InnerText;
 
-                pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText;
+                //pictureBoxAvatar.ImageLocation = response.SelectSingleNode("photo_100").InnerText;
                 webBrowser1.Visible = false;
             }
 
@@ -61,13 +61,21 @@ namespace vk_bot
 
         private void spam_Click(object sender, EventArgs e)
         {
-
+            FormDR T = new FormDR();
+            T.access_token = access_token;
+            T.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormDR q = new FormDR();
+            FormSPAM q = new FormSPAM();
+            q.access_token = access_token;
             q.Show();
+        }
+
+        private void timerQwerty_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -26,3 +26,4 @@ d:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resourc
 d:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 d:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
 d:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormDR.resources
+d:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSPAM.resources

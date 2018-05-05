@@ -34,7 +34,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.spam = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonПОЗДР = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,15 +93,15 @@
             this.delete_wall_post.Text = "Удаление записай со стены";
             this.delete_wall_post.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonПОЗДР
             // 
-            this.button1.Location = new System.Drawing.Point(420, 160);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 45);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "ЧСВ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonПОЗДР.Location = new System.Drawing.Point(420, 160);
+            this.buttonПОЗДР.Name = "buttonПОЗДР";
+            this.buttonПОЗДР.Size = new System.Drawing.Size(159, 45);
+            this.buttonПОЗДР.TabIndex = 6;
+            this.buttonПОЗДР.Text = "Поздравление с ДР";
+            this.buttonПОЗДР.UseVisualStyleBackColor = true;
+            this.buttonПОЗДР.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -109,12 +109,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 502);
             this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonПОЗДР);
             this.Controls.Add(this.delete_wall_post);
             this.Controls.Add(this.spam);
             this.Controls.Add(this.pictureBoxAvatar);
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.labelFirstName);
+            this.MaximumSize = new System.Drawing.Size(618, 536);
+            this.MinimumSize = new System.Drawing.Size(618, 536);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -132,7 +134,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button spam;
         private System.Windows.Forms.Button delete_wall_post;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonПОЗДР;
     }
 }
 
