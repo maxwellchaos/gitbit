@@ -53,28 +53,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="RepFromGroupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RepFromGroupForm.Designer.cs">
-      <DependentUpon>RepFromGroupForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormChangeStatus.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormChangeStatus.Designer.cs">
       <DependentUpon>FormChangeStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSpam_DR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpam_DR.Designer.cs">
+      <DependentUpon>FormSpam_DR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RepFromGroupForm.resx">
-      <DependentUpon>RepFromGroupForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormChangeStatus.resx">
       <DependentUpon>FormChangeStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpam_DR.resx">
+      <DependentUpon>FormSpam_DR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,7 +107,7 @@
     <None Include="Resources\10.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Buff2.png" />
+    <None Include="Resources\6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
