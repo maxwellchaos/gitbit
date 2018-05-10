@@ -110,5 +110,12 @@ namespace vk_bot
             buttonChangeStatus.FlatAppearance.BorderSize = 0;
 
         }
+
+        private void spam_Click(object sender, EventArgs e)
+        {
+            FormSpam_DR T = new FormSpam_DR();
+            T.access_token = access_token;
+            T.Show();
+        }
     }
 }

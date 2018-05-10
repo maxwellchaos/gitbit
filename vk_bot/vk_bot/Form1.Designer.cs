@@ -132,6 +132,7 @@
             this.spam.Text = "Спам";
             this.spam.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.spam.UseVisualStyleBackColor = false;
+            this.spam.Click += new System.EventHandler(this.spam_Click);
             this.spam.MouseEnter += new System.EventHandler(this.spam_MouseEnter);
             this.spam.MouseLeave += new System.EventHandler(this.spam_MouseLeave);
             // 
@@ -155,7 +156,6 @@
             this.ORG.Size = new System.Drawing.Size(266, 40);
             this.ORG.TabIndex = 7;
             this.ORG.Text = "VK_TUMBOCHKA";
-
             // 
             // Form1
             // 
