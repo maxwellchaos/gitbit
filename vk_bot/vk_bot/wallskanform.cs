@@ -82,5 +82,12 @@ namespace vk_bot
             webBrowser1.Navigate("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
         }
 
+        private void wallskanform_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Инструкция: 1. Нажмите на кнопку ВЫПОЛНИТЬ ЗАПРОС | 2. Нажми на кнопку НАЧАТЬ АВТОЛАЙКИНГ");
+        }
+
+      
+
     }
 }

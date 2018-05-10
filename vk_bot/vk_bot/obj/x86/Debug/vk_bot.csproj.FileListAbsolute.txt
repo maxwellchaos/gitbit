@@ -26,3 +26,15 @@ C:\Documents and Settings\Администратор\Рабочий стол\git
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.delgroups.resources
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.prigl.resources
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.wallskanform.resources
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog

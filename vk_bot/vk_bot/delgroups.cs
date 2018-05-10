@@ -65,7 +65,7 @@ namespace vk_bot
                     dop.Load("https://api.vk.com/method/groups.leave.xml?group_id="
                 + index + "&access_token=" + access_token + "&v=5.73");
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(500);
                     Application.DoEvents();
                     
                 }
@@ -85,6 +85,11 @@ namespace vk_bot
         {
             webBrowser1.Navigate("https://api.vk.com/method/groups.leave.xml?group_id=" 
                 + index + "&access_token=" + access_token + "&v=5.73");
+        }
+
+        private void delgroups_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Инструкция: 1. Нажмите на кнопку ВЫПОЛНИТЬ ЗАПРОС | 2. Нажмите на НАЧАТЬ УДАЛЯТЬ");
         }
     }
 }

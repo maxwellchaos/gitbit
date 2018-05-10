@@ -45,7 +45,7 @@ namespace vk_bot
 
             //добираюсь до индентификаторов
             XmlDocument doo = new XmlDocument();
-            doo.Load("https://api.vk.com/method/groups.get.xml?&access_token=" + access_token + "&v=5.73");
+            doo.Load("https://api.vk.com/method/groups.getInvitedUsers.xml?group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
             XmlNode response = doo.SelectSingleNode("response");
             XmlNode tager = response.SelectSingleNode("items");
 
@@ -54,6 +54,9 @@ namespace vk_bot
                 doo.Load("https://api.vk.com/method/groups.removeUser.xml?user_id=" + indexer + "&group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
                 XmlNode id = prof.SelectSingleNode("id");
                 indexer = id.InnerXml;
+
+                Thread.Sleep(220);
+                Application.DoEvents();
             }
         }
 
@@ -61,5 +64,11 @@ namespace vk_bot
         {
             webBrowser1.Navigate("https://api.vk.com/method/groups.removeUser.xml?user_id="+indexer+"&group_id="+textBox1.Text+"&access_token=" + access_token + "&v=5.73");
         }
+
+        private void prigl_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Инструкция: 1. Нажмите на кнопку ВЫПОЛНИТЬ ЗАПРОС | 2. Нажмите на кнопку НАЧАТЬ УДАЛЯТЬ ПРИГЛАШЕНИЯ");
+        }
+
     }
 }

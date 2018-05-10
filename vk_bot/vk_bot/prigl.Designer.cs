@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 261);
+            this.ClientSize = new System.Drawing.Size(484, 266);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -96,6 +96,7 @@
             this.MinimumSize = new System.Drawing.Size(492, 300);
             this.Name = "prigl";
             this.Text = "prigl";
+            this.Load += new System.EventHandler(this.prigl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 246);
+            this.ClientSize = new System.Drawing.Size(519, 251);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -98,6 +98,7 @@
             this.MinimumSize = new System.Drawing.Size(527, 285);
             this.Name = "delgroups";
             this.Text = "delgroups";
+            this.Load += new System.EventHandler(this.delgroups_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
