@@ -31,11 +31,12 @@
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelLastName = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.ORG = new System.Windows.Forms.Label();
+            this.RepFromGroupBTN = new System.Windows.Forms.Button();
             this.buttonChangeStatus = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
-            this.ORG = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,38 @@
             this.webBrowser1.Size = new System.Drawing.Size(20, 28);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            // 
+            // ORG
+            // 
+            this.ORG.AutoSize = true;
+            this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ORG.Location = new System.Drawing.Point(12, 9);
+            this.ORG.Name = "ORG";
+            this.ORG.Size = new System.Drawing.Size(266, 40);
+            this.ORG.TabIndex = 7;
+            this.ORG.Text = "VK_TUMBOCHKA";
+            // 
+            // RepFromGroupBTN
+            // 
+            this.RepFromGroupBTN.BackColor = System.Drawing.Color.SteelBlue;
+            this.RepFromGroupBTN.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.RepFromGroupBTN.FlatAppearance.BorderSize = 0;
+            this.RepFromGroupBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.RepFromGroupBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.RepFromGroupBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RepFromGroupBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RepFromGroupBTN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RepFromGroupBTN.Location = new System.Drawing.Point(308, 208);
+            this.RepFromGroupBTN.Name = "RepFromGroupBTN";
+            this.RepFromGroupBTN.Size = new System.Drawing.Size(150, 150);
+            this.RepFromGroupBTN.TabIndex = 8;
+            this.RepFromGroupBTN.Text = "Репост записи из группы";
+            this.RepFromGroupBTN.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.RepFromGroupBTN.UseVisualStyleBackColor = false;
+            this.RepFromGroupBTN.Click += new System.EventHandler(this.RepFromGroupBTN_Click);
+            this.RepFromGroupBTN.MouseEnter += new System.EventHandler(this.RepFromGroupBTN_MouseEnter);
+            this.RepFromGroupBTN.MouseLeave += new System.EventHandler(this.RepFromGroupBTN_MouseLeave);
             // 
             // buttonChangeStatus
             // 
@@ -140,22 +173,11 @@
             // 
             this.pictureBoxAvatar.Location = new System.Drawing.Point(4, 54);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
-            this.pictureBoxAvatar.Size = new System.Drawing.Size(300, 300);
+            this.pictureBoxAvatar.Size = new System.Drawing.Size(300, 303);
             this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
             this.pictureBoxAvatar.Click += new System.EventHandler(this.pictureBoxAvatar_Click);
-            // 
-            // ORG
-            // 
-            this.ORG.AutoSize = true;
-            this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ORG.Location = new System.Drawing.Point(12, 9);
-            this.ORG.Name = "ORG";
-            this.ORG.Size = new System.Drawing.Size(266, 40);
-            this.ORG.TabIndex = 7;
-            this.ORG.Text = "VK_TUMBOCHKA";
             // 
             // Form1
             // 
@@ -164,6 +186,7 @@
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
             this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.RepFromGroupBTN);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
@@ -190,6 +213,7 @@
         private System.Windows.Forms.Button delete_wall_post;
         private System.Windows.Forms.Button buttonChangeStatus;
         private System.Windows.Forms.Label ORG;
+        private System.Windows.Forms.Button RepFromGroupBTN;
     }
 }
 

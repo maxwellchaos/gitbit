@@ -41,6 +41,7 @@
             this.labelrrr = new System.Windows.Forms.Label();
             this.numericUpDownqwe = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownrr = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownqwe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownrr)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             // textBoxID
             // 
             this.textBoxID.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBoxID.Location = new System.Drawing.Point(15, 69);
+            this.textBoxID.Location = new System.Drawing.Point(12, 88);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(669, 33);
             this.textBoxID.TabIndex = 0;
@@ -66,11 +67,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(5, 9);
+            this.label1.Location = new System.Drawing.Point(2, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(589, 57);
+            this.label1.Size = new System.Drawing.Size(188, 57);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Cсылка на личную страницу";
+            this.label1.Text = "Cсылка ";
             // 
             // label2
             // 
@@ -160,12 +161,24 @@
             this.numericUpDownrr.Size = new System.Drawing.Size(669, 33);
             this.numericUpDownrr.TabIndex = 13;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(7, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 29);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "на личную страницу";
+            // 
             // FormSpam_DR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDownrr);
             this.Controls.Add(this.numericUpDownqwe);
             this.Controls.Add(this.labelrrr);
@@ -203,5 +216,6 @@
         private System.Windows.Forms.Label labelrrr;
         private System.Windows.Forms.NumericUpDown numericUpDownqwe;
         private System.Windows.Forms.NumericUpDown numericUpDownrr;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -34,7 +34,6 @@ C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.CoreCompileInputs.cache
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
 y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
@@ -71,3 +70,5 @@ C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\
 C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
 C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources
