@@ -19,6 +19,7 @@ namespace vk_bot
         public string idpostlist;
         public string id2postlist;
         public string score;
+        public string errors;
 
         public wallskanform()
         {
@@ -27,27 +28,8 @@ namespace vk_bot
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //передаю id из текстбокса в переменную
             textboxer = textBox1.Text;
-
-            webBrowser1.Navigate("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
-        }
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            
-            string url = e.Url.ToString();
-            if (url.Contains("error"))
-            {
-                MessageBox.Show("Ошибка");
-            }
-            if (url.Contains("access_token"))
-            {
-                //Выделяю access_token
-                int IndexAccTok = url.IndexOf("access_token");
-                access_token = url.Remove(0, IndexAccTok + 13);
-                int IndexAmp = access_token.IndexOf("&");
-                access_token = access_token.Remove(IndexAmp);
-            }
 
             //добираюсь до id
             XmlDocument tags = new XmlDocument();
@@ -55,7 +37,8 @@ namespace vk_bot
             XmlNode response = tags.SelectSingleNode("response");
             XmlNode tager = response.SelectSingleNode("items");
 
-            foreach(  XmlNode utag in tager.SelectNodes("post") )
+            //цикл
+            foreach (XmlNode utag in tager.SelectNodes("post"))
             {
                 XmlNode postid = utag.SelectSingleNode("id");
                 XmlDocument dopdoo = new XmlDocument();
@@ -64,9 +47,19 @@ namespace vk_bot
 
                 textboxer = postid.InnerXml;
 
-                Thread.Sleep(300);
+                //ищу ошибки
+                if (dopdoo.InnerXml.Contains("error"))
+                {
+                    errors += 1;
+                    label5.Text = errors;
+                }
+
+                //делаю паузу
+                Thread.Sleep(200);
                 Application.DoEvents();
             }
+
+            label3.Text = "ГОТОВО!";
 
                 //считаю кол-во
                 tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
@@ -74,17 +67,21 @@ namespace vk_bot
                 tager = response.SelectSingleNode("count");
 
                 label4.Text = tager.InnerXml;
-            
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
+           
         }
 
         private void wallskanform_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Инструкция: 1. Нажмите на кнопку ВЫПОЛНИТЬ ЗАПРОС | 2. Нажми на кнопку НАЧАТЬ АВТОЛАЙКИНГ");
+            
         }
 
       

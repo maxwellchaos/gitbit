@@ -15,6 +15,7 @@ namespace vk_bot
     {
         public string access_token;
         public string index;
+        public string errors;
         
 
         public delgroups()
@@ -24,27 +25,7 @@ namespace vk_bot
 
         private void button1_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://api.vk.com/method/groups.get.xml?offset=1&access_token=" 
-                + access_token + "&v=5.73");
-        }
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            string url = e.Url.ToString();
-            if (url.Contains("error"))
-            {
-                MessageBox.Show("Ошибка");
-            }
-            if (url.Contains("access_token"))
-            {
-                //Выделяю access_token
-                int IndexAccTok = url.IndexOf("access_token");
-                access_token = url.Remove(0, IndexAccTok + 13);
-                int IndexAmp = access_token.IndexOf("&");
-                access_token = access_token.Remove(IndexAmp);
-            }
-
-                //добираюсь до индентификаторов групп
+            //добираюсь до индентификаторов групп
                 XmlDocument doo = new XmlDocument();
                 doo.Load("https://api.vk.com/method/groups.get.xml?&access_token=" 
                     + access_token + "&v=5.73");
@@ -65,10 +46,19 @@ namespace vk_bot
                     dop.Load("https://api.vk.com/method/groups.leave.xml?group_id="
                 + index + "&access_token=" + access_token + "&v=5.73");
 
+                    //ищу ошибки
+                    if (dop.InnerXml.Contains("error"))
+                    {
+                        errors += 1;
+                        label3.Text = errors;
+                    }
+
                     Thread.Sleep(500);
                     Application.DoEvents();
                     
                 }
+
+                label4.Text = "ГОТОВО!";
 
                     //считаю кол-во записей в группе
                     doo.Load("https://api.vk.com/method/groups.get.xml?&access_token=" 
@@ -78,18 +68,21 @@ namespace vk_bot
                     XmlNode dopres = response.SelectSingleNode("count");
 
                     label1.Text = dopres.InnerXml;
-                   
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+      
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://api.vk.com/method/groups.leave.xml?group_id=" 
-                + index + "&access_token=" + access_token + "&v=5.73");
+         
         }
 
         private void delgroups_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Инструкция: 1. Нажмите на кнопку ВЫПОЛНИТЬ ЗАПРОС | 2. Нажмите на НАЧАТЬ УДАЛЯТЬ");
+            
         }
     }
 }
