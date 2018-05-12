@@ -28,38 +28,45 @@ namespace vk_bot
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //передаю id из текстбокса в переменную
-            textboxer = textBox1.Text;
-
-            //добираюсь до id
-            XmlDocument tags = new XmlDocument();
-            tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
-            XmlNode response = tags.SelectSingleNode("response");
-            XmlNode tager = response.SelectSingleNode("items");
-
-            //цикл
-            foreach (XmlNode utag in tager.SelectNodes("post"))
+            if (textBox1.Text == "")
             {
-                XmlNode postid = utag.SelectSingleNode("id");
-                XmlDocument dopdoo = new XmlDocument();
-
-                dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
-
-                textboxer = postid.InnerXml;
-
-                //ищу ошибки
-                if (dopdoo.InnerXml.Contains("error"))
-                {
-                    errors += 1;
-                    label5.Text = errors;
-                }
-
-                //делаю паузу
-                Thread.Sleep(200);
-                Application.DoEvents();
+                MessageBox.Show("Введите id!");
             }
 
-            label3.Text = "ГОТОВО!";
+            else
+            {
+                //передаю id из текстбокса в переменную
+                textboxer = textBox1.Text;
+
+                //добираюсь до id
+                XmlDocument tags = new XmlDocument();
+                tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+                XmlNode response = tags.SelectSingleNode("response");
+                XmlNode tager = response.SelectSingleNode("items");
+
+                //цикл
+                foreach (XmlNode utag in tager.SelectNodes("post"))
+                {
+                    XmlNode postid = utag.SelectSingleNode("id");
+                    XmlDocument dopdoo = new XmlDocument();
+
+                    dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
+
+                    textboxer = postid.InnerXml;
+
+                    //ищу ошибки
+                    if (dopdoo.InnerXml.Contains("error"))
+                    {
+                        errors += 1;
+                        label5.Text = errors;
+                    }
+
+                    //делаю паузу
+                    Thread.Sleep(200);
+                    Application.DoEvents();
+                }
+
+                label3.Text = "ГОТОВО!";
 
                 //считаю кол-во
                 tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
@@ -67,13 +74,14 @@ namespace vk_bot
                 tager = response.SelectSingleNode("count");
 
                 label4.Text = tager.InnerXml;
+            }
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
            
@@ -83,8 +91,6 @@ namespace vk_bot
         {
             
         }
-
-      
 
     }
 }

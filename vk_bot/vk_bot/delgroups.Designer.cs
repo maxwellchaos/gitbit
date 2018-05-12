@@ -35,6 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -54,7 +55,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(487, 153);
             this.webBrowser1.TabIndex = 13;
-            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // button1
             // 
@@ -106,11 +107,20 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Кол-во ошибок:";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 25;
+            // 
             // delgroups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 251);
+            this.ClientSize = new System.Drawing.Size(511, 246);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -122,7 +132,6 @@
             this.MinimumSize = new System.Drawing.Size(527, 285);
             this.Name = "delgroups";
             this.Text = "delgroups";
-            this.Load += new System.EventHandler(this.delgroups_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +146,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

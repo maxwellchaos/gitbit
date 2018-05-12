@@ -99,6 +99,11 @@ namespace vk_bot
             newForm.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
         
 
     }

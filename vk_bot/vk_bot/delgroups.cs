@@ -70,19 +70,6 @@ namespace vk_bot
                     label1.Text = dopres.InnerXml;
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-      
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void delgroups_Load(object sender, EventArgs e)
-        {
-            
-        }
+       
     }
 }

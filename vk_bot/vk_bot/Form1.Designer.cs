@@ -36,6 +36,8 @@
             this.egroup = new System.Windows.Forms.Button();
             this.delprigl = new System.Windows.Forms.Button();
             this.webBrowser2 = new System.Windows.Forms.WebBrowser();
+            this.button1 = new System.Windows.Forms.Button();
+            this.webBrowser3 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,11 +121,32 @@
             this.webBrowser2.TabIndex = 9;
             this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(25, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Выйти";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // webBrowser3
+            // 
+            this.webBrowser3.Location = new System.Drawing.Point(-1, -11);
+            this.webBrowser3.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser3.Name = "webBrowser3";
+            this.webBrowser3.Size = new System.Drawing.Size(20, 20);
+            this.webBrowser3.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 202);
+            this.Controls.Add(this.webBrowser3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser2);
             this.Controls.Add(this.delprigl);
             this.Controls.Add(this.egroup);
@@ -153,6 +176,8 @@
         private System.Windows.Forms.Button egroup;
         private System.Windows.Forms.Button delprigl;
         private System.Windows.Forms.WebBrowser webBrowser2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.WebBrowser webBrowser3;
     }
 }
 

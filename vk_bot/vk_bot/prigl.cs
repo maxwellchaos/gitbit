@@ -24,28 +24,36 @@ namespace vk_bot
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //добираюсь до индентификаторов
-            XmlDocument doo = new XmlDocument();
-            doo.Load("https://api.vk.com/method/groups.getInvitedUsers.xml?group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
-            XmlNode response = doo.SelectSingleNode("response");
-            XmlNode tager = response.SelectSingleNode("items");
-
-            foreach (XmlNode prof in tager.SelectNodes("user"))
+            if (textBox1.Text == "")
             {
-                XmlNode id = prof.SelectSingleNode("id");
-                indexer = id.InnerXml;
-                doo.Load("https://api.vk.com/method/groups.removeUser.xml?user_id=" + indexer + "&group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
-                
-                
-                //ищу ошибки
-                if (doo.InnerXml.Contains("error"))
-                {
-                    errors += 1;
-                    label3.Text = errors;
-                }
+                MessageBox.Show("Введите id!");
             }
 
-            label4.Text = "ГОТОВО!";
+            else
+            {
+                //добираюсь до индентификаторов
+                XmlDocument doo = new XmlDocument();
+                doo.Load("https://api.vk.com/method/groups.getInvitedUsers.xml?group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+                XmlNode response = doo.SelectSingleNode("response");
+                XmlNode tager = response.SelectSingleNode("items");
+
+                foreach (XmlNode prof in tager.SelectNodes("user"))
+                {
+                    XmlNode id = prof.SelectSingleNode("id");
+                    indexer = id.InnerXml;
+                    doo.Load("https://api.vk.com/method/groups.removeUser.xml?user_id=" + indexer + "&group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
+
+
+                    //ищу ошибки
+                    if (doo.InnerXml.Contains("error"))
+                    {
+                        errors += 1;
+                        label3.Text = errors;
+                    }
+                }
+
+                label4.Text = "ГОТОВО!";
+            }
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
