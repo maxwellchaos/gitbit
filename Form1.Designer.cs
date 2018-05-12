@@ -35,6 +35,7 @@
             this.mass_laik = new System.Windows.Forms.Button();
             this.egroup = new System.Windows.Forms.Button();
             this.delprigl = new System.Windows.Forms.Button();
+            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFirstName.Location = new System.Drawing.Point(217, 47);
+            this.labelFirstName.Location = new System.Drawing.Point(58, 123);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(57, 20);
             this.labelFirstName.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelLastName.Location = new System.Drawing.Point(217, 75);
+            this.labelLastName.Location = new System.Drawing.Point(58, 143);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(57, 20);
             this.labelLastName.TabIndex = 1;
@@ -60,10 +61,10 @@
             // 
             // pictureBoxAvatar
             // 
-            this.pictureBoxAvatar.Location = new System.Drawing.Point(29, 36);
+            this.pictureBoxAvatar.Location = new System.Drawing.Point(25, 14);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
-            this.pictureBoxAvatar.Size = new System.Drawing.Size(157, 169);
-            this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxAvatar.Size = new System.Drawing.Size(135, 106);
+            this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
             // 
@@ -78,9 +79,10 @@
             // 
             // mass_laik
             // 
-            this.mass_laik.Location = new System.Drawing.Point(426, 36);
+            this.mass_laik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.mass_laik.Location = new System.Drawing.Point(208, 14);
             this.mass_laik.Name = "mass_laik";
-            this.mass_laik.Size = new System.Drawing.Size(159, 41);
+            this.mass_laik.Size = new System.Drawing.Size(285, 41);
             this.mass_laik.TabIndex = 6;
             this.mass_laik.Text = "Массовый лайкинг";
             this.mass_laik.UseVisualStyleBackColor = true;
@@ -88,27 +90,41 @@
             // 
             // egroup
             // 
-            this.egroup.Location = new System.Drawing.Point(426, 101);
+            this.egroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egroup.Location = new System.Drawing.Point(208, 79);
             this.egroup.Name = "egroup";
-            this.egroup.Size = new System.Drawing.Size(159, 41);
+            this.egroup.Size = new System.Drawing.Size(285, 41);
             this.egroup.TabIndex = 7;
-            this.egroup.Text = "Выход и вступление в группы";
+            this.egroup.Text = "Выход из групп";
             this.egroup.UseVisualStyleBackColor = true;
+            this.egroup.Click += new System.EventHandler(this.egroup_Click);
             // 
             // delprigl
             // 
-            this.delprigl.Location = new System.Drawing.Point(426, 164);
+            this.delprigl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.delprigl.Location = new System.Drawing.Point(208, 142);
             this.delprigl.Name = "delprigl";
-            this.delprigl.Size = new System.Drawing.Size(159, 41);
+            this.delprigl.Size = new System.Drawing.Size(285, 41);
             this.delprigl.TabIndex = 8;
             this.delprigl.Text = " Удаление всех приглашений";
             this.delprigl.UseVisualStyleBackColor = true;
+            this.delprigl.Click += new System.EventHandler(this.delprigl_Click);
+            // 
+            // webBrowser2
+            // 
+            this.webBrowser2.Location = new System.Drawing.Point(25, 200);
+            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser2.Name = "webBrowser2";
+            this.webBrowser2.Size = new System.Drawing.Size(672, 117);
+            this.webBrowser2.TabIndex = 9;
+            this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 232);
+            this.ClientSize = new System.Drawing.Size(512, 202);
+            this.Controls.Add(this.webBrowser2);
             this.Controls.Add(this.delprigl);
             this.Controls.Add(this.egroup);
             this.Controls.Add(this.mass_laik);
@@ -116,6 +132,8 @@
             this.Controls.Add(this.pictureBoxAvatar);
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.labelFirstName);
+            this.MaximumSize = new System.Drawing.Size(528, 241);
+            this.MinimumSize = new System.Drawing.Size(528, 241);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -134,6 +152,7 @@
         private System.Windows.Forms.Button mass_laik;
         private System.Windows.Forms.Button egroup;
         private System.Windows.Forms.Button delprigl;
+        private System.Windows.Forms.WebBrowser webBrowser2;
     }
 }
 
