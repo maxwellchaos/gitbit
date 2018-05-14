@@ -36,6 +36,10 @@
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
             this.ORG = new System.Windows.Forms.Label();
+            this.delprigl = new System.Windows.Forms.Button();
+            this.egroup = new System.Windows.Forms.Button();
+            this.mass_laik = new System.Windows.Forms.Button();
+            this.buttonПОЗДР = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,12 +161,56 @@
             this.ORG.TabIndex = 7;
             this.ORG.Text = "VK_TUMBOCHKA";
             // 
+            // delprigl
+            // 
+            this.delprigl.Location = new System.Drawing.Point(600, 387);
+            this.delprigl.Name = "delprigl";
+            this.delprigl.Size = new System.Drawing.Size(159, 41);
+            this.delprigl.TabIndex = 11;
+            this.delprigl.Text = " Удаление всех приглашений";
+            this.delprigl.UseVisualStyleBackColor = true;
+            this.delprigl.Click += new System.EventHandler(this.delprigl_Click);
+            // 
+            // egroup
+            // 
+            this.egroup.Location = new System.Drawing.Point(600, 324);
+            this.egroup.Name = "egroup";
+            this.egroup.Size = new System.Drawing.Size(159, 41);
+            this.egroup.TabIndex = 10;
+            this.egroup.Text = "Выход и вступление в группы";
+            this.egroup.UseVisualStyleBackColor = true;
+            this.egroup.Click += new System.EventHandler(this.egroup_Click);
+            // 
+            // mass_laik
+            // 
+            this.mass_laik.Location = new System.Drawing.Point(600, 259);
+            this.mass_laik.Name = "mass_laik";
+            this.mass_laik.Size = new System.Drawing.Size(159, 41);
+            this.mass_laik.TabIndex = 9;
+            this.mass_laik.Text = "Массовый лайкинг";
+            this.mass_laik.UseVisualStyleBackColor = true;
+            this.mass_laik.Click += new System.EventHandler(this.mass_laik_Click);
+            // 
+            // buttonПОЗДР
+            // 
+            this.buttonПОЗДР.Location = new System.Drawing.Point(306, 229);
+            this.buttonПОЗДР.Name = "buttonПОЗДР";
+            this.buttonПОЗДР.Size = new System.Drawing.Size(159, 45);
+            this.buttonПОЗДР.TabIndex = 12;
+            this.buttonПОЗДР.Text = "Поздравление с ДР";
+            this.buttonПОЗДР.UseVisualStyleBackColor = true;
+            this.buttonПОЗДР.Click += new System.EventHandler(this.buttonПОЗДР_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
+            this.Controls.Add(this.buttonПОЗДР);
+            this.Controls.Add(this.delprigl);
+            this.Controls.Add(this.egroup);
+            this.Controls.Add(this.mass_laik);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
@@ -190,6 +238,10 @@
         private System.Windows.Forms.Button delete_wall_post;
         private System.Windows.Forms.Button buttonChangeStatus;
         private System.Windows.Forms.Label ORG;
+        private System.Windows.Forms.Button delprigl;
+        private System.Windows.Forms.Button egroup;
+        private System.Windows.Forms.Button mass_laik;
+        private System.Windows.Forms.Button buttonПОЗДР;
     }
 }
 

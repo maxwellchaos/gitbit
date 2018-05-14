@@ -22,7 +22,8 @@ namespace vk_bot
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+status&response_type=token&v=5.73");
+            webBrowser1.BringToFront();
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&response_type=token&v=5.73");
        
         }
 
@@ -116,6 +117,34 @@ namespace vk_bot
             FormSpam_DR T = new FormSpam_DR();
             T.access_token = access_token;
             T.Show();
+        }
+
+        private void mass_laik_Click(object sender, EventArgs e)
+        {
+            wallskanform newForm = new wallskanform();
+            newForm.access_token = access_token;
+            newForm.Show();
+        }
+
+        private void delprigl_Click(object sender, EventArgs e)
+        {
+            prigl newForm = new prigl();
+            newForm.access_token = access_token;
+            newForm.Show();
+        }
+
+        private void egroup_Click(object sender, EventArgs e)
+        {
+            delgroups newForm = new delgroups();
+            newForm.access_token = access_token;
+            newForm.Show();
+        }
+
+        private void buttonПОЗДР_Click(object sender, EventArgs e)
+        {
+            FormSPAM q = new FormSPAM();
+            q.access_token = access_token;
+            q.Show();
         }
     }
 }

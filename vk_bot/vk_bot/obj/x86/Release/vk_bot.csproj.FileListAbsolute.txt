@@ -1,0 +1,15 @@
+C:\gitbit-master_main\vk_bot\vk_bot\bin\Release\vk_bot.exe.config
+C:\gitbit-master_main\vk_bot\vk_bot\bin\Release\vk_bot.exe
+C:\gitbit-master_main\vk_bot\vk_bot\bin\Release\vk_bot.pdb
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\ResolveAssemblyReference.cache
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.delgroups.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.Form1.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.FormChangeStatus.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.FormSpam_DR.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.prigl.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.Properties.Resources.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.wallskanform.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\GenerateResource.read.1.tlog
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\GenerateResource.write.1.tlog
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.exe
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Release\vk_bot.pdb

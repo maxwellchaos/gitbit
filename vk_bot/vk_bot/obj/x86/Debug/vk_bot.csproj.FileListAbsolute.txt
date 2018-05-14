@@ -60,3 +60,7 @@ C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
 C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.delgroups.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.prigl.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.wallskanform.resources
+C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSPAM.resources
