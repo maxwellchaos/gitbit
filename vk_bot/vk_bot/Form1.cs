@@ -43,16 +43,17 @@ namespace vk_bot
                 access_token = access_token.Remove(IndexAmp);
 
                 //Зпрашиваю информацию о пользователе
-                
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
                 doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
                 XmlNode response = doc.SelectSingleNode("response");
                 XmlNode user = response.SelectSingleNode("user");
 
+
+
                 XmlNode FirstName = user.SelectSingleNode("first_name");
                 labelFirstName.Text = FirstName.InnerText;
-             
+
                 XmlNode LastName = user.SelectSingleNode("last_name");
                 labelLastName.Text = LastName.InnerText;
 
@@ -69,7 +70,6 @@ namespace vk_bot
             FormChangeStatus FRM3 = new FormChangeStatus();
             FRM3.ACT2 = access_token;
             FRM3.Show();
-            
         }
 
         private void pictureBoxAvatar_Click(object sender, EventArgs e)
