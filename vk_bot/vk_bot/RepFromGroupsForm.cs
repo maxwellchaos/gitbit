@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Drawing.Text;
 
 namespace vk_bot
 {
@@ -23,7 +23,40 @@ namespace vk_bot
         public RepFromGroupsForm()
         {
             InitializeComponent();
+            fontsProjects();
+            fonts();
         }
+
+        PrivateFontCollection font;
+        private void fontsProjects()
+        {
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("FONTS/RLL.ttf");
+            this.font.AddFontFile("FONTS/WS.ttf");
+
+
+
+        }
+        private void fonts()
+        {
+            label1.Font = new Font(font.Families[0], 36);
+            label2.Font = new Font(font.Families[0], 20);
+            label3.Font = new Font(font.Families[0], 36);
+            label4.Font = new Font(font.Families[0], 20);
+            textBoxREP2.Font = new Font(font.Families[0], 24);
+            textBoxShName.Font = new Font(font.Families[0], 24);
+
+
+
+
+
+        }
+
+
+
+
+
+
 
         private void RepFromGroupForm_Load(object sender, EventArgs e)
         {

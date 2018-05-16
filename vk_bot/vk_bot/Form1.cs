@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Drawing.Text;
 
 namespace vk_bot
 {
@@ -17,7 +18,36 @@ namespace vk_bot
         public Form1()
         {
             InitializeComponent();
+            fontsProjects();
+            fonts();
         }
+
+        PrivateFontCollection font;
+        private void fontsProjects()
+        {
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("FONTS/RLL.ttf");
+            this.font.AddFontFile("FONTS/WS.ttf");
+
+
+
+        }
+        private void fonts()
+        {
+            labelLastName.Font = new Font(font.Families[0], 24);
+            ORG.Font = new Font(font.Families[0], 24);
+            labelFirstName.Font = new Font(font.Families[0], 18);
+            delete_wall_post.Font = new Font(font.Families[0], 10);
+            spam.Font = new Font(font.Families[0], 14);
+            buttonChangeStatus.Font = new Font(font.Families[0], 10);
+            RepFromGroupBTN.Font =  new Font(font.Families[0], 10);
+
+        }
+
+
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -48,39 +48,47 @@
             // 
             // textBoxID
             // 
-            this.textBoxID.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBoxID.Location = new System.Drawing.Point(12, 88);
+            this.textBoxID.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBoxID.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxID.Location = new System.Drawing.Point(1, 88);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(669, 33);
+            this.textBoxID.Size = new System.Drawing.Size(760, 24);
             this.textBoxID.TabIndex = 0;
+            this.textBoxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxMess
             // 
-            this.textBoxMess.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBoxMess.Location = new System.Drawing.Point(12, 165);
+            this.textBoxMess.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBoxMess.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMess.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBoxMess.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxMess.Location = new System.Drawing.Point(1, 183);
             this.textBoxMess.Name = "textBoxMess";
-            this.textBoxMess.Size = new System.Drawing.Size(669, 33);
+            this.textBoxMess.Size = new System.Drawing.Size(760, 24);
             this.textBoxMess.TabIndex = 1;
+            this.textBoxMess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(2, 9);
+            this.label1.Location = new System.Drawing.Point(-10, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 57);
+            this.label1.Size = new System.Drawing.Size(215, 55);
             this.label1.TabIndex = 3;
             this.label1.Text = "Cсылка ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(7, 133);
+            this.label2.Location = new System.Drawing.Point(-4, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 29);
+            this.label2.Size = new System.Drawing.Size(209, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Для сообщения";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -101,9 +109,11 @@
             // buttonSPAM
             // 
             this.buttonSPAM.BackColor = System.Drawing.Color.SteelBlue;
+            this.buttonSPAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonSPAM.FlatAppearance.BorderSize = 0;
+            this.buttonSPAM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.buttonSPAM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSPAM.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
+            this.buttonSPAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.buttonSPAM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonSPAM.Location = new System.Drawing.Point(1, 369);
             this.buttonSPAM.Name = "buttonSPAM";
@@ -116,59 +126,67 @@
             // labelbree
             // 
             this.labelbree.AutoSize = true;
-            this.labelbree.Font = new System.Drawing.Font("Atiba Cyrillic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelbree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelbree.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelbree.Location = new System.Drawing.Point(687, 315);
             this.labelbree.Name = "labelbree";
-            this.labelbree.Size = new System.Drawing.Size(0, 29);
+            this.labelbree.Size = new System.Drawing.Size(0, 25);
             this.labelbree.TabIndex = 7;
             // 
             // labelENT
             // 
             this.labelENT.AutoSize = true;
-            this.labelENT.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelENT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelENT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelENT.Location = new System.Drawing.Point(7, 201);
+            this.labelENT.Location = new System.Drawing.Point(-4, 217);
             this.labelENT.Name = "labelENT";
-            this.labelENT.Size = new System.Drawing.Size(169, 29);
+            this.labelENT.Size = new System.Drawing.Size(212, 29);
             this.labelENT.TabIndex = 8;
             this.labelENT.Text = "Для количества";
             // 
             // labelrrr
             // 
             this.labelrrr.AutoSize = true;
-            this.labelrrr.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
+            this.labelrrr.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.labelrrr.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelrrr.Location = new System.Drawing.Point(7, 283);
+            this.labelrrr.Location = new System.Drawing.Point(-4, 286);
             this.labelrrr.Name = "labelrrr";
-            this.labelrrr.Size = new System.Drawing.Size(160, 29);
+            this.labelrrr.Size = new System.Drawing.Size(201, 29);
             this.labelrrr.TabIndex = 9;
             this.labelrrr.Text = "Для интервала";
             // 
             // numericUpDownqwe
             // 
-            this.numericUpDownqwe.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold);
-            this.numericUpDownqwe.Location = new System.Drawing.Point(12, 233);
+            this.numericUpDownqwe.BackColor = System.Drawing.Color.SteelBlue;
+            this.numericUpDownqwe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDownqwe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownqwe.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.numericUpDownqwe.Location = new System.Drawing.Point(1, 249);
             this.numericUpDownqwe.Name = "numericUpDownqwe";
-            this.numericUpDownqwe.Size = new System.Drawing.Size(669, 33);
+            this.numericUpDownqwe.Size = new System.Drawing.Size(771, 27);
             this.numericUpDownqwe.TabIndex = 12;
+            this.numericUpDownqwe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDownrr
             // 
-            this.numericUpDownrr.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownrr.Location = new System.Drawing.Point(12, 315);
+            this.numericUpDownrr.BackColor = System.Drawing.Color.SteelBlue;
+            this.numericUpDownrr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDownrr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownrr.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.numericUpDownrr.Location = new System.Drawing.Point(-3, 318);
             this.numericUpDownrr.Name = "numericUpDownrr";
-            this.numericUpDownrr.Size = new System.Drawing.Size(669, 33);
+            this.numericUpDownrr.Size = new System.Drawing.Size(775, 27);
             this.numericUpDownrr.TabIndex = 13;
+            this.numericUpDownrr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(7, 56);
+            this.label3.Location = new System.Drawing.Point(-4, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 29);
+            this.label3.Size = new System.Drawing.Size(266, 29);
             this.label3.TabIndex = 14;
             this.label3.Text = "на личную страницу";
             // 
@@ -182,7 +200,6 @@
             this.Controls.Add(this.numericUpDownrr);
             this.Controls.Add(this.numericUpDownqwe);
             this.Controls.Add(this.labelrrr);
-            this.Controls.Add(this.labelENT);
             this.Controls.Add(this.labelbree);
             this.Controls.Add(this.buttonSPAM);
             this.Controls.Add(this.webBrowserWWW);
@@ -190,6 +207,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxMess);
             this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.labelENT);
             this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormSpam_DR";

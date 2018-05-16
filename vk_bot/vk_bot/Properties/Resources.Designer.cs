@@ -83,9 +83,29 @@ namespace vk_bot.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1111 {
+            get {
+                object obj = ResourceManager.GetObject("1111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _14 {
             get {
                 object obj = ResourceManager.GetObject("14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2222 {
+            get {
+                object obj = ResourceManager.GetObject("2222", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -92,6 +92,7 @@
             this.RepFromGroupBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RepFromGroupBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RepFromGroupBTN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RepFromGroupBTN.Image = global::vk_bot.Properties.Resources._2222;
             this.RepFromGroupBTN.Location = new System.Drawing.Point(308, 208);
             this.RepFromGroupBTN.Name = "RepFromGroupBTN";
             this.RepFromGroupBTN.Size = new System.Drawing.Size(150, 150);
@@ -136,7 +137,7 @@
             this.delete_wall_post.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_wall_post.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delete_wall_post.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.delete_wall_post.Image = global::vk_bot.Properties.Resources._11;
+            this.delete_wall_post.Image = global::vk_bot.Properties.Resources._1111;
             this.delete_wall_post.Location = new System.Drawing.Point(308, 54);
             this.delete_wall_post.Name = "delete_wall_post";
             this.delete_wall_post.Size = new System.Drawing.Size(150, 150);
