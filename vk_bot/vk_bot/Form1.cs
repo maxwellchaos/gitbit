@@ -148,25 +148,5 @@ namespace vk_bot
             q.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            wallskanform newForm = new wallskanform();
-            newForm.access_token = access_token;
-            newForm.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            prigl newForm = new prigl();
-            newForm.access_token = access_token;
-            newForm.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            delgroups newForm = new delgroups();
-            newForm.access_token = access_token;
-            newForm.Show();
-        }
     }
 }

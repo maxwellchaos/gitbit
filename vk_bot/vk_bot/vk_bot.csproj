@@ -65,7 +65,10 @@
     <Compile Include="FormChangeStatus.Designer.cs">
       <DependentUpon>FormChangeStatus.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04b24cf53255ef0c6576ed6dfb9112e37b866c58
     <Compile Include="FormSPAM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +89,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+=======
+>>>>>>> 04b24cf53255ef0c6576ed6dfb9112e37b866c58
     <Compile Include="wallskanform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,7 +131,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
 
+=======
+    <EmbeddedResource Include="wallskanform.resx">
+      <DependentUpon>wallskanform.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 04b24cf53255ef0c6576ed6dfb9112e37b866c58
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
