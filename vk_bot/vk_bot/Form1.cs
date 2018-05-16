@@ -43,6 +43,7 @@ namespace vk_bot
                 access_token = access_token.Remove(IndexAmp);
 
                 //Зпрашиваю информацию о пользователе
+
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
                 doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
