@@ -21,7 +21,7 @@ namespace vk_bot
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends&response_type=token&v=5.73");
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6464597&scope=friends,comment,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&redirect_uri=https://api.vk.com/blank.html&display=page&response_type=token");
        
         }
 
@@ -58,6 +58,13 @@ namespace vk_bot
                 webBrowser1.Visible = false;
             }
 
+        }
+
+        private void delcom_Click(object sender, EventArgs e)
+        {
+            url newForm = new url();
+            newForm.access_token = access_token;
+            newForm.Show();
         }
     }
 }
