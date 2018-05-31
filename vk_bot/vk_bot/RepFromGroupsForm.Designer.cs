@@ -47,6 +47,8 @@
             this.FADER = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +60,9 @@
             this.ButtonRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.ButtonRep.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ButtonRep.Location = new System.Drawing.Point(-30, 603);
+            this.ButtonRep.Location = new System.Drawing.Point(-30, 594);
             this.ButtonRep.Name = "ButtonRep";
-            this.ButtonRep.Size = new System.Drawing.Size(722, 105);
+            this.ButtonRep.Size = new System.Drawing.Size(731, 105);
             this.ButtonRep.TabIndex = 7;
             this.ButtonRep.Text = "Репост";
             this.ButtonRep.UseVisualStyleBackColor = false;
@@ -82,7 +84,7 @@
             this.textBoxShName.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.textBoxShName.Location = new System.Drawing.Point(0, 135);
             this.textBoxShName.Name = "textBoxShName";
-            this.textBoxShName.Size = new System.Drawing.Size(667, 24);
+            this.textBoxShName.Size = new System.Drawing.Size(701, 24);
             this.textBoxShName.TabIndex = 9;
             this.textBoxShName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -113,7 +115,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(-10, 180);
+            this.label3.Location = new System.Drawing.Point(-10, 306);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 55);
             this.label3.TabIndex = 12;
@@ -124,7 +126,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(-5, 235);
+            this.label4.Location = new System.Drawing.Point(-5, 354);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(490, 29);
             this.label4.TabIndex = 13;
@@ -138,9 +140,9 @@
             this.textBoxREP2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxREP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxREP2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxREP2.Location = new System.Drawing.Point(0, 267);
+            this.textBoxREP2.Location = new System.Drawing.Point(0, 384);
             this.textBoxREP2.Name = "textBoxREP2";
-            this.textBoxREP2.Size = new System.Drawing.Size(667, 24);
+            this.textBoxREP2.Size = new System.Drawing.Size(701, 24);
             this.textBoxREP2.TabIndex = 14;
             this.textBoxREP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -150,9 +152,9 @@
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 335);
+            this.listBox1.Location = new System.Drawing.Point(0, 432);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(641, 195);
+            this.listBox1.Size = new System.Drawing.Size(701, 156);
             this.listBox1.TabIndex = 15;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -172,7 +174,7 @@
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minimize_Button.Location = new System.Drawing.Point(582, -6);
+            this.Minimize_Button.Location = new System.Drawing.Point(621, -6);
             this.Minimize_Button.Name = "Minimize_Button";
             this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
             this.Minimize_Button.TabIndex = 20;
@@ -191,7 +193,7 @@
             this.Button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Exit.Location = new System.Drawing.Point(623, -1);
+            this.Button_Exit.Location = new System.Drawing.Point(657, -1);
             this.Button_Exit.Name = "Button_Exit";
             this.Button_Exit.Size = new System.Drawing.Size(44, 40);
             this.Button_Exit.TabIndex = 19;
@@ -204,7 +206,7 @@
             this.WindowHalfBorder.BackColor = System.Drawing.Color.SteelBlue;
             this.WindowHalfBorder.Location = new System.Drawing.Point(-6, -1);
             this.WindowHalfBorder.Name = "WindowHalfBorder";
-            this.WindowHalfBorder.Size = new System.Drawing.Size(673, 44);
+            this.WindowHalfBorder.Size = new System.Drawing.Size(802, 44);
             this.WindowHalfBorder.TabIndex = 18;
             this.WindowHalfBorder.TabStop = false;
             this.WindowHalfBorder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseDown);
@@ -241,12 +243,41 @@
             this.FADERMINI.Interval = 1;
             this.FADERMINI.Tick += new System.EventHandler(this.FADERMINI_Tick);
             // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.Color.SteelBlue;
+            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(0, 182);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(701, 78);
+            this.listBox2.TabIndex = 22;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(0, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(701, 45);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "получить список постов";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // RepFromGroupsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(665, 700);
+            this.ClientSize = new System.Drawing.Size(700, 700);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.Button_Exit);
@@ -262,8 +293,8 @@
             this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(665, 700);
-            this.MinimumSize = new System.Drawing.Size(665, 700);
+            this.MaximumSize = new System.Drawing.Size(700, 700);
+            this.MinimumSize = new System.Drawing.Size(700, 700);
             this.Name = "RepFromGroupsForm";
             this.Opacity = 0D;
             this.Text = "RepFromGroupsForm";
@@ -293,5 +324,7 @@
         private System.Windows.Forms.Timer FADER;
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Timer FADERMINI;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button button1;
     }
 }

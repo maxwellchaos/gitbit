@@ -26,6 +26,10 @@ namespace vk_bot
         public string TEMP_NG;
         public int TEMP_NG2;
         public int TEMP_NGLEN;
+        public string EachPostID;
+        public string EachPost;
+
+        
         public RepFromGroupsForm()
         {
             InitializeComponent();
@@ -52,6 +56,8 @@ namespace vk_bot
             ButtonRep.Font = new Font(font.Families[0], 36);
             Minimize_Button.Font = new Font(font.Families[0], 24);
             Button_Exit.Font = new Font(font.Families[0], 24);
+            button1.Font = new Font(font.Families[0], 24);
+            listBox2.Font = new Font(font.Families[0], 11);
         }
         private void RepFromGroupForm_Load(object sender, EventArgs e)
         {
@@ -93,7 +99,7 @@ namespace vk_bot
             XmlNode items = response.SelectSingleNode("items");
             XmlNode post = items.SelectSingleNode("post");
             XmlNode id = post.SelectSingleNode("id");
-            postID = id.InnerXml;
+            postID = listBox2.Text;
             UrGrID = textBoxREP2.Text;
             webBrowser1.Navigate("https://api.vk.com/method/wall.repost.XML?object=" + "wall" + "-" + GrID + "_" + postID + "&group_id=" + UrGrID + "&access_token=" + ACT3 + "&v=5.52");
             DebugOK OK = new DebugOK();
@@ -185,6 +191,38 @@ namespace vk_bot
                 FADERMINI.Stop();
                 Opacity = 1;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShortLink = textBoxShName.Text;
+            ShortLink=  ShortLink.Remove(0, 15);
+            XmlDocument doc2 = new XmlDocument();
+            doc2.Load("https://api.vk.com/method/utils.resolveScreenName.xml?screen_name=" + ShortLink + "&access_token=" + ACT3 + "&v=5.52");
+            XmlNode response2 = doc2.SelectSingleNode("response");
+            XmlNode obid = response2.SelectSingleNode("object_id");
+            GrID = obid.InnerXml;
+            XmlDocument docPOSTS = new XmlDocument();
+            docPOSTS.Load("https://api.vk.com/method/wall.get.xml?owner_id=" + "-" + GrID + "&access_token=" + ACT3 + "&v=5.52");
+            XmlNode response = docPOSTS.SelectSingleNode("response");
+            XmlNode items = response.SelectSingleNode("items");
+            //XmlNode post = items.SelectSingleNode("post");
+
+          //  postID = id.InnerXml;
+            foreach(XmlNode post in items.SelectNodes("post") ){
+
+                XmlNode id = post.SelectSingleNode("id");
+                
+                EachPostID = id.InnerXml;
+
+
+                listBox2.Items.AddRange(new string[]{            
+                      EachPostID
+            
+            });
+            }
+            
+         
         }
     }  
 }
