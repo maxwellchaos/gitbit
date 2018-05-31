@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Drawing.Text;
+using System.Media;
 
 namespace vk_bot
 {
@@ -23,6 +24,9 @@ namespace vk_bot
         public string CST5;
 
         public string ID;
+
+        private Point mouseOffset;
+        private bool isMouseDown = false;
         public FormChangeStatus()
         {
             InitializeComponent();
@@ -63,7 +67,9 @@ namespace vk_bot
             textBox2.Font = new Font(font.Families[0], 18);
             textBox3.Font = new Font(font.Families[0], 18);
             textBox4.Font = new Font(font.Families[0], 18);
-
+            Minimize_Button.Font = new Font(font.Families[0], 24);
+            Button_Exit.Font = new Font(font.Families[0], 24);
+            ORG.Font = new Font(font.Families[0], 24);
 
         }
 
@@ -72,7 +78,8 @@ namespace vk_bot
         private void FormChangeStatus_Load(object sender, EventArgs e)
         {
 
-
+            Opacity = 0;
+            FADERSTART.Start();
 
             CSTinter.Text = Properties.Settings.Default.ST1;
             textBox1.Text = Properties.Settings.Default.ST2;
@@ -112,7 +119,9 @@ namespace vk_bot
             timer5.Enabled = true;
             Properties.Settings.Default.Save();
 
-
+            DebugOK OK = new DebugOK();
+            SystemSounds.Asterisk.Play();
+            OK.Show();
 
         }
 
@@ -204,7 +213,80 @@ namespace vk_bot
             Properties.Settings.Default.Reset();
         }
 
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            FADERMINI.Start();
         }
+
+        private void Button_Exit_Click(object sender, EventArgs e)
+        {
+            FADER.Start();
+        }
+
+        private void FADERSTART_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity += 0.1;
+            if (Opacity == 1)
+            {
+
+                FADERSTART.Stop();
+
+            }
+        }
+
+        private void FADERMINI_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                this.WindowState = FormWindowState.Minimized;
+                FADERMINI.Stop();
+                Opacity = 1;
+            }
+        }
+
+        private void FADER_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                Close();
+
+            }
+        }
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xOffset;
+            int yOffset;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
+                yOffset = -e.Y - SystemInformation.CaptionHeight -
+                    SystemInformation.FrameBorderSize.Height;
+                mouseOffset = new Point(xOffset, yOffset);
+                isMouseDown = true;
+            }
+        }
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
+                Location = mousePos;
+            }
+        }
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+            }
+        }
+    }
     }
 
 

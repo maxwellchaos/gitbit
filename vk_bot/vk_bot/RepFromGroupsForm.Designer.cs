@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RepFromGroupsForm));
             this.ButtonRep = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -37,16 +38,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxREP2 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Minimize_Button = new System.Windows.Forms.Button();
+            this.Button_Exit = new System.Windows.Forms.Button();
+            this.WindowHalfBorder = new System.Windows.Forms.PictureBox();
+            this.ORG = new System.Windows.Forms.Label();
+            this.FADER = new System.Windows.Forms.Timer(this.components);
+            this.FADERSTART = new System.Windows.Forms.Timer(this.components);
+            this.FADERMINI = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonRep
             // 
             this.ButtonRep.BackColor = System.Drawing.Color.SteelBlue;
             this.ButtonRep.FlatAppearance.BorderSize = 0;
+            this.ButtonRep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.ButtonRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.ButtonRep.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ButtonRep.Location = new System.Drawing.Point(-17, 411);
+            this.ButtonRep.Location = new System.Drawing.Point(-30, 603);
             this.ButtonRep.Name = "ButtonRep";
             this.ButtonRep.Size = new System.Drawing.Size(722, 105);
             this.ButtonRep.TabIndex = 7;
@@ -56,7 +68,7 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(633, 411);
+            this.webBrowser1.Location = new System.Drawing.Point(617, 633);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(20, 20);
@@ -68,9 +80,9 @@
             this.textBoxShName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxShName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxShName.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxShName.Location = new System.Drawing.Point(0, 110);
+            this.textBoxShName.Location = new System.Drawing.Point(0, 135);
             this.textBoxShName.Name = "textBoxShName";
-            this.textBoxShName.Size = new System.Drawing.Size(653, 24);
+            this.textBoxShName.Size = new System.Drawing.Size(667, 24);
             this.textBoxShName.TabIndex = 9;
             this.textBoxShName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -79,22 +91,22 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-10, 23);
+            this.label1.Location = new System.Drawing.Point(-10, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 55);
+            this.label1.Size = new System.Drawing.Size(201, 55);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Short name\r\n";
+            this.label1.Text = "Ссылка";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(-5, 78);
+            this.label2.Location = new System.Drawing.Point(-5, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(588, 29);
+            this.label2.Size = new System.Drawing.Size(600, 29);
             this.label2.TabIndex = 11;
-            this.label2.Text = "НЕ вашей группы, из которой будет взят пост";
+            this.label2.Text = "на НЕ вашу группу, из которой будет взят пост";
             // 
             // label3
             // 
@@ -120,22 +132,126 @@
             // 
             // textBoxREP2
             // 
+            this.textBoxREP2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBoxREP2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxREP2.BackColor = System.Drawing.Color.SteelBlue;
             this.textBoxREP2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxREP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxREP2.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.textBoxREP2.Location = new System.Drawing.Point(0, 267);
             this.textBoxREP2.Name = "textBoxREP2";
-            this.textBoxREP2.Size = new System.Drawing.Size(653, 24);
+            this.textBoxREP2.Size = new System.Drawing.Size(667, 24);
             this.textBoxREP2.TabIndex = 14;
             this.textBoxREP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.SteelBlue;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(12, 335);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(641, 195);
+            this.listBox1.TabIndex = 15;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Minimize_Button
+            // 
+            this.Minimize_Button.BackColor = System.Drawing.Color.SteelBlue;
+            this.Minimize_Button.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.Minimize_Button.FlatAppearance.BorderSize = 0;
+            this.Minimize_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.Minimize_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Minimize_Button.Location = new System.Drawing.Point(582, -6);
+            this.Minimize_Button.Name = "Minimize_Button";
+            this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
+            this.Minimize_Button.TabIndex = 20;
+            this.Minimize_Button.Text = "_";
+            this.Minimize_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Minimize_Button.UseVisualStyleBackColor = false;
+            this.Minimize_Button.Click += new System.EventHandler(this.Minimize_Button_Click);
+            // 
+            // Button_Exit
+            // 
+            this.Button_Exit.BackColor = System.Drawing.Color.SteelBlue;
+            this.Button_Exit.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.Button_Exit.FlatAppearance.BorderSize = 0;
+            this.Button_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.Button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.Button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Button_Exit.Location = new System.Drawing.Point(623, -1);
+            this.Button_Exit.Name = "Button_Exit";
+            this.Button_Exit.Size = new System.Drawing.Size(44, 40);
+            this.Button_Exit.TabIndex = 19;
+            this.Button_Exit.Text = "x";
+            this.Button_Exit.UseVisualStyleBackColor = false;
+            this.Button_Exit.Click += new System.EventHandler(this.Button_Exit_Click);
+            // 
+            // WindowHalfBorder
+            // 
+            this.WindowHalfBorder.BackColor = System.Drawing.Color.SteelBlue;
+            this.WindowHalfBorder.Location = new System.Drawing.Point(-6, -1);
+            this.WindowHalfBorder.Name = "WindowHalfBorder";
+            this.WindowHalfBorder.Size = new System.Drawing.Size(673, 44);
+            this.WindowHalfBorder.TabIndex = 18;
+            this.WindowHalfBorder.TabStop = false;
+            this.WindowHalfBorder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseDown);
+            this.WindowHalfBorder.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseMove);
+            this.WindowHalfBorder.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseUp);
+            // 
+            // ORG
+            // 
+            this.ORG.AutoSize = true;
+            this.ORG.BackColor = System.Drawing.Color.SteelBlue;
+            this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ORG.Location = new System.Drawing.Point(-3, 1);
+            this.ORG.Name = "ORG";
+            this.ORG.Size = new System.Drawing.Size(325, 40);
+            this.ORG.TabIndex = 21;
+            this.ORG.Text = "РЕПОСТ ИЗ ГРУППЫ";
+            this.ORG.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseDown);
+            this.ORG.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseMove);
+            this.ORG.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WindowHalfBorder_MouseUp);
+            // 
+            // FADER
+            // 
+            this.FADER.Interval = 1;
+            this.FADER.Tick += new System.EventHandler(this.FADER_Tick);
+            // 
+            // FADERSTART
+            // 
+            this.FADERSTART.Interval = 1;
+            this.FADERSTART.Tick += new System.EventHandler(this.FADERSTART_Tick);
+            // 
+            // FADERMINI
+            // 
+            this.FADERMINI.Interval = 1;
+            this.FADERMINI.Tick += new System.EventHandler(this.FADERMINI_Tick);
             // 
             // RepFromGroupsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(649, 510);
+            this.ClientSize = new System.Drawing.Size(665, 700);
+            this.Controls.Add(this.ORG);
+            this.Controls.Add(this.Minimize_Button);
+            this.Controls.Add(this.Button_Exit);
+            this.Controls.Add(this.WindowHalfBorder);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBoxREP2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -144,11 +260,15 @@
             this.Controls.Add(this.textBoxShName);
             this.Controls.Add(this.ButtonRep);
             this.Controls.Add(this.webBrowser1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(665, 549);
-            this.MinimumSize = new System.Drawing.Size(665, 549);
+            this.MaximumSize = new System.Drawing.Size(665, 700);
+            this.MinimumSize = new System.Drawing.Size(665, 700);
             this.Name = "RepFromGroupsForm";
+            this.Opacity = 0D;
             this.Text = "RepFromGroupsForm";
+            this.Load += new System.EventHandler(this.RepFromGroupForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +284,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxREP2;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button Minimize_Button;
+        private System.Windows.Forms.Button Button_Exit;
+        private System.Windows.Forms.PictureBox WindowHalfBorder;
+        private System.Windows.Forms.Label ORG;
+        private System.Windows.Forms.Timer FADER;
+        private System.Windows.Forms.Timer FADERSTART;
+        private System.Windows.Forms.Timer FADERMINI;
     }
 }
