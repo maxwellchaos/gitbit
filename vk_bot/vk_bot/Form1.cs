@@ -43,25 +43,23 @@ namespace vk_bot
                 access_token = access_token.Remove(IndexAmp);
 
                 //Зпрашиваю информацию о пользователе
-
+                
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
                 doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
                 XmlNode response = doc.SelectSingleNode("response");
                 XmlNode user = response.SelectSingleNode("user");
 
-
+                
 
                 XmlNode FirstName = user.SelectSingleNode("first_name");
                 labelFirstName.Text = FirstName.InnerText;
-
+             
                 XmlNode LastName = user.SelectSingleNode("last_name");
                 labelLastName.Text = LastName.InnerText;
 
                 pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText;
                 webBrowser1.Visible = false;
-
-                webBrowser1.Navigate("https://api.vk.com/method/groups.join.xml?group_id=165764761&access_token=" + access_token + "&v=5.73");
             }
 
         }
@@ -71,6 +69,7 @@ namespace vk_bot
             FormChangeStatus FRM3 = new FormChangeStatus();
             FRM3.ACT2 = access_token;
             FRM3.Show();
+            
         }
 
         private void pictureBoxAvatar_Click(object sender, EventArgs e)
@@ -148,5 +147,39 @@ namespace vk_bot
             q.Show();
         }
 
+        private void but_exitgroups_MouseEnter(object sender, EventArgs e)
+        {
+            but_exitgroups.FlatAppearance.BorderSize = 2;
+        }
+
+        private void but_laik_MouseEnter(object sender, EventArgs e)
+        {
+            but_laik.FlatAppearance.BorderSize = 2;
+        }
+
+        private void but_delprigla_MouseEnter(object sender, EventArgs e)
+        {
+            but_delprigla.FlatAppearance.BorderSize = 2;
+        }
+
+        private void but_exitgroups_MouseLeave(object sender, EventArgs e)
+        {
+            but_exitgroups.FlatAppearance.BorderSize = 0;
+        }
+
+        private void but_laik_MouseLeave(object sender, EventArgs e)
+        {
+            but_laik.FlatAppearance.BorderSize = 0;
+        }
+
+        private void but_delprigla_MouseLeave(object sender, EventArgs e)
+        {
+            but_delprigla.FlatAppearance.BorderSize = 0;
+        }
+
+        private void delete_wall_post_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

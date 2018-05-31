@@ -19,7 +19,7 @@ namespace vk_bot
         public string idpostlist;
         public string id2postlist;
         public string score;
-        public string errors;
+        int errors;
 
         public wallskanform()
         {
@@ -49,20 +49,21 @@ namespace vk_bot
                 {
                     XmlNode postid = utag.SelectSingleNode("id");
                     XmlDocument dopdoo = new XmlDocument();
+                    textboxer = postid.InnerXml;
+
 
                     dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
 
-                    textboxer = postid.InnerXml;
 
                     //ищу ошибки
                     if (dopdoo.InnerXml.Contains("error"))
                     {
                         errors += 1;
-                        label5.Text = errors;
+                        label5.Text = Convert.ToString(errors);
                     }
 
                     //делаю паузу
-                    Thread.Sleep(200);
+                    Thread.Sleep(500);
                     Application.DoEvents();
                 }
 
@@ -90,6 +91,11 @@ namespace vk_bot
         private void wallskanform_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

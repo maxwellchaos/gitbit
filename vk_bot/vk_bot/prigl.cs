@@ -44,33 +44,19 @@ namespace vk_bot
                     doo.Load("https://api.vk.com/method/groups.removeUser.xml?user_id=" + indexer + "&group_id=" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
 
 
-                    //ищу ошибки
                     if (doo.InnerXml.Contains("error"))
                     {
                         errors += 1;
-                        label3.Text = errors;
+                        label3.Text = Convert.ToString(errors);
                     }
+
+                    //делаю паузу
+                    Thread.Sleep(300);
+                    Application.DoEvents();
                 }
 
                 label4.Text = "ГОТОВО!";
             }
         }
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-          
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void prigl_Load(object sender, EventArgs e)
-        {
-            
-        }
-
     }
 }

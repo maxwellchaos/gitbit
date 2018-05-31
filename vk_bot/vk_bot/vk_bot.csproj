@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -65,10 +65,6 @@
     <Compile Include="FormChangeStatus.Designer.cs">
       <DependentUpon>FormChangeStatus.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-
-=======
->>>>>>> 04b24cf53255ef0c6576ed6dfb9112e37b866c58
     <Compile Include="FormSPAM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,14 +85,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-=======
->>>>>>> 04b24cf53255ef0c6576ed6dfb9112e37b866c58
     <Compile Include="wallskanform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,21 +111,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
-
-=======
     <EmbeddedResource Include="wallskanform.resx">
       <DependentUpon>wallskanform.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> 04b24cf53255ef0c6576ed6dfb9112e37b866c58
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -162,20 +146,28 @@
     <None Include="Resources\6.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\12.png" />
+    <None Include="bin\Debug\6.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\20.png" />
+    <None Include="bin\Debug\10.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\30.png" />
+    <None Include="bin\Debug\11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\30 %282%29.png" />
+    <None Include="bin\Debug\12.png" />
   </ItemGroup>
-
+  <ItemGroup>
+    <None Include="bin\Debug\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

@@ -73,7 +73,6 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(452, 120);
             this.webBrowser1.TabIndex = 18;
-            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // label2
             // 
@@ -120,7 +119,6 @@
             this.MinimumSize = new System.Drawing.Size(492, 300);
             this.Name = "prigl";
             this.Text = "prigl";
-            this.Load += new System.EventHandler(this.prigl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
