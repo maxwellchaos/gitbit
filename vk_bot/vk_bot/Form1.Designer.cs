@@ -38,8 +38,10 @@
             this.but_exitgroups = new System.Windows.Forms.Button();
             this.buttonChangeStatus = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
+            this.SlovaIstini = new System.Windows.Forms.Button();
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,7 +223,25 @@
             this.spam.Click += new System.EventHandler(this.spam_Click);
             this.spam.MouseEnter += new System.EventHandler(this.spam_MouseEnter);
             this.spam.MouseLeave += new System.EventHandler(this.spam_MouseLeave);
+            
+            this.delete_wall_post.Location = new System.Drawing.Point(420, 97);
+            this.delete_wall_post.Name = "delete_wall_post";
+            this.delete_wall_post.Size = new System.Drawing.Size(159, 41);
+            this.delete_wall_post.TabIndex = 5;
+            this.delete_wall_post.Text = "Удаление записай со стены";
+            this.delete_wall_post.UseVisualStyleBackColor = true;
+            this.delete_wall_post.Click += new System.EventHandler(this.delete_wall_post_Click);
             // 
+            // SlovaIstini
+            // 
+            this.SlovaIstini.Location = new System.Drawing.Point(292, 440);
+            this.SlovaIstini.Name = "SlovaIstini";
+            this.SlovaIstini.Size = new System.Drawing.Size(159, 50);
+            this.SlovaIstini.TabIndex = 6;
+            this.SlovaIstini.Text = "СЛОВА!!!";
+            this.SlovaIstini.UseVisualStyleBackColor = true;
+            this.SlovaIstini.Click += new System.EventHandler(this.SlovaIstini_Click);
+// 
             // pictureBoxAvatar
             // 
             this.pictureBoxAvatar.Location = new System.Drawing.Point(4, 54);
@@ -231,11 +251,14 @@
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
             this.pictureBoxAvatar.Click += new System.EventHandler(this.pictureBoxAvatar_Click);
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.SlovaIstini);
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
             this.Controls.Add(this.but_exitgroups);
@@ -265,6 +288,7 @@
         private System.Windows.Forms.Label ORG;
         private System.Windows.Forms.Button spam;
         private System.Windows.Forms.Button delete_wall_post;
+        private System.Windows.Forms.Button SlovaIstini;
         private System.Windows.Forms.Button buttonChangeStatus;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label labelLastName;
@@ -273,6 +297,7 @@
         private System.Windows.Forms.Button but_exitgroups;
         private System.Windows.Forms.Button but_delprigla;
         private System.Windows.Forms.Button but_laik;
+
 
     }
 }
