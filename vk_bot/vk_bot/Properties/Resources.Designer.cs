@@ -81,20 +81,65 @@ namespace vk_bot.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap _111 {
+
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11_1 {
             get {
-                object obj = ResourceManager.GetObject("111", resourceCulture);
+                object obj = ResourceManager.GetObject("11_1", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap _12 {
+
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11_11 {
             get {
-                object obj = ResourceManager.GetObject("12", resourceCulture);
+                object obj = ResourceManager.GetObject("11_11", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
+
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1111 {
+            get {
+                object obj = ResourceManager.GetObject("1111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _12_1 {
+            get {
+                object obj = ResourceManager.GetObject("12_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _12_11 {
+            get {
+                object obj = ResourceManager.GetObject("12_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+
         internal static System.Drawing.Bitmap _14 {
             get {
                 object obj = ResourceManager.GetObject("14", resourceCulture);
@@ -102,6 +147,7 @@ namespace vk_bot.Properties {
             }
         }
         
+
         internal static System.Drawing.Bitmap _141 {
             get {
                 object obj = ResourceManager.GetObject("141", resourceCulture);
@@ -119,10 +165,24 @@ namespace vk_bot.Properties {
         internal static System.Drawing.Bitmap _30 {
             get {
                 object obj = ResourceManager.GetObject("30", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2222 {
+            get {
+                object obj = ResourceManager.GetObject("2222", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
+
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+
         internal static System.Drawing.Bitmap _6 {
             get {
                 object obj = ResourceManager.GetObject("6", resourceCulture);

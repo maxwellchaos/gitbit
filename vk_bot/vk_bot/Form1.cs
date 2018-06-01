@@ -7,26 +7,60 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Drawing.Text;
+using System.Threading;
 
 namespace vk_bot
 {
     public partial class Form1 : Form
     {
         public string access_token;
-
+        private Point mouseOffset;
+        private bool isMouseDown = false;
         public Form1()
         {
             InitializeComponent();
+            fontsProjects();
+            fonts();
         }
+        PrivateFontCollection font;
 
+
+        private void fontsProjects()
+        {
+        
+
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("FONTS/RLL.ttf");
+            this.font.AddFontFile("FONTS/WS.ttf");   
+        }
+        private void fonts()
+        {
+            labelLastName.Font = new Font(font.Families[0],24);
+            ORG.Font = new Font(font.Families[0], 24);
+            labelFirstName.Font = new Font(font.Families[0], 24);
+            delete_wall_post.Font = new Font(font.Families[0], 10);
+            spam.Font = new Font(font.Families[0], 14);
+            buttonChangeStatus.Font = new Font(font.Families[0], 10);
+            RepFromGroupBTN.Font =  new Font(font.Families[0], 10);
+            Minimize_Button.Font = new Font(font.Families[0], 24);
+            Button_Exit.Font = new Font(font.Families[0], 24);
+            
+
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
+            Opacity = 0;
+           
+            FADERSTART.Start();
+
+       
             webBrowser1.Dock = DockStyle.Fill;
+
             webBrowser1.BringToFront();
             webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&response_type=token&v=5.73");
        
         }
-
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             string url = e.Url.ToString();
@@ -61,51 +95,40 @@ namespace vk_bot
                 pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText;
                 webBrowser1.Visible = false;
             }
-
         }
-
         private void buttonChangeStatus_Click(object sender, EventArgs e)
         {
             FormChangeStatus FRM3 = new FormChangeStatus();
             FRM3.ACT2 = access_token;
-            FRM3.Show();
-            
+            FRM3.Show();            
         }
-
         private void pictureBoxAvatar_Click(object sender, EventArgs e)
         {
-
         }
-
         private void delete_wall_post_MouseEnter(object sender, EventArgs e)
         {
             delete_wall_post.FlatAppearance.BorderSize = 2;
         }
-
         private void delete_wall_post_MouseLeave(object sender, EventArgs e)
         {
             delete_wall_post.FlatAppearance.BorderSize = 0;
 
         }
-
         private void spam_MouseEnter(object sender, EventArgs e)
         {
             spam.FlatAppearance.BorderSize = 2;
 
         }
-
         private void spam_MouseLeave(object sender, EventArgs e)
         {
             spam.FlatAppearance.BorderSize = 0;
 
         }
-
         private void buttonChangeStatus_MouseEnter(object sender, EventArgs e)
         {
             buttonChangeStatus.FlatAppearance.BorderSize = 2;
 
         }
-
         private void buttonChangeStatus_MouseLeave(object sender, EventArgs e)
         {
             buttonChangeStatus.FlatAppearance.BorderSize = 0;
@@ -118,6 +141,7 @@ namespace vk_bot
             T.access_token = access_token;
             T.Show();
         }
+
 
         private void mass_laik_Click(object sender, EventArgs e)
         {
@@ -146,5 +170,95 @@ namespace vk_bot
             q.access_token = access_token;
             q.Show();
         }
+        private void RepFromGroupBTN_Click(object sender, EventArgs e)
+        {
+            RepFromGroupsForm FRM4 = new RepFromGroupsForm();
+            FRM4.ACT3 = access_token;
+            FRM4.Show();
+        }
+        private void RepFromGroupBTN_MouseLeave(object sender, EventArgs e)
+        {
+            RepFromGroupBTN.FlatAppearance.BorderSize = 0;
+        }
+        private void RepFromGroupBTN_MouseEnter(object sender, EventArgs e)
+        {
+            RepFromGroupBTN.FlatAppearance.BorderSize = 2;
+
+        }                                    
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xOffset;
+            int yOffset;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
+                yOffset = -e.Y - SystemInformation.CaptionHeight -
+                    SystemInformation.FrameBorderSize.Height;
+                mouseOffset = new Point(xOffset, yOffset);
+                isMouseDown = true;
+            }
+        }
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
+                Location = mousePos;
+            }
+        }
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+            }
+        }
+        private void Button_Exit_Click(object sender, EventArgs e)
+        {
+            FADER.Enabled = true;
+           
+        }
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            FADERMINI.Enabled = true;
+        }
+
+        private void FADER_Tick(object sender, EventArgs e)
+        {
+            Opacity =   Opacity -= 0.1;
+            if (this.Opacity == 0) {
+
+                Application.Exit();
+
+            }
+        }
+
+        private void FADERMINI_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                this.WindowState = FormWindowState.Minimized;
+                FADERMINI.Stop();
+                Opacity = 1;
+            }
+
+        }
+
+        private void FADERSTART_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity += 0.1;
+            if (Opacity == 1)
+            {
+
+                FADERSTART.Stop();
+
+            }
+        }
+
+       
     }
 }
