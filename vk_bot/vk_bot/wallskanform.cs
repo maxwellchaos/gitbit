@@ -19,7 +19,16 @@ namespace vk_bot
         public string idpostlist;
         public string id2postlist;
         public string score;
-        int errors;
+
+        //************** ДОНАТ ОГРАНИЧЕНИЕ + ХРАНЕНИЕ ДАННЫХ **************\\
+         public int donatveron; //1 - бесплатная демо версия, 0 - версия с лицензией
+         public int countlike; //кол-во поставленных лайков
+        //************************ ********************* *******************\\
+       
+
+        //переменная для хранения кол-ва ошибок при обработке в цикле
+        public string errors;
+
 
         public wallskanform()
         {
@@ -28,6 +37,7 @@ namespace vk_bot
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Введите id!");
@@ -47,23 +57,26 @@ namespace vk_bot
                 //цикл
                 foreach (XmlNode utag in tager.SelectNodes("post"))
                 {
+                    countlike += 1;
+                    label7.Text = Convert.ToString(countlike);
+
                     XmlNode postid = utag.SelectSingleNode("id");
                     XmlDocument dopdoo = new XmlDocument();
+
                     textboxer = postid.InnerXml;
-
-
                     dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
-
 
                     //ищу ошибки
                     if (dopdoo.InnerXml.Contains("error"))
                     {
                         errors += 1;
+
                         label5.Text = Convert.ToString(errors);
                     }
 
                     //делаю паузу
                     Thread.Sleep(500);
+
                     Application.DoEvents();
                 }
 
@@ -78,25 +91,18 @@ namespace vk_bot
             }
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
-        }
-        
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void wallskanform_Load(object sender, EventArgs e)
         {
-            
+            //включаю ограничение для пробной версии
+            if (donatveron == 1)
+            {
+                if (countlike == 10)
+                {
+                    
+                    MessageBox.Show("Вы израсходывали демо версию. Преобретите платную!");
+                    this.Close();
+                }
+            }
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

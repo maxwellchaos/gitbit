@@ -7,12 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Drawing.Text;
+
 
 namespace vk_bot
 {
 
     public partial class FormSpam_DR : Form
     {
+
+        private Point mouseOffset;
+        private bool isMouseDown = false;
+
+
+
         int r;
         int k;
         string id;
@@ -25,10 +33,44 @@ namespace vk_bot
         }
         private void FormDR_Load(object sender, EventArgs e)
         {
-            
-        //    webBrowserWWW.Dock = DockStyle.Fill;
-        //    webBrowserWWW.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+messages&response_type=token&v=5.74");
+            fontsProjects();
+            fonts();
+            Opacity = 0;
+            FADERSTART.Start();
         }
+
+        PrivateFontCollection font;
+        private void fontsProjects()
+        {
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("FONTS/RLL.ttf");
+            this.font.AddFontFile("FONTS/WS.ttf");
+
+
+
+        }
+
+        private void fonts()
+        {
+            label1.Font = new Font(font.Families[0], 36);
+            label2.Font = new Font(font.Families[0], 20);
+            label3.Font = new Font(font.Families[0], 20);
+            labelbree.Font = new Font(font.Families[0], 20);
+            labelENT.Font = new Font(font.Families[0], 20);
+            labelrrr.Font = new Font(font.Families[0], 20);
+            buttonSPAM.Font = new Font(font.Families[0], 36);
+            textBoxID.Font = new Font(font.Families[0], 24);
+            textBoxMess.Font = new Font(font.Families[0], 24);
+            numericUpDownqwe.Font = new Font(font.Families[0], 24);
+            numericUpDownrr.Font = new Font(font.Families[0], 24);
+            Minimize_Button.Font = new Font(font.Families[0], 24);
+            Button_Exit.Font = new Font(font.Families[0], 24);
+            ORG.Font = new Font(font.Families[0], 24);
+
+
+
+        }
+
 
         private void webBrowserWWW_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
@@ -123,6 +165,87 @@ namespace vk_bot
         private void FormDR_Load_1(object sender, EventArgs e)
         {
 
+            Opacity = 0;
+            FADERSTART.Start();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            FADERMINI.Start();
+        }
+
+        private void Button_Exit_Click(object sender, EventArgs e)
+        {
+            FADER.Start();
+        }
+
+        private void FADERSTART_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity += 0.1;
+            if (Opacity == 1)
+            {
+
+                FADERSTART.Stop();
+
+            }
+        }
+
+        private void FADERMINI_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                this.WindowState = FormWindowState.Minimized;
+                FADERMINI.Stop();
+                Opacity = 1;
+            }
+        }
+
+        private void FADER_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                Close();
+
+            }
+        }
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xOffset;
+            int yOffset;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
+                yOffset = -e.Y - SystemInformation.CaptionHeight -
+                    SystemInformation.FrameBorderSize.Height;
+                mouseOffset = new Point(xOffset, yOffset);
+                isMouseDown = true;
+            }
+        }
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
+                Location = mousePos;
+            }
+        }
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+            }
         }
     }
 }
