@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -36,7 +36,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,41 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="delgroups.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="delgroups.designer.cs">
-      <DependentUpon>delgroups.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormChangeStatus.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormChangeStatus.Designer.cs">
-      <DependentUpon>FormChangeStatus.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSPAM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSPAM.designer.cs">
-      <DependentUpon>FormSPAM.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSpam_DR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSpam_DR.Designer.cs">
-      <DependentUpon>FormSpam_DR.cs</DependentUpon>
-    </Compile>
-    <Compile Include="prigl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="prigl.designer.cs">
-      <DependentUpon>prigl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,29 +60,8 @@
     <Compile Include="SLOVA.Designer.cs">
       <DependentUpon>SLOVA.cs</DependentUpon>
     </Compile>
-    <Compile Include="wallskanform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="wallskanform.designer.cs">
-      <DependentUpon>wallskanform.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="delgroups.resx">
-      <DependentUpon>delgroups.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormChangeStatus.resx">
-      <DependentUpon>FormChangeStatus.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSPAM.resx">
-      <DependentUpon>FormSPAM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSpam_DR.resx">
-      <DependentUpon>FormSpam_DR.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="prigl.resx">
-      <DependentUpon>prigl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,15 +71,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SLOVA.resx">
       <DependentUpon>SLOVA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="wallskanform.resx">
-      <DependentUpon>wallskanform.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,39 +84,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\14.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\14.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\20.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
