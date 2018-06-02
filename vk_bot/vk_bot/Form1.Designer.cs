@@ -33,8 +33,6 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.spam = new System.Windows.Forms.Button();
-            this.delete_wall_post = new System.Windows.Forms.Button();
             this.delcom = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -80,27 +78,9 @@
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // spam
-            // 
-            this.spam.Location = new System.Drawing.Point(420, 36);
-            this.spam.Name = "spam";
-            this.spam.Size = new System.Drawing.Size(159, 41);
-            this.spam.TabIndex = 4;
-            this.spam.Text = "Спам";
-            this.spam.UseVisualStyleBackColor = true;
-            // 
-            // delete_wall_post
-            // 
-            this.delete_wall_post.Location = new System.Drawing.Point(420, 97);
-            this.delete_wall_post.Name = "delete_wall_post";
-            this.delete_wall_post.Size = new System.Drawing.Size(159, 41);
-            this.delete_wall_post.TabIndex = 5;
-            this.delete_wall_post.Text = "Удаление записай со стены";
-            this.delete_wall_post.UseVisualStyleBackColor = true;
-            // 
             // delcom
             // 
-            this.delcom.Location = new System.Drawing.Point(420, 154);
+            this.delcom.Location = new System.Drawing.Point(428, 29);
             this.delcom.Name = "delcom";
             this.delcom.Size = new System.Drawing.Size(159, 42);
             this.delcom.TabIndex = 6;
@@ -112,7 +92,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("RomanT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(383, 476);
+            this.label1.Location = new System.Drawing.Point(383, 477);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 17);
             this.label1.TabIndex = 7;
@@ -134,8 +114,6 @@
             this.ClientSize = new System.Drawing.Size(610, 502);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.delcom);
-            this.Controls.Add(this.delete_wall_post);
-            this.Controls.Add(this.spam);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.pictureBoxAvatar);
             this.Controls.Add(this.labelLastName);
@@ -157,8 +135,6 @@
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.PictureBox pictureBoxAvatar;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Button spam;
-        private System.Windows.Forms.Button delete_wall_post;
         private System.Windows.Forms.Button delcom;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
