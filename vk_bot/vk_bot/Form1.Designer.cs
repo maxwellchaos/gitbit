@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-
+            this.components = new System.ComponentModel.Container();
             this.buttonПОЗДР = new System.Windows.Forms.Button();
             this.ORG = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -37,37 +37,45 @@
             this.but_delprigla = new System.Windows.Forms.Button();
             this.but_laik = new System.Windows.Forms.Button();
             this.but_exitgroups = new System.Windows.Forms.Button();
-
-            this.components = new System.ComponentModel.Container();
-           
             this.RepFromGroupBTN = new System.Windows.Forms.Button();
-
             this.buttonChangeStatus = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
-
             this.WindowHalfBorder = new System.Windows.Forms.PictureBox();
             this.Button_Exit = new System.Windows.Forms.Button();
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.FADER = new System.Windows.Forms.Timer(this.components);
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonПОЗДР
             // 
-            this.buttonПОЗДР.Location = new System.Drawing.Point(306, 229);
+            this.buttonПОЗДР.Location = new System.Drawing.Point(77, 408);
             this.buttonПОЗДР.Name = "buttonПОЗДР";
             this.buttonПОЗДР.Size = new System.Drawing.Size(159, 45);
             this.buttonПОЗДР.TabIndex = 12;
             this.buttonПОЗДР.Text = "Поздравление с ДР";
             this.buttonПОЗДР.UseVisualStyleBackColor = true;
             this.buttonПОЗДР.Click += new System.EventHandler(this.buttonПОЗДР_Click);
-
+            // 
+            // ORG
+            // 
+            this.ORG.AutoSize = true;
+            this.ORG.BackColor = System.Drawing.Color.SteelBlue;
+            this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ORG.Location = new System.Drawing.Point(-3, 1);
+            this.ORG.Name = "ORG";
+            this.ORG.Size = new System.Drawing.Size(266, 40);
+            this.ORG.TabIndex = 7;
+            this.ORG.Text = "VK_TUMBOCHKA";
+            this.ORG.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
+            this.ORG.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseMove);
+            this.ORG.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseUp);
             // 
             // webBrowser1
             // 
@@ -77,18 +85,6 @@
             this.webBrowser1.Size = new System.Drawing.Size(20, 142);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
-            // 
-            // labelFirstName
-            // 
-            this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelFirstName.Location = new System.Drawing.Point(0, 408);
-            this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(47, 24);
-            this.labelFirstName.TabIndex = 0;
-            this.labelFirstName.Text = "имя";
-
             // 
             // labelLastName
             // 
@@ -100,8 +96,17 @@
             this.labelLastName.Size = new System.Drawing.Size(165, 37);
             this.labelLastName.TabIndex = 1;
             this.labelLastName.Text = "фамилия";
-
-
+            // 
+            // labelFirstName
+            // 
+            this.labelFirstName.AutoSize = true;
+            this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelFirstName.Location = new System.Drawing.Point(0, 408);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(47, 24);
+            this.labelFirstName.TabIndex = 0;
+            this.labelFirstName.Text = "имя";
             // 
             // but_delprigla
             // 
@@ -114,9 +119,9 @@
             this.but_delprigla.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.but_delprigla.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_delprigla.Image = global::vk_bot.Properties.Resources._20;
-            this.but_delprigla.Location = new System.Drawing.Point(616, 298);
+            this.but_delprigla.Location = new System.Drawing.Point(620, 349);
             this.but_delprigla.Name = "but_delprigla";
-            this.but_delprigla.Size = new System.Drawing.Size(150, 150);
+            this.but_delprigla.Size = new System.Drawing.Size(150, 141);
             this.but_delprigla.TabIndex = 17;
             this.but_delprigla.Text = "Удаление приглашений";
             this.but_delprigla.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -135,9 +140,9 @@
             this.but_laik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.but_laik.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_laik.Image = global::vk_bot.Properties.Resources._12;
-            this.but_laik.Location = new System.Drawing.Point(460, 298);
+            this.but_laik.Location = new System.Drawing.Point(464, 349);
             this.but_laik.Name = "but_laik";
-            this.but_laik.Size = new System.Drawing.Size(150, 150);
+            this.but_laik.Size = new System.Drawing.Size(150, 141);
             this.but_laik.TabIndex = 16;
             this.but_laik.Text = "Массовый лайкинг";
             this.but_laik.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -155,30 +160,14 @@
             this.but_exitgroups.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.but_exitgroups.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_exitgroups.Image = global::vk_bot.Properties.Resources._30;
-            this.but_exitgroups.Location = new System.Drawing.Point(304, 298);
+            this.but_exitgroups.Location = new System.Drawing.Point(308, 349);
             this.but_exitgroups.Name = "but_exitgroups";
-            this.but_exitgroups.Size = new System.Drawing.Size(150, 150);
+            this.but_exitgroups.Size = new System.Drawing.Size(150, 141);
             this.but_exitgroups.TabIndex = 18;
             this.but_exitgroups.Text = "Выход из всех групп";
             this.but_exitgroups.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.but_exitgroups.UseVisualStyleBackColor = false;
             this.but_exitgroups.Click += new System.EventHandler(this.egroup_Click);
-
-            // 
-            // ORG
-            // 
-            this.ORG.AutoSize = true;
-            this.ORG.BackColor = System.Drawing.Color.SteelBlue;
-            this.ORG.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ORG.Location = new System.Drawing.Point(-3, 1);
-            this.ORG.Name = "ORG";
-            this.ORG.Size = new System.Drawing.Size(266, 40);
-            this.ORG.TabIndex = 7;
-            this.ORG.Text = "VK_TUMBOCHKA";
-            this.ORG.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
-            this.ORG.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseMove);
-            this.ORG.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseUp);
             // 
             // RepFromGroupBTN
             // 
@@ -193,7 +182,7 @@
             this.RepFromGroupBTN.Image = global::vk_bot.Properties.Resources._2222;
             this.RepFromGroupBTN.Location = new System.Drawing.Point(308, 208);
             this.RepFromGroupBTN.Name = "RepFromGroupBTN";
-            this.RepFromGroupBTN.Size = new System.Drawing.Size(150, 150);
+            this.RepFromGroupBTN.Size = new System.Drawing.Size(150, 135);
             this.RepFromGroupBTN.TabIndex = 8;
             this.RepFromGroupBTN.Text = "Репост записи из группы";
             this.RepFromGroupBTN.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -348,7 +337,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
-
             this.Controls.Add(this.but_exitgroups);
             this.Controls.Add(this.but_delprigla);
             this.Controls.Add(this.but_laik);
