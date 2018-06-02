@@ -38,7 +38,6 @@ C:\Documents and Settings\Администратор\Рабочий стол\sco
 C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.wallskanform.resources
 C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Documents and Settings\Администратор\Рабочий стол\scope\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
 C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe
@@ -133,3 +132,23 @@ c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
 c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 c:\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
 c:\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
+c:\gitbit-master-main\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
+c:\gitbit-master-main\vk_bot\vk_bot\bin\Debug\vk_bot.exe
+c:\gitbit-master-main\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.delgroups.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.DebugOK.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSPAM.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.prigl.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.LOGO.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.wallskanform.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\gitbit-master-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot._123.resources

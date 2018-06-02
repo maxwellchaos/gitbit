@@ -28,45 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
-
             this.buttonПОЗДР = new System.Windows.Forms.Button();
             this.ORG = new System.Windows.Forms.Label();
-
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.but_delprigla = new System.Windows.Forms.Button();
             this.but_laik = new System.Windows.Forms.Button();
             this.but_exitgroups = new System.Windows.Forms.Button();
-
             this.RepFromGroupBTN = new System.Windows.Forms.Button();
             this.buttonChangeStatus = new System.Windows.Forms.Button();
             this.delete_wall_post = new System.Windows.Forms.Button();
             this.spam = new System.Windows.Forms.Button();
             this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
-
             this.WindowHalfBorder = new System.Windows.Forms.PictureBox();
             this.Button_Exit = new System.Windows.Forms.Button();
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.FADER = new System.Windows.Forms.Timer(this.components);
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
+            this.buttonWelkom = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonПОЗДР
             // 
-            this.buttonПОЗДР.Location = new System.Drawing.Point(77, 408);
+            this.buttonПОЗДР.Location = new System.Drawing.Point(115, 428);
             this.buttonПОЗДР.Name = "buttonПОЗДР";
             this.buttonПОЗДР.Size = new System.Drawing.Size(159, 45);
             this.buttonПОЗДР.TabIndex = 12;
             this.buttonПОЗДР.Text = "Поздравление с ДР";
             this.buttonПОЗДР.UseVisualStyleBackColor = true;
             this.buttonПОЗДР.Click += new System.EventHandler(this.buttonПОЗДР_Click);
-
             // 
             // ORG
             // 
@@ -82,7 +77,6 @@
             this.ORG.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
             this.ORG.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseMove);
             this.ORG.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseUp);
-
             // 
             // webBrowser1
             // 
@@ -96,13 +90,11 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-
             this.labelLastName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelLastName.Location = new System.Drawing.Point(34, 160);
+            this.labelLastName.Location = new System.Drawing.Point(12, 392);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(98, 22);
-
             this.labelLastName.TabIndex = 1;
             this.labelLastName.Text = "фамилия";
             // 
@@ -111,9 +103,7 @@
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-
-            this.labelFirstName.Location = new System.Drawing.Point(62, 13);
-
+            this.labelFirstName.Location = new System.Drawing.Point(12, 359);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(47, 24);
             this.labelFirstName.TabIndex = 0;
@@ -130,9 +120,7 @@
             this.but_delprigla.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.but_delprigla.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_delprigla.Image = global::vk_bot.Properties.Resources._20;
-
-            this.but_delprigla.Location = new System.Drawing.Point(483, 180);
-
+            this.but_delprigla.Location = new System.Drawing.Point(620, 349);
             this.but_delprigla.Name = "but_delprigla";
             this.but_delprigla.Size = new System.Drawing.Size(150, 141);
             this.but_delprigla.TabIndex = 17;
@@ -155,9 +143,7 @@
             this.but_laik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.but_laik.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_laik.Image = global::vk_bot.Properties.Resources._12;
-
-            this.but_laik.Location = new System.Drawing.Point(329, 180);
-
+            this.but_laik.Location = new System.Drawing.Point(464, 349);
             this.but_laik.Name = "but_laik";
             this.but_laik.Size = new System.Drawing.Size(150, 141);
             this.but_laik.TabIndex = 16;
@@ -222,7 +208,7 @@
             this.buttonChangeStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonChangeStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonChangeStatus.Image = global::vk_bot.Properties.Resources._10;
-            this.buttonChangeStatus.Location = new System.Drawing.Point(483, 24);
+            this.buttonChangeStatus.Location = new System.Drawing.Point(618, 45);
             this.buttonChangeStatus.Name = "buttonChangeStatus";
             this.buttonChangeStatus.Size = new System.Drawing.Size(150, 150);
             this.buttonChangeStatus.TabIndex = 6;
@@ -243,10 +229,8 @@
             this.delete_wall_post.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_wall_post.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delete_wall_post.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-
             this.delete_wall_post.Image = global::vk_bot.Properties.Resources._11;
-            this.delete_wall_post.Location = new System.Drawing.Point(175, 24);
-
+            this.delete_wall_post.Location = new System.Drawing.Point(308, 45);
             this.delete_wall_post.Name = "delete_wall_post";
             this.delete_wall_post.Size = new System.Drawing.Size(148, 150);
             this.delete_wall_post.TabIndex = 5;
@@ -268,7 +252,7 @@
             this.spam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.spam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.spam.Image = global::vk_bot.Properties.Resources._14;
-            this.spam.Location = new System.Drawing.Point(329, 24);
+            this.spam.Location = new System.Drawing.Point(462, 45);
             this.spam.Name = "spam";
             this.spam.Size = new System.Drawing.Size(150, 150);
             this.spam.TabIndex = 4;
@@ -281,16 +265,14 @@
             // 
             // pictureBoxAvatar
             // 
-            this.pictureBoxAvatar.Location = new System.Drawing.Point(4, 54);
+            this.pictureBoxAvatar.Location = new System.Drawing.Point(12, 45);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
-            this.pictureBoxAvatar.Size = new System.Drawing.Size(300, 303);
-
-            this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAvatar.Size = new System.Drawing.Size(273, 270);
+            this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
             this.pictureBoxAvatar.Click += new System.EventHandler(this.pictureBoxAvatar_Click);
             // 
-
             // WindowHalfBorder
             // 
             this.WindowHalfBorder.BackColor = System.Drawing.Color.SteelBlue;
@@ -355,18 +337,27 @@
             this.FADERSTART.Interval = 1;
             this.FADERSTART.Tick += new System.EventHandler(this.FADERSTART_Tick);
             // 
-
+            // buttonWelkom
+            // 
+            this.buttonWelkom.Location = new System.Drawing.Point(116, 369);
+            this.buttonWelkom.Name = "buttonWelkom";
+            this.buttonWelkom.Size = new System.Drawing.Size(159, 45);
+            this.buttonWelkom.TabIndex = 19;
+            this.buttonWelkom.Text = "Приглашения в группу";
+            this.buttonWelkom.UseVisualStyleBackColor = true;
+            this.buttonWelkom.Click += new System.EventHandler(this.buttonWelkom_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
+            this.Controls.Add(this.buttonWelkom);
             this.Controls.Add(this.but_exitgroups);
             this.Controls.Add(this.but_delprigla);
             this.Controls.Add(this.but_laik);
             this.Controls.Add(this.buttonПОЗДР);
-
             this.Controls.Add(this.Button_Exit);
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.ORG);
@@ -416,6 +407,7 @@
         private System.Windows.Forms.Timer FADER;
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADERSTART;
+        private System.Windows.Forms.Button buttonWelkom;
 
 
     }

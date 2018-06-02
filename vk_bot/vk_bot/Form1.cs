@@ -17,6 +17,8 @@ namespace vk_bot
         public string access_token;
         private Point mouseOffset;
         private bool isMouseDown = false;
+        string userId;
+
         public Form1()
         {
             InitializeComponent();
@@ -90,6 +92,8 @@ namespace vk_bot
              
                 XmlNode LastName = user.SelectSingleNode("last_name");
                 labelLastName.Text = LastName.InnerText;
+
+                userId = user.SelectSingleNode("id").InnerText;
 
                 pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText;
                 webBrowser1.Visible = false;
@@ -294,6 +298,14 @@ namespace vk_bot
                 FADERSTART.Stop();
 
             }
+        }
+
+        private void buttonWelkom_Click(object sender, EventArgs e)
+        {
+            _123 frm = new _123();
+            frm.Access_token = access_token;
+            frm.userId = userId;
+            frm.Show();
         }
 
        
