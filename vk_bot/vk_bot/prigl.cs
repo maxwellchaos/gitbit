@@ -45,16 +45,23 @@ namespace vk_bot
 
 
                     //ищу ошибки
+
                     if (doo.InnerXml.Contains("error"))
                     {
                         errors += 1;
-                        label3.Text = errors;
+                        label3.Text = Convert.ToString(errors);
                     }
+
+                    //делаю паузу
+                    Thread.Sleep(300);
+                    Application.DoEvents();
+
                 }
 
                 label4.Text = "ГОТОВО!";
             }
         }
+
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
@@ -71,6 +78,5 @@ namespace vk_bot
         {
             
         }
-
     }
 }

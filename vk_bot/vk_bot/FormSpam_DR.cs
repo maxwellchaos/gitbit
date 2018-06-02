@@ -15,6 +15,7 @@ namespace vk_bot
 
     public partial class FormSpam_DR : Form
     {
+
         private Point mouseOffset;
         private bool isMouseDown = false;
 
@@ -77,6 +78,7 @@ namespace vk_bot
         {
             Opacity = 0;
             FADERSTART.Start();
+
         //    webBrowserWWW.Dock = DockStyle.Fill;
         //    webBrowserWWW.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+messages&response_type=token&v=5.74");
         }
@@ -173,6 +175,7 @@ namespace vk_bot
 
         private void FormDR_Load_1(object sender, EventArgs e)
         {
+
             Opacity = 0;
             FADERSTART.Start();
         }

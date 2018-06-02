@@ -42,6 +42,7 @@
             this.numericUpDownqwe = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownrr = new System.Windows.Forms.NumericUpDown();
 
+
             this.label3 = new System.Windows.Forms.Label();
             this.Button_Exit = new System.Windows.Forms.Button();
             this.Minimize_Button = new System.Windows.Forms.Button();
@@ -58,6 +59,7 @@
             // 
             // textBoxID
             // 
+
 
             this.textBoxID.BackColor = System.Drawing.Color.SteelBlue;
             this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -86,6 +88,7 @@
             // 
             this.label1.AutoSize = true;
 
+
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(-10, 55);
@@ -94,10 +97,12 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Cсылка ";
 
+
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+
 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -124,6 +129,7 @@
             // buttonSPAM
             // 
 
+
             this.buttonSPAM.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonSPAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonSPAM.FlatAppearance.BorderSize = 0;
@@ -138,11 +144,13 @@
             this.buttonSPAM.Text = "СПАМ";
             this.buttonSPAM.UseVisualStyleBackColor = false;
 
+
             this.buttonSPAM.Click += new System.EventHandler(this.buttonSPAM_Click);
             // 
             // labelbree
             // 
             this.labelbree.AutoSize = true;
+
 
             this.labelbree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelbree.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -151,16 +159,17 @@
             this.labelbree.Size = new System.Drawing.Size(0, 25);
             this.labelbree.TabIndex = 7;
 
+
             // 
             // labelENT
             // 
             this.labelENT.AutoSize = true;
-
             this.labelENT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelENT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelENT.Location = new System.Drawing.Point(-4, 263);
             this.labelENT.Name = "labelENT";
             this.labelENT.Size = new System.Drawing.Size(212, 29);
+
             this.labelENT.TabIndex = 8;
             this.labelENT.Text = "Для количества";
             // 
@@ -168,16 +177,19 @@
             // 
             this.labelrrr.AutoSize = true;
 
+
             this.labelrrr.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.labelrrr.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelrrr.Location = new System.Drawing.Point(-4, 332);
             this.labelrrr.Name = "labelrrr";
             this.labelrrr.Size = new System.Drawing.Size(201, 29);
+
             this.labelrrr.TabIndex = 9;
             this.labelrrr.Text = "Для интервала";
             // 
             // numericUpDownqwe
             // 
+
 
             this.numericUpDownqwe.BackColor = System.Drawing.Color.SteelBlue;
             this.numericUpDownqwe.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -298,11 +310,13 @@
             // 
             this.FADER.Interval = 1;
             this.FADER.Tick += new System.EventHandler(this.FADER_Tick);
+
             // 
             // FormSpam_DR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
 
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(800, 500);
@@ -315,6 +329,7 @@
             this.Controls.Add(this.numericUpDownrr);
             this.Controls.Add(this.numericUpDownqwe);
             this.Controls.Add(this.labelrrr);
+
 
             this.Controls.Add(this.labelbree);
             this.Controls.Add(this.buttonSPAM);
@@ -329,12 +344,14 @@
             this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
 
+
             this.Name = "FormSpam_DR";
             this.Text = "FormSPAM";
             this.Load += new System.EventHandler(this.FormDR_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownqwe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownrr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).EndInit();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,6 +371,7 @@
         private System.Windows.Forms.Label labelrrr;
         private System.Windows.Forms.NumericUpDown numericUpDownqwe;
         private System.Windows.Forms.NumericUpDown numericUpDownrr;
+
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Button_Exit;
         private System.Windows.Forms.Button Minimize_Button;
@@ -363,6 +381,7 @@
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADER;
+
 
     }
 }

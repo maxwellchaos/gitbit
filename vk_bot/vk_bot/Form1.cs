@@ -56,7 +56,6 @@ namespace vk_bot
 
        
             webBrowser1.Dock = DockStyle.Fill;
-
             webBrowser1.BringToFront();
             webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&response_type=token&v=5.73");
        
@@ -101,6 +100,7 @@ namespace vk_bot
             FormChangeStatus FRM3 = new FormChangeStatus();
             FRM3.ACT2 = access_token;
             FRM3.Show();            
+
         }
         private void pictureBoxAvatar_Click(object sender, EventArgs e)
         {
@@ -170,11 +170,48 @@ namespace vk_bot
             q.access_token = access_token;
             q.Show();
         }
+
         private void RepFromGroupBTN_Click(object sender, EventArgs e)
         {
             RepFromGroupsForm FRM4 = new RepFromGroupsForm();
             FRM4.ACT3 = access_token;
             FRM4.Show();
+        }
+
+        private void but_exitgroups_MouseEnter(object sender, EventArgs e)
+        {
+            but_exitgroups.FlatAppearance.BorderSize = 2;
+        }
+
+        private void but_laik_MouseEnter(object sender, EventArgs e)
+        {
+            but_laik.FlatAppearance.BorderSize = 2;
+        }
+
+        private void but_delprigla_MouseEnter(object sender, EventArgs e)
+        {
+            but_delprigla.FlatAppearance.BorderSize = 2;
+        }
+
+        private void but_exitgroups_MouseLeave(object sender, EventArgs e)
+        {
+            but_exitgroups.FlatAppearance.BorderSize = 0;
+        }
+
+        private void but_laik_MouseLeave(object sender, EventArgs e)
+        {
+            but_laik.FlatAppearance.BorderSize = 0;
+        }
+
+        private void but_delprigla_MouseLeave(object sender, EventArgs e)
+        {
+            but_delprigla.FlatAppearance.BorderSize = 0;
+        }
+
+        private void delete_wall_post_Click(object sender, EventArgs e)
+        {
+
+
         }
         private void RepFromGroupBTN_MouseLeave(object sender, EventArgs e)
         {

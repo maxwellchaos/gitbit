@@ -120,7 +120,9 @@
             this.MinimumSize = new System.Drawing.Size(492, 300);
             this.Name = "prigl";
             this.Text = "prigl";
+
             this.Load += new System.EventHandler(this.prigl_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

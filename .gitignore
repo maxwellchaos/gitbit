@@ -300,3 +300,10 @@ vk_bot/vk_bot/bin/Debug/vk_bot.pdb
 *.exe
 *.pdb
 vk_bot/vk_bot/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.suo
+*.exe
+vk_bot/vk_bot/obj/x86/Debug/vk_bot.pdb
+vk_bot/vk_bot/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache
+vk_bot/vk_bot/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+vk_bot/vk_bot/obj/x86/Debug/vk_bot.exe
+vk_bot/vk_bot/obj/x86/Debug/vk_bot.pdb
