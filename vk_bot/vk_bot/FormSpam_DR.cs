@@ -35,6 +35,8 @@ namespace vk_bot
         {
             fontsProjects();
             fonts();
+            Opacity = 0;
+            FADERSTART.Start();
         }
 
         PrivateFontCollection font;
@@ -72,8 +74,6 @@ namespace vk_bot
 
 
 
-
-
         private void FormDR_Load(object sender, EventArgs e)
         {
             Opacity = 0;
@@ -82,6 +82,7 @@ namespace vk_bot
         //    webBrowserWWW.Dock = DockStyle.Fill;
         //    webBrowserWWW.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+messages&response_type=token&v=5.74");
         }
+
 
         private void webBrowserWWW_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
