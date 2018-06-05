@@ -308,6 +308,13 @@ namespace vk_bot
             frm.Show();
         }
 
+        private void SlovaIstini_Click(object sender, EventArgs e)
+        {
+            SLOVA sl = new SLOVA();
+            sl.A_T = access_token;
+            sl.Show();
+        }
+
        
     }
 }

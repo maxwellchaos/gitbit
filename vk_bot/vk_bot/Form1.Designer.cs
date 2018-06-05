@@ -49,6 +49,7 @@
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             this.buttonWelkom = new System.Windows.Forms.Button();
+            this.SlovaIstini = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
@@ -347,12 +348,23 @@
             this.buttonWelkom.UseVisualStyleBackColor = true;
             this.buttonWelkom.Click += new System.EventHandler(this.buttonWelkom_Click);
             // 
+            // SlovaIstini
+            // 
+            this.SlovaIstini.Location = new System.Drawing.Point(116, 313);
+            this.SlovaIstini.Name = "SlovaIstini";
+            this.SlovaIstini.Size = new System.Drawing.Size(159, 50);
+            this.SlovaIstini.TabIndex = 20;
+            this.SlovaIstini.Text = "СЛОВА!!!";
+            this.SlovaIstini.UseVisualStyleBackColor = true;
+            this.SlovaIstini.Click += new System.EventHandler(this.SlovaIstini_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
+            this.Controls.Add(this.SlovaIstini);
             this.Controls.Add(this.buttonWelkom);
             this.Controls.Add(this.but_exitgroups);
             this.Controls.Add(this.but_delprigla);
@@ -408,6 +420,7 @@
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Button buttonWelkom;
+        private System.Windows.Forms.Button SlovaIstini;
 
 
     }
