@@ -50,15 +50,16 @@
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             this.buttonWelkom = new System.Windows.Forms.Button();
             this.SlovaIstini = new System.Windows.Forms.Button();
+            this.delcom = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonПОЗДР
             // 
-            this.buttonПОЗДР.Location = new System.Drawing.Point(115, 428);
+            this.buttonПОЗДР.Location = new System.Drawing.Point(620, 250);
             this.buttonПОЗДР.Name = "buttonПОЗДР";
-            this.buttonПОЗДР.Size = new System.Drawing.Size(159, 45);
+            this.buttonПОЗДР.Size = new System.Drawing.Size(139, 45);
             this.buttonПОЗДР.TabIndex = 12;
             this.buttonПОЗДР.Text = "Поздравление с ДР";
             this.buttonПОЗДР.UseVisualStyleBackColor = true;
@@ -340,9 +341,9 @@
             // 
             // buttonWelkom
             // 
-            this.buttonWelkom.Location = new System.Drawing.Point(116, 369);
+            this.buttonWelkom.Location = new System.Drawing.Point(620, 199);
             this.buttonWelkom.Name = "buttonWelkom";
-            this.buttonWelkom.Size = new System.Drawing.Size(159, 45);
+            this.buttonWelkom.Size = new System.Drawing.Size(139, 45);
             this.buttonWelkom.TabIndex = 19;
             this.buttonWelkom.Text = "Приглашения в группу";
             this.buttonWelkom.UseVisualStyleBackColor = true;
@@ -350,13 +351,23 @@
             // 
             // SlovaIstini
             // 
-            this.SlovaIstini.Location = new System.Drawing.Point(116, 313);
+            this.SlovaIstini.Location = new System.Drawing.Point(462, 208);
             this.SlovaIstini.Name = "SlovaIstini";
-            this.SlovaIstini.Size = new System.Drawing.Size(159, 50);
+            this.SlovaIstini.Size = new System.Drawing.Size(150, 50);
             this.SlovaIstini.TabIndex = 20;
             this.SlovaIstini.Text = "СЛОВА!!!";
             this.SlovaIstini.UseVisualStyleBackColor = true;
             this.SlovaIstini.Click += new System.EventHandler(this.SlovaIstini_Click);
+            // 
+            // delcom
+            // 
+            this.delcom.Location = new System.Drawing.Point(620, 301);
+            this.delcom.Name = "delcom";
+            this.delcom.Size = new System.Drawing.Size(139, 42);
+            this.delcom.TabIndex = 21;
+            this.delcom.Text = "Удалять комментарии со ссылкой ";
+            this.delcom.UseVisualStyleBackColor = true;
+            this.delcom.Click += new System.EventHandler(this.delcom_Click);
             // 
             // Form1
             // 
@@ -364,6 +375,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(771, 502);
+            this.Controls.Add(this.delcom);
             this.Controls.Add(this.SlovaIstini);
             this.Controls.Add(this.buttonWelkom);
             this.Controls.Add(this.but_exitgroups);
@@ -421,6 +433,7 @@
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Button buttonWelkom;
         private System.Windows.Forms.Button SlovaIstini;
+        private System.Windows.Forms.Button delcom;
 
 
     }

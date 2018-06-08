@@ -173,3 +173,9 @@ c:\gitbit-main\vk_bot\vk_bot\bin\Debug\vk_bot.exe
 c:\gitbit-main\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
 c:\gitbit-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot._123.resources
 c:\gitbit-main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.SLOVA.resources
+c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot._123.resources
+c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.DebugOK.resources
+c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.LOGO.resources
+c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.SLOVA.resources
+c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.url.resources
+c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources

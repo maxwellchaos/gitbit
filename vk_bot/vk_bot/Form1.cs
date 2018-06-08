@@ -315,6 +315,13 @@ namespace vk_bot
             sl.Show();
         }
 
+        private void delcom_Click(object sender, EventArgs e)
+        {
+            url newForm = new url();
+            newForm.access_token = access_token;
+            newForm.Show();
+        }
+
        
     }
 }
