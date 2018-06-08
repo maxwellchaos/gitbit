@@ -19,6 +19,11 @@ namespace vk_bot
         private bool isMouseDown = false;
         string userId;
 
+
+        //создаю переменную для хранения данных об аккаунте, 1 - бесплатная демо версия, 0 - версия с лицензией
+        public int donatveron ;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -48,7 +53,6 @@ namespace vk_bot
             Minimize_Button.Font = new Font(font.Families[0], 24);
             Button_Exit.Font = new Font(font.Families[0], 24);
             
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -320,6 +324,7 @@ namespace vk_bot
             url newForm = new url();
             newForm.access_token = access_token;
             newForm.Show();
+
         }
 
        

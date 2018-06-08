@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -58,6 +58,13 @@
     </Compile>
     <Compile Include="delgroups.designer.cs">
       <DependentUpon>delgroups.cs</DependentUpon>
+ </Compile>
+    <Compile Include="DebugOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugOK.Designer.cs">
+      <DependentUpon>DebugOK.cs</DependentUpon>
+
     </Compile>
     <Compile Include="DebugOK.cs">
       <SubType>Form</SubType>
@@ -112,6 +119,23 @@
     </EmbeddedResource>
     <EmbeddedResource Include="delgroups.resx">
       <DependentUpon>delgroups.cs</DependentUpon>
+   </EmbeddedResource>
+    <Compile Include="LOGO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGO.Designer.cs">
+      <DependentUpon>LOGO.cs</DependentUpon>
+    </Compile>
+    
+    <Compile Include="RepFromGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepFromGroupsForm.Designer.cs">
+      <DependentUpon>RepFromGroupsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DebugOK.resx">
+      <DependentUpon>DebugOK.cs</DependentUpon>
+
     </EmbeddedResource>
     <Compile Include="LOGO.cs">
       <SubType>Form</SubType>
@@ -144,6 +168,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="prigl.resx">
       <DependentUpon>prigl.cs</DependentUpon>
+   </EmbeddedResource>
+    <EmbeddedResource Include="LOGO.resx">
+      <DependentUpon>LOGO.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="LOGO.resx">
       <DependentUpon>LOGO.cs</DependentUpon>
@@ -163,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="wallskanform.resx">
       <DependentUpon>wallskanform.cs</DependentUpon>
+   </EmbeddedResource>
+    <EmbeddedResource Include="RepFromGroupsForm.resx">
+      <DependentUpon>RepFromGroupsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RepFromGroupsForm.resx">
       <DependentUpon>RepFromGroupsForm.cs</DependentUpon>
@@ -210,6 +241,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\30.png" />
+    </ItemGroup>
+<ItemGroup>
+    <None Include="Resources\1111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_11.png" />
+
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1111.png" />

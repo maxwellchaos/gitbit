@@ -51,15 +51,18 @@
             this.buttonWelkom = new System.Windows.Forms.Button();
             this.SlovaIstini = new System.Windows.Forms.Button();
             this.delcom = new System.Windows.Forms.Button();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonПОЗДР
             // 
+
             this.buttonПОЗДР.Location = new System.Drawing.Point(620, 250);
             this.buttonПОЗДР.Name = "buttonПОЗДР";
             this.buttonПОЗДР.Size = new System.Drawing.Size(139, 45);
+
             this.buttonПОЗДР.TabIndex = 12;
             this.buttonПОЗДР.Text = "Поздравление с ДР";
             this.buttonПОЗДР.UseVisualStyleBackColor = true;
@@ -94,7 +97,9 @@
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+
             this.labelLastName.Location = new System.Drawing.Point(12, 392);
+
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(98, 22);
             this.labelLastName.TabIndex = 1;
@@ -106,6 +111,7 @@
             this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelFirstName.Location = new System.Drawing.Point(12, 359);
+
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(47, 24);
             this.labelFirstName.TabIndex = 0;
@@ -125,6 +131,7 @@
             this.but_delprigla.Location = new System.Drawing.Point(620, 349);
             this.but_delprigla.Name = "but_delprigla";
             this.but_delprigla.Size = new System.Drawing.Size(150, 141);
+
             this.but_delprigla.TabIndex = 17;
             this.but_delprigla.Text = "Удаление приглашений";
             this.but_delprigla.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -148,6 +155,7 @@
             this.but_laik.Location = new System.Drawing.Point(464, 349);
             this.but_laik.Name = "but_laik";
             this.but_laik.Size = new System.Drawing.Size(150, 141);
+
             this.but_laik.TabIndex = 16;
             this.but_laik.Text = "Массовый лайкинг";
             this.but_laik.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -170,6 +178,7 @@
             this.but_exitgroups.Location = new System.Drawing.Point(308, 349);
             this.but_exitgroups.Name = "but_exitgroups";
             this.but_exitgroups.Size = new System.Drawing.Size(150, 141);
+
             this.but_exitgroups.TabIndex = 18;
             this.but_exitgroups.Text = "Выход из всех групп";
             this.but_exitgroups.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -190,6 +199,7 @@
             this.RepFromGroupBTN.Location = new System.Drawing.Point(308, 208);
             this.RepFromGroupBTN.Name = "RepFromGroupBTN";
             this.RepFromGroupBTN.Size = new System.Drawing.Size(150, 135);
+
             this.RepFromGroupBTN.TabIndex = 8;
             this.RepFromGroupBTN.Text = "Репост записи из группы";
             this.RepFromGroupBTN.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -270,6 +280,7 @@
             this.pictureBoxAvatar.Location = new System.Drawing.Point(12, 45);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
             this.pictureBoxAvatar.Size = new System.Drawing.Size(273, 270);
+
             this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
@@ -344,6 +355,7 @@
             this.buttonWelkom.Location = new System.Drawing.Point(620, 199);
             this.buttonWelkom.Name = "buttonWelkom";
             this.buttonWelkom.Size = new System.Drawing.Size(139, 45);
+
             this.buttonWelkom.TabIndex = 19;
             this.buttonWelkom.Text = "Приглашения в группу";
             this.buttonWelkom.UseVisualStyleBackColor = true;
@@ -369,6 +381,7 @@
             this.delcom.UseVisualStyleBackColor = true;
             this.delcom.Click += new System.EventHandler(this.delcom_Click);
             // 
+
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,6 +447,7 @@
         private System.Windows.Forms.Button buttonWelkom;
         private System.Windows.Forms.Button SlovaIstini;
         private System.Windows.Forms.Button delcom;
+
 
 
     }
