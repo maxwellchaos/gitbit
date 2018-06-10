@@ -72,7 +72,7 @@ namespace vk_bot
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Введите id!");
@@ -93,7 +93,7 @@ namespace vk_bot
                 foreach (XmlNode utag in tager.SelectNodes("post"))
                 {
                     countlike += 1;
-                    label7.Text = Convert.ToString(countlike);
+                    label5.Text = Convert.ToString(countlike);
 
 
                     XmlNode postid = utag.SelectSingleNode("id");

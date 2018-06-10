@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,12 +49,10 @@
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
-
             this.SuspendLayout();
             // 
             // textBox1
             // 
-
             this.textBox1.BackColor = System.Drawing.Color.SteelBlue;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -86,7 +83,6 @@
             // label1
             // 
             this.label1.AutoSize = true;
-
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(-1, 162);
@@ -118,7 +114,6 @@
             // label4
             // 
             this.label4.AutoSize = true;
-
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.GreenYellow;
             this.label4.Location = new System.Drawing.Point(104, 328);
@@ -126,12 +121,10 @@
             this.label4.Size = new System.Drawing.Size(27, 29);
             this.label4.TabIndex = 9;
             this.label4.Text = "0";
-
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-
             this.label3.Location = new System.Drawing.Point(12, 550);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
@@ -153,7 +146,6 @@
             // label6
             // 
             this.label6.AutoSize = true;
-
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(-3, 458);
@@ -161,7 +153,6 @@
             this.label6.Size = new System.Drawing.Size(115, 29);
             this.label6.TabIndex = 22;
             this.label6.Text = "ошибок:";
-
             // 
             // label7
             // 
@@ -241,9 +232,9 @@
             this.ORG.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ORG.Location = new System.Drawing.Point(-3, 2);
             this.ORG.Name = "ORG";
-            this.ORG.Size = new System.Drawing.Size(300, 40);
+            this.ORG.Size = new System.Drawing.Size(351, 40);
             this.ORG.TabIndex = 33;
-            this.ORG.Text = "УДАЛИТЬ ГРУППЫ";
+            this.ORG.Text = "МАССОВЫЙ ЛАЙКИНГ";
             this.ORG.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
             this.ORG.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseMove);
             this.ORG.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseUp);
@@ -274,7 +265,6 @@
             // 
             this.FADERSTART.Interval = 1;
             this.FADERSTART.Tick += new System.EventHandler(this.FADERSTART_Tick);
-
             // 
             // wallskanform
             // 
@@ -289,8 +279,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-             this.Controls.Add(this.label3);
-
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -299,7 +287,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.webBrowser1);
-
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(600, 600);

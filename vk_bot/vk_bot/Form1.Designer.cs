@@ -49,8 +49,8 @@
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             this.buttonWelkom = new System.Windows.Forms.Button();
-            this.SlovaIstini = new System.Windows.Forms.Button();
             this.delcom = new System.Windows.Forms.Button();
+            this.SlovaIstini = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
@@ -293,7 +293,7 @@
             this.WindowHalfBorder.BackColor = System.Drawing.Color.SteelBlue;
             this.WindowHalfBorder.Location = new System.Drawing.Point(-6, -1);
             this.WindowHalfBorder.Name = "WindowHalfBorder";
-            this.WindowHalfBorder.Size = new System.Drawing.Size(790, 44);
+            this.WindowHalfBorder.Size = new System.Drawing.Size(954, 44);
             this.WindowHalfBorder.TabIndex = 11;
             this.WindowHalfBorder.TabStop = false;
             this.WindowHalfBorder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
@@ -310,7 +310,7 @@
             this.Button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Exit.Location = new System.Drawing.Point(736, -2);
+            this.Button_Exit.Location = new System.Drawing.Point(877, -4);
             this.Button_Exit.Name = "Button_Exit";
             this.Button_Exit.Size = new System.Drawing.Size(44, 45);
             this.Button_Exit.TabIndex = 14;
@@ -328,7 +328,7 @@
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minimize_Button.Location = new System.Drawing.Point(696, -2);
+            this.Minimize_Button.Location = new System.Drawing.Point(833, -4);
             this.Minimize_Button.Name = "Minimize_Button";
             this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
             this.Minimize_Button.TabIndex = 15;
@@ -373,32 +373,50 @@
             this.buttonWelkom.MouseEnter += new System.EventHandler(this.buttonWelkom_MouseEnter);
             this.buttonWelkom.MouseLeave += new System.EventHandler(this.buttonWelkom_MouseLeave);
             // 
-            // SlovaIstini
-            // 
-            this.SlovaIstini.Location = new System.Drawing.Point(154, 355);
-            this.SlovaIstini.Name = "SlovaIstini";
-            this.SlovaIstini.Size = new System.Drawing.Size(150, 50);
-            this.SlovaIstini.TabIndex = 20;
-            this.SlovaIstini.Text = "СЛОВА!!!";
-            this.SlovaIstini.UseVisualStyleBackColor = true;
-            this.SlovaIstini.Click += new System.EventHandler(this.SlovaIstini_Click);
-            // 
             // delcom
             // 
-            this.delcom.Location = new System.Drawing.Point(154, 411);
+            this.delcom.BackColor = System.Drawing.Color.SteelBlue;
+            this.delcom.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.delcom.FlatAppearance.BorderSize = 0;
+            this.delcom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.delcom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.delcom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delcom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.delcom.ForeColor = System.Drawing.Color.White;
+            this.delcom.Location = new System.Drawing.Point(771, 199);
             this.delcom.Name = "delcom";
-            this.delcom.Size = new System.Drawing.Size(150, 43);
-            this.delcom.TabIndex = 21;
-            this.delcom.Text = "Удалять комментарии со ссылкой ";
-            this.delcom.UseVisualStyleBackColor = true;
+            this.delcom.Size = new System.Drawing.Size(150, 150);
+            this.delcom.TabIndex = 23;
+            this.delcom.Text = "Удалять комментарии со ссылкой";
+            this.delcom.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.delcom.UseVisualStyleBackColor = false;
             this.delcom.Click += new System.EventHandler(this.delcom_Click);
+            // 
+            // SlovaIstini
+            // 
+            this.SlovaIstini.BackColor = System.Drawing.Color.SteelBlue;
+            this.SlovaIstini.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.SlovaIstini.FlatAppearance.BorderSize = 0;
+            this.SlovaIstini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.SlovaIstini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.SlovaIstini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SlovaIstini.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SlovaIstini.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SlovaIstini.Location = new System.Drawing.Point(771, 45);
+            this.SlovaIstini.Name = "SlovaIstini";
+            this.SlovaIstini.Size = new System.Drawing.Size(150, 150);
+            this.SlovaIstini.TabIndex = 22;
+            this.SlovaIstini.Text = "Слова";
+            this.SlovaIstini.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.SlovaIstini.UseVisualStyleBackColor = false;
+            this.SlovaIstini.Click += new System.EventHandler(this.SlovaIstini_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(782, 522);
+            this.ClientSize = new System.Drawing.Size(928, 522);
             this.Controls.Add(this.delcom);
             this.Controls.Add(this.SlovaIstini);
             this.Controls.Add(this.buttonWelkom);
@@ -456,9 +474,8 @@
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Button buttonWelkom;
-
-        private System.Windows.Forms.Button SlovaIstini;
         private System.Windows.Forms.Button delcom;
+        private System.Windows.Forms.Button SlovaIstini;
 
 
 
