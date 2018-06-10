@@ -33,7 +33,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.label1 = new System.Windows.Forms.Label();
             this.Button_Exit = new System.Windows.Forms.Button();
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.ORG = new System.Windows.Forms.Label();
@@ -41,18 +40,18 @@
             this.FADER = new System.Windows.Forms.Timer(this.components);
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-
             this.textBox1.BackColor = System.Drawing.Color.SteelBlue;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(-2, 105);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(608, 177);
+            this.textBox1.Size = new System.Drawing.Size(295, 177);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -89,22 +88,12 @@
             // 
             // webBrowser1
             // 
-
             this.webBrowser1.Location = new System.Drawing.Point(12, 292);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(20, 20);
             this.webBrowser1.TabIndex = 7;
             this.webBrowser1.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(420, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 98);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Не во все группы, сообщества и паблики можно приглашать друзей! Когда копируешь i" +
-                "d, проверь можно ли в это сообщество приглашать друзей или нет.";
             // 
             // Button_Exit
             // 
@@ -184,16 +173,28 @@
             this.FADERSTART.Interval = 1;
             this.FADERSTART.Tick += new System.EventHandler(this.FADERSTART_Tick);
             // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.textBox3.Location = new System.Drawing.Point(299, 105);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(290, 177);
+            this.textBox3.TabIndex = 33;
+            this.textBox3.Text = "Не во все группы, сообщества и паблики можно приглашать друзей! Когда копируешь i" +
+                "d, проверь можно ли в это сообщество приглашать друзей или нет.";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // _123
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
-            this.Controls.Add(this.label1);
-
-
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(601, 365);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.Button_Exit);
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.ORG);
@@ -221,8 +222,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.WebBrowser webBrowser1;
 
-        private System.Windows.Forms.Label label1;
-
         private System.Windows.Forms.Button Button_Exit;
         private System.Windows.Forms.Button Minimize_Button;
         private System.Windows.Forms.Label ORG;
@@ -230,6 +229,7 @@
         private System.Windows.Forms.Timer FADER;
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADERSTART;
+        private System.Windows.Forms.TextBox textBox3;
 
     }
 }

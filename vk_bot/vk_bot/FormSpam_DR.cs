@@ -35,13 +35,6 @@ namespace vk_bot
             Opacity = 0;
             FADERSTART.Start();
         }
-        private void FormDR_Load(object sender, EventArgs e)
-        {
-            fontsProjects();
-            fonts();
-            Opacity = 0;
-            FADERSTART.Start();
-        }
 
         PrivateFontCollection font;
         private void fontsProjects()

@@ -104,7 +104,9 @@
     <Compile Include="SLOVA.designer.cs">
       <DependentUpon>SLOVA.cs</DependentUpon>
     </Compile>
-    <Compile Include="url.cs" />
+    <Compile Include="url.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="url.Designer.cs">
       <DependentUpon>url.cs</DependentUpon>
     </Compile>

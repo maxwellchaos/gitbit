@@ -8,11 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Threading;
-<<<<<<< HEAD
-=======
+
 using System.Drawing.Text;
 using System.Media;
->>>>>>> pr/16
+
 
 namespace vk_bot
 {
@@ -170,6 +169,7 @@ namespace vk_bot
                     MessageBox.Show("Вы израсходовали демо версию. Преобретите платную!");
                     this.Close();
                 }
+            }
 
         }
 
