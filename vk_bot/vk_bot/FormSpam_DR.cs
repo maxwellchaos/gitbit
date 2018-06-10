@@ -18,9 +18,6 @@ namespace vk_bot
 
         private Point mouseOffset;
         private bool isMouseDown = false;
-
-
-
         int r;
         int k;
         string id;
@@ -38,6 +35,13 @@ namespace vk_bot
             Opacity = 0;
             FADERSTART.Start();
         }
+        private void FormDR_Load(object sender, EventArgs e)
+        {
+            fontsProjects();
+            fonts();
+            Opacity = 0;
+            FADERSTART.Start();
+        }
 
         PrivateFontCollection font;
         private void fontsProjects()
@@ -45,9 +49,6 @@ namespace vk_bot
             this.font = new PrivateFontCollection();
             this.font.AddFontFile("FONTS/RLL.ttf");
             this.font.AddFontFile("FONTS/WS.ttf");
-
-
-
         }
 
         private void fonts()
@@ -66,9 +67,6 @@ namespace vk_bot
             Minimize_Button.Font = new Font(font.Families[0], 24);
             Button_Exit.Font = new Font(font.Families[0], 24);
             ORG.Font = new Font(font.Families[0], 24);
-
-
-
         }
 
 
@@ -91,10 +89,8 @@ namespace vk_bot
             //}
 
         }
-
         private void spam_Click(object sender, EventArgs e)
         {
-
         }
 
         private void buttonWWW_Click(object sender, EventArgs e)
@@ -106,21 +102,16 @@ namespace vk_bot
         private void timerQwerty_Tick(object sender, EventArgs e)
         {
             mess = textBoxMess.Text;
-
             //Зпрашиваю информацию о пользователе
-
             //Создаю XML документ
             XmlDocument doc = new XmlDocument();
             doc.Load("https://api.vk.com/method/messages.send.xml?user_id="+id+"&message=" + mess + "&access_token=" + access_token + "&v=5.74");
             //XmlNode response = doc.SelectSingleNode("response");
             //XmlNode user = response.SelectSingleNode("user");
-
             //XmlNode FirstName = user.SelectSingleNode("first_name");
             //labelFirstName.Text = FirstName.InnerText;
-
             //XmlNode LastName = user.SelectSingleNode("last_name");
             //labelLastName.Text = LastName.InnerText;
-
             //pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText
             qwerty += 1;
             labelbree.Text = qwerty.ToString();

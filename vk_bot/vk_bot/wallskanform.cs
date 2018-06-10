@@ -8,6 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Threading;
+<<<<<<< HEAD
+=======
+using System.Drawing.Text;
+using System.Media;
+>>>>>>> pr/16
 
 namespace vk_bot
 {
@@ -20,6 +25,7 @@ namespace vk_bot
         public string id2postlist;
         public string score;
 
+
         //************** ДОНАТ ОГРАНИЧЕНИЕ + ХРАНЕНИЕ ДАННЫХ **************\\
          public int donatveron; //1 - бесплатная демо версия, 0 - версия с лицензией
          public int countlike; //кол-во поставленных лайков
@@ -28,14 +34,43 @@ namespace vk_bot
 
         //переменная для хранения кол-ва ошибок при обработке в цикле
 
+        private Point mouseOffset;
+        private bool isMouseDown = false;
+
         public string errors;
 
 
         public wallskanform()
         {
             InitializeComponent();
-        }
 
+            fontsProjects();
+            fonts();
+        }
+        PrivateFontCollection font;
+        private void fontsProjects()
+        {
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("FONTS/RLL.ttf");
+            this.font.AddFontFile("FONTS/WS.ttf");
+        }
+        private void fonts()
+        {
+            label1.Font = new Font(font.Families[0], 18);
+            label2.Font = new Font(font.Families[0], 18);
+            label3.Font = new Font(font.Families[0], 18);
+            label4.Font = new Font(font.Families[0], 18);
+            label5.Font = new Font(font.Families[0], 18);
+            label6.Font = new Font(font.Families[0], 18);
+            label7.Font = new Font(font.Families[0], 48);
+            label8.Font = new Font(font.Families[0], 48);
+            label9.Font = new Font(font.Families[0], 72);
+            button1.Font = new Font(font.Families[0], 36);
+            Minimize_Button.Font = new Font(font.Families[0], 24);
+            Button_Exit.Font = new Font(font.Families[0], 24);
+            ORG.Font = new Font(font.Families[0], 24);
+            textBox1.Font = new Font(font.Families[0], 24);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -61,11 +96,13 @@ namespace vk_bot
                     countlike += 1;
                     label7.Text = Convert.ToString(countlike);
 
+
                     XmlNode postid = utag.SelectSingleNode("id");
                     XmlDocument dopdoo = new XmlDocument();
 
 
                     textboxer = postid.InnerXml;
+
                     dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
 
                     textboxer = postid.InnerXml;
@@ -74,8 +111,6 @@ namespace vk_bot
 
 
                    // dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
-
-
                     //ищу ошибки
                     if (dopdoo.InnerXml.Contains("error"))
                     {
@@ -90,7 +125,9 @@ namespace vk_bot
                     Application.DoEvents();
                 }
 
-                label3.Text = "ГОТОВО!";
+                DebugOK OK = new DebugOK();
+                SystemSounds.Asterisk.Play();
+                OK.Show();
 
                 //считаю кол-во
                 tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
@@ -101,15 +138,28 @@ namespace vk_bot
             }
         }
 
-        private void wallskanform_Load(object sender, EventArgs e)
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
-            
+        }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void wallskanform_Load(object sender, EventArgs e)
+        {
+            Opacity = 0;
+
+            FADERSTART.Start();
         }
 
 
         private void label5_Click(object sender, EventArgs e)
         {
+
 
             //включаю ограничение для пробной версии
             if (donatveron == 1)
@@ -117,9 +167,82 @@ namespace vk_bot
                 if (countlike == 10)
                 {
                     
-                    MessageBox.Show("Вы израсходывали демо версию. Преобретите платную!");
+                    MessageBox.Show("Вы израсходовали демо версию. Преобретите платную!");
                     this.Close();
                 }
+
+        }
+
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xOffset;
+            int yOffset;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
+                yOffset = -e.Y - SystemInformation.CaptionHeight -
+                    SystemInformation.FrameBorderSize.Height;
+                mouseOffset = new Point(xOffset, yOffset);
+                isMouseDown = true;
+            }
+        }
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
+                Location = mousePos;
+            }
+        }
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+            }
+        }
+        private void Button_Exit_Click(object sender, EventArgs e)
+        {
+            FADER.Enabled = true;
+
+        }
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            FADERMINI.Enabled = true;
+        }
+
+        private void FADER_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                Close();
+            }
+        }
+
+        private void FADERMINI_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                this.WindowState = FormWindowState.Minimized;
+                FADERMINI.Stop();
+                Opacity = 1;
+            }
+
+        }
+
+        private void FADERSTART_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity += 0.1;
+            if (Opacity == 1)
+            {
+
+                FADERSTART.Stop();
             }
         }
     }

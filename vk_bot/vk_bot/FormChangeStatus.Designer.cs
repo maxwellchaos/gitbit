@@ -78,9 +78,9 @@
             this.CSTinter.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CSTinter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CSTinter.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.CSTinter.Location = new System.Drawing.Point(4, 92);
+            this.CSTinter.Location = new System.Drawing.Point(-9, 92);
             this.CSTinter.Name = "CSTinter";
-            this.CSTinter.Size = new System.Drawing.Size(592, 19);
+            this.CSTinter.Size = new System.Drawing.Size(605, 19);
             this.CSTinter.TabIndex = 0;
             this.CSTinter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CSTinter.WordWrap = false;
@@ -134,10 +134,10 @@
             // 
             // webBrowserCST
             // 
-            this.webBrowserCST.Location = new System.Drawing.Point(635, 122);
+            this.webBrowserCST.Location = new System.Drawing.Point(664, 73);
             this.webBrowserCST.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserCST.Name = "webBrowserCST";
-            this.webBrowserCST.Size = new System.Drawing.Size(20, 20);
+            this.webBrowserCST.Size = new System.Drawing.Size(38, 90);
             this.webBrowserCST.TabIndex = 8;
             // 
             // timer1
@@ -254,9 +254,9 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Location = new System.Drawing.Point(4, 181);
+            this.textBox1.Location = new System.Drawing.Point(-9, 181);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(592, 19);
+            this.textBox1.Size = new System.Drawing.Size(605, 19);
             this.textBox1.TabIndex = 17;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -266,9 +266,9 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox2.Location = new System.Drawing.Point(4, 270);
+            this.textBox2.Location = new System.Drawing.Point(-9, 270);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(592, 19);
+            this.textBox2.Size = new System.Drawing.Size(605, 19);
             this.textBox2.TabIndex = 18;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -278,9 +278,9 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox3.Location = new System.Drawing.Point(2, 359);
+            this.textBox3.Location = new System.Drawing.Point(-9, 359);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(594, 19);
+            this.textBox3.Size = new System.Drawing.Size(605, 19);
             this.textBox3.TabIndex = 19;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -290,9 +290,9 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox4.Location = new System.Drawing.Point(2, 448);
+            this.textBox4.Location = new System.Drawing.Point(-9, 448);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(594, 19);
+            this.textBox4.Size = new System.Drawing.Size(605, 19);
             this.textBox4.TabIndex = 20;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -336,34 +336,34 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(635, 122);
+            this.webBrowser1.Location = new System.Drawing.Point(664, 83);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Size = new System.Drawing.Size(38, 80);
             this.webBrowser1.TabIndex = 25;
             // 
             // webBrowser2
             // 
-            this.webBrowser2.Location = new System.Drawing.Point(635, 122);
+            this.webBrowser2.Location = new System.Drawing.Point(661, 73);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(20, 20);
+            this.webBrowser2.Size = new System.Drawing.Size(38, 80);
             this.webBrowser2.TabIndex = 26;
             // 
             // webBrowser3
             // 
-            this.webBrowser3.Location = new System.Drawing.Point(635, 122);
+            this.webBrowser3.Location = new System.Drawing.Point(664, 84);
             this.webBrowser3.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser3.Name = "webBrowser3";
-            this.webBrowser3.Size = new System.Drawing.Size(20, 20);
+            this.webBrowser3.Size = new System.Drawing.Size(38, 69);
             this.webBrowser3.TabIndex = 27;
             // 
             // webBrowser4
             // 
-            this.webBrowser4.Location = new System.Drawing.Point(635, 122);
+            this.webBrowser4.Location = new System.Drawing.Point(664, 84);
             this.webBrowser4.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser4.Name = "webBrowser4";
-            this.webBrowser4.Size = new System.Drawing.Size(20, 20);
+            this.webBrowser4.Size = new System.Drawing.Size(38, 79);
             this.webBrowser4.TabIndex = 28;
             // 
             // button6
@@ -374,7 +374,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(635, 50);
+            this.button6.Location = new System.Drawing.Point(638, 50);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(64, 531);
             this.button6.TabIndex = 34;
@@ -392,9 +392,9 @@
             this.Button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Exit.Location = new System.Drawing.Point(655, 0);
+            this.Button_Exit.Location = new System.Drawing.Point(659, -1);
             this.Button_Exit.Name = "Button_Exit";
-            this.Button_Exit.Size = new System.Drawing.Size(44, 40);
+            this.Button_Exit.Size = new System.Drawing.Size(44, 45);
             this.Button_Exit.TabIndex = 38;
             this.Button_Exit.Text = "x";
             this.Button_Exit.UseVisualStyleBackColor = false;
@@ -410,7 +410,7 @@
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minimize_Button.Location = new System.Drawing.Point(614, -5);
+            this.Minimize_Button.Location = new System.Drawing.Point(618, -1);
             this.Minimize_Button.Name = "Minimize_Button";
             this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
             this.Minimize_Button.TabIndex = 39;
@@ -439,7 +439,7 @@
             this.WindowHalfBorder.BackColor = System.Drawing.Color.SteelBlue;
             this.WindowHalfBorder.Location = new System.Drawing.Point(-80, 0);
             this.WindowHalfBorder.Name = "WindowHalfBorder";
-            this.WindowHalfBorder.Size = new System.Drawing.Size(779, 44);
+            this.WindowHalfBorder.Size = new System.Drawing.Size(783, 44);
             this.WindowHalfBorder.TabIndex = 37;
             this.WindowHalfBorder.TabStop = false;
             this.WindowHalfBorder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);

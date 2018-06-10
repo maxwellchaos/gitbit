@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app1.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -105,6 +108,8 @@
     <Compile Include="url.Designer.cs">
       <DependentUpon>url.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="wallskanform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,8 +128,6 @@
     <Compile Include="LOGO.Designer.cs">
       <DependentUpon>LOGO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepFromGroupsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +178,12 @@
       <DependentUpon>RepFromGroupsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="App.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app1.manifest">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

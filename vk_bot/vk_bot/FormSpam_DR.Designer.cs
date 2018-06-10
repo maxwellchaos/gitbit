@@ -67,7 +67,7 @@
             this.textBoxID.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.textBoxID.Location = new System.Drawing.Point(1, 134);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(760, 24);
+            this.textBoxID.Size = new System.Drawing.Size(799, 24);
             this.textBoxID.TabIndex = 0;
             this.textBoxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -79,7 +79,7 @@
             this.textBoxMess.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.textBoxMess.Location = new System.Drawing.Point(1, 229);
             this.textBoxMess.Name = "textBoxMess";
-            this.textBoxMess.Size = new System.Drawing.Size(760, 24);
+            this.textBoxMess.Size = new System.Drawing.Size(799, 24);
             this.textBoxMess.TabIndex = 1;
             this.textBoxMess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 
@@ -197,7 +197,7 @@
             this.numericUpDownqwe.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.numericUpDownqwe.Location = new System.Drawing.Point(1, 295);
             this.numericUpDownqwe.Name = "numericUpDownqwe";
-            this.numericUpDownqwe.Size = new System.Drawing.Size(771, 27);
+            this.numericUpDownqwe.Size = new System.Drawing.Size(799, 27);
             this.numericUpDownqwe.TabIndex = 12;
             this.numericUpDownqwe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -209,7 +209,7 @@
             this.numericUpDownrr.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.numericUpDownrr.Location = new System.Drawing.Point(-3, 364);
             this.numericUpDownrr.Name = "numericUpDownrr";
-            this.numericUpDownrr.Size = new System.Drawing.Size(775, 27);
+            this.numericUpDownrr.Size = new System.Drawing.Size(803, 27);
             this.numericUpDownrr.TabIndex = 13;
             this.numericUpDownrr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -234,9 +234,9 @@
             this.Button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Exit.Location = new System.Drawing.Point(755, -1);
+            this.Button_Exit.Location = new System.Drawing.Point(756, -2);
             this.Button_Exit.Name = "Button_Exit";
-            this.Button_Exit.Size = new System.Drawing.Size(44, 40);
+            this.Button_Exit.Size = new System.Drawing.Size(44, 45);
             this.Button_Exit.TabIndex = 19;
             this.Button_Exit.Text = "x";
             this.Button_Exit.UseVisualStyleBackColor = false;
@@ -252,7 +252,7 @@
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minimize_Button.Location = new System.Drawing.Point(716, -6);
+            this.Minimize_Button.Location = new System.Drawing.Point(715, -2);
             this.Minimize_Button.Name = "Minimize_Button";
             this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
             this.Minimize_Button.TabIndex = 20;
