@@ -21,7 +21,7 @@ namespace vk_bot
         private void Form1_Load(object sender, EventArgs e)
         {
             webBrowser1.Dock = DockStyle.Fill;
-            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends&response_type=token&v=5.73");
+            webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+messages&response_type=token&v=5.73");
        
         }
 
@@ -34,17 +34,13 @@ namespace vk_bot
             }
             if (url.Contains("access_token"))
             {
-                //Выделяю access_token
                 int IndexAccTok = url.IndexOf("access_token");
                 access_token = url.Remove(0, IndexAccTok + 13);
                 int IndexAmp = access_token.IndexOf("&");
                 access_token = access_token.Remove(IndexAmp);
 
-                //Зпрашиваю информацию о пользователе
-                
-                //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
-                doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
+                doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token=" + access_token+"&v=5.73");
                 XmlNode response = doc.SelectSingleNode("response");
                 XmlNode user = response.SelectSingleNode("user");
 
@@ -65,6 +61,48 @@ namespace vk_bot
             FormYa frm = new FormYa();
             frm.Access_token = access_token;
             frm.Show();
+        }
+
+        private void deletefriends_Click(object sender, EventArgs e)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("https://api.vk.com/method/friends.get.xml?fields=photo_200_orig&access_token=" + access_token+"&v=5.73");
+            XmlNode response = doc.SelectSingleNode("response");
+            XmlNode items= response.SelectSingleNode("items");
+            foreach (XmlNode user in items.SelectNodes("user"))
+            {
+                XmlNode photo = user.SelectSingleNode("photo_200_orig");
+                if (photo.InnerXml.Contains("deactivated_200"))
+                {
+                    XmlDocument document = new XmlDocument();
+                    document.Load("https://api.vk.com/method/friends.delete.xml?user_id=" + user.SelectSingleNode("id").InnerText+ "&access_token=" + access_token + "&v=5.73");
+                    XmlNode id = document.SelectSingleNode("id");
+                    System.Threading.Thread.Sleep(100);
+                    labelFriendsDelete.Text = "All Friends Delete";
+                }
+            }
+                
+        }
+
+        private void DeleteComments_Click(object sender, EventArgs e)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("https://api.vk.com/method/wall.get.xml?owner_id=315032483&access_token=" + access_token + "&v=5.73");
+            XmlDocument docs = new XmlDocument();
+            docs.Load("https://api.vk.com/method/wall.getComment.xml?owner_id=315032483&access_token=" + access_token + "&v=5.73");
+            XmlNode response = doc.SelectSingleNode("response");
+            XmlNode items = response.SelectSingleNode("items");
+            foreach (XmlNode post in items.SelectNodes("post"))
+            {
+                XmlNode censcom = post.SelectSingleNode("post");
+                if (censcom.InnerXml.Contains(""))
+                {
+                    XmlDocument document = new XmlDocument();
+                    document.Load("https://api.vk.com/method/wall.deleteComment.xml?owner_id=315032483&post_id=" + post.SelectSingleNode("id").InnerText + "&access_token=" + access_token + "&v=5.73");
+                    XmlNode id = censcom.SelectSingleNode("id");
+                    labelCensure.Text = "All Comments Delete";
+                }
+            }
         }
     }
 }
