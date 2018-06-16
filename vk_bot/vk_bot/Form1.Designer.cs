@@ -49,6 +49,7 @@
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             this.buttonWelkom = new System.Windows.Forms.Button();
+            this.lic = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
@@ -371,6 +372,12 @@
             this.buttonWelkom.MouseEnter += new System.EventHandler(this.buttonWelkom_MouseEnter);
             this.buttonWelkom.MouseLeave += new System.EventHandler(this.buttonWelkom_MouseLeave);
             // 
+            // lic
+            // 
+            this.lic.Enabled = true;
+            this.lic.Interval = 1;
+            this.lic.Tick += new System.EventHandler(this.lic_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,6 +439,7 @@
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Button buttonWelkom;
+        private System.Windows.Forms.Timer lic;
 
 
     }

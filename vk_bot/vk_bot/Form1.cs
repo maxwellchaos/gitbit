@@ -18,6 +18,9 @@ namespace vk_bot
         private Point mouseOffset;
         private bool isMouseDown = false;
         string userId;
+        static bool License = false;
+        private string securitychecker;
+
 
         public Form1()
         {
@@ -58,6 +61,12 @@ namespace vk_bot
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
+
+        
+
+
             Microsoft.Win32.RegistryKey Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\",true);
 
 
@@ -77,6 +86,7 @@ namespace vk_bot
         }
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            License = true;
             string url = e.Url.ToString();
             if (url.Contains("error"))
             {
@@ -90,8 +100,16 @@ namespace vk_bot
                 int IndexAmp = access_token.IndexOf("&");
                 access_token = access_token.Remove(IndexAmp);
 
+
+
+
                 //Зпрашиваю информацию о пользователе
-                
+
+
+              
+
+
+
                 //Создаю XML документ
                 XmlDocument doc = new XmlDocument();
                 doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token="+access_token+"&v=5.73");
@@ -110,6 +128,26 @@ namespace vk_bot
 
                 pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText;
                 webBrowser1.Visible = false;
+
+                XmlDocument Security = new XmlDocument();
+                Security.Load("https://api.vk.com/method/groups.get.xml?user_id=" + userId + "&access_token=" + access_token + "&v=5.73");
+                XmlNode response0 = Security.SelectSingleNode("response");
+                XmlNode items0 = response0.SelectSingleNode("items");
+                foreach (XmlNode gid in items0.SelectNodes("gid"))
+                {
+                    securitychecker = gid.InnerXml;
+                    if (securitychecker == "167736693")
+                    {
+
+                        License = true;
+                        break;
+
+                    }
+                    else {
+                        License = false;
+                    }
+                
+                }
             }
         }
         private void buttonChangeStatus_Click(object sender, EventArgs e)
@@ -352,6 +390,40 @@ namespace vk_bot
         {
             buttonWelkom.FlatAppearance.BorderSize = 0;
 
+        }
+
+        private void lic_Tick(object sender, EventArgs e)
+        {
+            if (License == false)
+            {
+
+                but_delprigla.Enabled = false;
+                but_exitgroups.Enabled = false;
+                but_laik.Enabled = false;
+                buttonChangeStatus.Enabled = false;
+                buttonWelkom.Enabled = false;
+                buttonПОЗДР.Enabled = false;
+                RepFromGroupBTN.Enabled = false;
+                spam.Enabled = false;
+                delete_wall_post.Enabled = false;
+                ORG.Text = "У ВАС НЕТ ЛИЦЕНЗИИ";
+
+            }
+            if (License ==true)
+            {
+
+                but_delprigla.Enabled = true;
+                but_exitgroups.Enabled = true;
+                but_laik.Enabled =true;
+                buttonChangeStatus.Enabled = true;
+                buttonWelkom.Enabled = true;
+                buttonПОЗДР.Enabled = true;
+                RepFromGroupBTN.Enabled = true;
+                spam.Enabled = true;
+                delete_wall_post.Enabled = true;
+                ORG.Text = "VKTUMBOCHKA";
+
+            }
         }
 
        

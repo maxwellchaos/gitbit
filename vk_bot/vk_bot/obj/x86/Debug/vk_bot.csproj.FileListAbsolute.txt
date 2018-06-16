@@ -1,89 +1,19 @@
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\bin\Debug\vk_bot.exe
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\bin\Debug\vk_bot.pdb
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\vk_bot.exe
-C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\vk_bot.pdb
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
-\\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
-C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
-C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot._123.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.delgroups.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.DebugOK.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSPAM.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.prigl.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.LOGO.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.wallskanform.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources
+C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.cache
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-c:\gitbit-master_main\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-C:\gitbit-master_main\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-C:\gitbit-master_main\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.cache
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.CoreCompileInputs.cache
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.DebugOK.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.LOGO.resources
