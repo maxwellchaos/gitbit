@@ -72,16 +72,20 @@ namespace vk_bot
 
                 foreach (XmlNode utag2 in id2.SelectNodes("comment"))
                 {
-                    XmlDocument vopros = new XmlDocument();
-                    XmlNode who = utag2.SelectSingleNode("id");
-                    XmlNode http = utag2.SelectSingleNode("text");
+                    if (utag2.InnerText.Contains("http") || utag2.InnerText.Contains("https") || utag2.InnerText.Contains("https://")) 
+
+                    {
+                        XmlDocument vopros = new XmlDocument();
+                        XmlNode who = utag2.SelectSingleNode("id");
+                        XmlNode http = utag2.SelectSingleNode("text");
 
 
-                    vopros.Load("https://api.vk.com/method/wall.deleteComment.xml?owner_id=-" + textbox1.Text + "&comment_id=" + who.InnerText + "&access_token=" + access_token + "&v=5.73");
+                        vopros.Load("https://api.vk.com/method/wall.deleteComment.xml?owner_id=-" + textbox1.Text + "&comment_id=" + who.InnerText + "&access_token=" + access_token + "&v=5.73");
 
-                    //делаю паузу
-                    Thread.Sleep(500);
-                    Application.DoEvents();
+                        //делаю паузу
+                        Thread.Sleep(500);
+                        Application.DoEvents();
+                    }
                 }
             }
         }
