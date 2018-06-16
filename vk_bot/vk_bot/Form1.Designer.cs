@@ -51,6 +51,9 @@
             this.buttonWelkom = new System.Windows.Forms.Button();
             this.delcom = new System.Windows.Forms.Button();
             this.SlovaIstini = new System.Windows.Forms.Button();
+            this.deletefriends = new System.Windows.Forms.Button();
+            this.DeleteComments = new System.Windows.Forms.Button();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
@@ -99,6 +102,7 @@
             this.webBrowser1.Size = new System.Drawing.Size(20, 25);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+
             // 
             // labelLastName
             // 
@@ -106,6 +110,7 @@
             this.labelLastName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelLastName.Location = new System.Drawing.Point(17, 405);
+
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(98, 22);
             this.labelLastName.TabIndex = 1;
@@ -256,7 +261,7 @@
             this.delete_wall_post.MouseEnter += new System.EventHandler(this.delete_wall_post_MouseEnter);
             this.delete_wall_post.MouseLeave += new System.EventHandler(this.delete_wall_post_MouseLeave);
             // 
-            // spam
+            // deletefriends
             // 
             this.spam.BackColor = System.Drawing.Color.SteelBlue;
             this.spam.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
@@ -374,6 +379,23 @@
             this.buttonWelkom.MouseLeave += new System.EventHandler(this.buttonWelkom_MouseLeave);
             // 
             // delcom
+            this.deletefriends.Location = new System.Drawing.Point(730, 28);
+            this.deletefriends.Name = "deletefriends";
+            this.deletefriends.Size = new System.Drawing.Size(159, 41);
+            this.deletefriends.TabIndex = 4;
+            this.deletefriends.Text = "Удалить Друга";
+            this.deletefriends.UseVisualStyleBackColor = true;
+            this.deletefriends.Click += new System.EventHandler(this.deletefriends_Click);
+            // 
+            // DeleteComments
+            // 
+            this.DeleteComments.Location = new System.Drawing.Point(730, 105);
+            this.DeleteComments.Name = "DeleteComments";
+            this.DeleteComments.Size = new System.Drawing.Size(159, 41);
+            this.DeleteComments.TabIndex = 5;
+            this.DeleteComments.Text = "Удалаять комментарии с нецензурной бранью";
+            this.DeleteComments.UseVisualStyleBackColor = true;
+            this.DeleteComments.Click += new System.EventHandler(this.DeleteComments_Click);
             // 
             this.delcom.BackColor = System.Drawing.Color.SteelBlue;
             this.delcom.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
@@ -392,6 +414,7 @@
             this.delcom.UseVisualStyleBackColor = false;
             this.delcom.Click += new System.EventHandler(this.delcom_Click);
             // 
+
             // SlovaIstini
             // 
             this.SlovaIstini.BackColor = System.Drawing.Color.SteelBlue;
@@ -410,6 +433,35 @@
             this.SlovaIstini.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.SlovaIstini.UseVisualStyleBackColor = false;
             this.SlovaIstini.Click += new System.EventHandler(this.SlovaIstini_Click);
+
+            // 
+            // labelFriendsDelete
+            // 
+            this.labelFriendsDelete.AutoSize = true;
+            this.labelFriendsDelete.Font = new System.Drawing.Font("Georgia", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFriendsDelete.Location = new System.Drawing.Point(739, 72);
+            this.labelFriendsDelete.Name = "labelFriendsDelete";
+            this.labelFriendsDelete.Size = new System.Drawing.Size(53, 18);
+            this.labelFriendsDelete.TabIndex = 7;
+            this.labelFriendsDelete.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(584, 272);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(289, 235);
+            this.textBox1.TabIndex = 8;
+            // 
+            // labelCensure
+            // 
+            this.labelCensure.AutoSize = true;
+            this.labelCensure.Font = new System.Drawing.Font("Georgia", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCensure.Location = new System.Drawing.Point(742, 153);
+            this.labelCensure.Name = "labelCensure";
+            this.labelCensure.Size = new System.Drawing.Size(53, 18);
+            this.labelCensure.TabIndex = 9;
+            this.labelCensure.Text = "label1";
             // 
             // Form1
             // 
@@ -435,6 +487,9 @@
             this.Controls.Add(this.buttonChangeStatus);
             this.Controls.Add(this.delete_wall_post);
             this.Controls.Add(this.spam);
+
+            this.Controls.Add(this.DeleteComments);
+            this.Controls.Add(this.deletefriends);
             this.Controls.Add(this.pictureBoxAvatar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -479,6 +534,9 @@
 
 
 
+
+        private System.Windows.Forms.Button deletefriends;
+        private System.Windows.Forms.Button DeleteComments;
 
     }
 }
