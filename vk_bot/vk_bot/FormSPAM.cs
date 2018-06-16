@@ -7,21 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Drawing.Text;
 
 namespace vk_bot
 {
     public partial class FormSPAM : Form
     {
+
+        private Point mouseOffset;
+        private bool isMouseDown = false;
         string p;
         string o;
         public string access_token;
         public FormSPAM()
         {
             InitializeComponent();
+
+            fontsProjects();
+            fonts();
         }
+
+        PrivateFontCollection font;
+
+         private void fontsProjects()
+        {
+        
+
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("FONTS/RLL.ttf");
+            this.font.AddFontFile("FONTS/WS.ttf");   
+        }
+        private void fonts()
+        {
+        
+             Minimize_Button.Font = new Font(font.Families[0], 24);
+            Button_Exit.Font = new Font(font.Families[0], 24);
+            ORG.Font = new Font(font.Families[0], 24);
+            button6.Font = new Font(font.Families[0], 24);
+            textBoxT.Font = new Font(font.Families[0], 24);
+        
+        }
+
+
+
+
+
+
         private void FormSPAM_Load(object sender, EventArgs e)
         {
-            webBrowserNTV.Dock = DockStyle.Fill;
+            Opacity = 0;
+
+            FADERSTART.Start();
             webBrowserNTV.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends+messages&response_type=token&v=5.74");
         }
 
@@ -66,6 +102,83 @@ namespace vk_bot
         {
 
         }
+
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            FADERMINI.Start();
+        }
+
+        private void Button_Exit_Click(object sender, EventArgs e)
+        {
+            FADER.Start();
+        }
+
+        private void FADERSTART_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity += 0.1;
+            if (Opacity == 1)
+            {
+
+                FADERSTART.Stop();
+
+            }
+        }
+
+        private void FADERMINI_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                this.WindowState = FormWindowState.Minimized;
+                FADERMINI.Stop();
+                Opacity = 1;
+            }
+        }
+
+        private void FADER_Tick(object sender, EventArgs e)
+        {
+            Opacity = Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+
+                Close();
+
+            }
+        }
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            int xOffset;
+            int yOffset;
+
+            if (e.Button == MouseButtons.Left)
+            {
+                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
+                yOffset = -e.Y - SystemInformation.CaptionHeight -
+                    SystemInformation.FrameBorderSize.Height;
+                mouseOffset = new Point(xOffset, yOffset);
+                isMouseDown = true;
+            }
+        }
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                Point mousePos = Control.MousePosition;
+                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
+                Location = mousePos;
+            }
+        }
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+            }
+        }
+
+
+
 
         private void checkBoxу_CheckedChanged(object sender, EventArgs e)
         {

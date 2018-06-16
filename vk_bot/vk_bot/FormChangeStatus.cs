@@ -137,7 +137,11 @@ namespace vk_bot
          
             if (CSTdatatimer.Value == DateTime.Today)
             {
-                webBrowserCST.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST + "&access_token="+ ACT2 +"&v=5.52");
+                string request = "https://api.vk.com/method/status.set.xml?text=" + CST + "&access_token=" + ACT2 + "&v=5.52";
+               
+                byte[] bytes = Encoding.UTF8.GetBytes(request); 
+                request = Encoding.GetEncoding("windows-1251").GetString(bytes);
+                webBrowserCST.Navigate(request);
                 timer1.Enabled = false;
              
 
@@ -161,7 +165,11 @@ namespace vk_bot
 
             if (dateTimePicker1.Value == DateTime.Today)
             {
-                webBrowser1.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST2 + "&access_token=" + ACT2 + "&v=5.52");
+                string request = "https://api.vk.com/method/status.set.xml?text=" + CST2 + "&access_token=" + ACT2 + "&v=5.52";
+
+                byte[] bytes = Encoding.UTF8.GetBytes(request);
+                request = Encoding.GetEncoding("windows-1251").GetString(bytes);
+                webBrowser1.Navigate(request);
                 timer2.Enabled = false;
 
             }
@@ -175,7 +183,10 @@ namespace vk_bot
 
             if (dateTimePicker2.Value == DateTime.Today)
             {
-                webBrowser2.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST3 + "&access_token=" + ACT2 + "&v=5.52");
+                string request = "https://api.vk.com/method/status.set.xml?text=" + CST3 + "&access_token=" + ACT2 + "&v=5.52";
+                byte[] bytes = Encoding.UTF8.GetBytes(request);
+                request = Encoding.GetEncoding("windows-1251").GetString(bytes);
+                webBrowser2.Navigate(request);
                 timer3.Enabled = false;
 
             }
@@ -189,7 +200,10 @@ namespace vk_bot
 
             if (dateTimePicker3.Value == DateTime.Today)
             {
-                webBrowser3.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST4 + "&access_token=" + ACT2 + "&v=5.52");
+                string request = "https://api.vk.com/method/status.set.xml?text=" + CST4 + "&access_token=" + ACT2 + "&v=5.52";
+                byte[] bytes = Encoding.UTF8.GetBytes(request);
+                request = Encoding.GetEncoding("windows-1251").GetString(bytes);
+                webBrowser3.Navigate(request);
                 timer4.Enabled = false;
 
             }
@@ -202,11 +216,15 @@ namespace vk_bot
 
 
             if (dateTimePicker3.Value == DateTime.Today)
-
-                webBrowser4.Navigate("https://api.vk.com/method/status.set.xml?text=" + CST5 + "&access_token=" + ACT2 + "&v=5.52");
+            {
+                string request = "https://api.vk.com/method/status.set.xml?text=" + CST5 + "&access_token=" + ACT2 + "&v=5.52";
+                byte[] bytes = Encoding.UTF8.GetBytes(request);
+                request = Encoding.GetEncoding("windows-1251").GetString(bytes);
+                webBrowser4.Navigate(request);
                 timer5.Enabled = false;
 
             }
+        }
 
         private void button6_Click(object sender, EventArgs e)
         {

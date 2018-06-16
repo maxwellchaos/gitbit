@@ -9,6 +9,9 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Drawing.Text;
 using System.Media;
+using System.Threading;
+
+
 
 namespace vk_bot
 {
@@ -82,29 +85,45 @@ namespace vk_bot
                listBox1.Items.AddRange(new string[]{            
                      OWNG + "  - " + NG                        
             });
+               if (listBox1.Items.Count > 5) {
+                   Thread.Sleep(3000);
+                   Application.DoEvents();
+               
+               }
             }                 
         }
         private void buttonRep_Click(object sender, EventArgs e)
-        {      
-            ShortLink = textBoxShName.Text;
-            ShortLink=  ShortLink.Remove(0, 15);
-            XmlDocument doc2 = new XmlDocument();
-            doc2.Load("https://api.vk.com/method/utils.resolveScreenName.xml?screen_name=" + ShortLink + "&access_token=" + ACT3 + "&v=5.52");
-            XmlNode response2 = doc2.SelectSingleNode("response");
-            XmlNode obid = response2.SelectSingleNode("object_id");
-            GrID = obid.InnerXml;
-            XmlDocument doc = new XmlDocument();
-            doc.Load("https://api.vk.com/method/wall.get.xml?owner_id=" + "-" + GrID + "&access_token=" + ACT3 + "&v=5.52");
-            XmlNode response = doc.SelectSingleNode("response");
-            XmlNode items = response.SelectSingleNode("items");
-            XmlNode post = items.SelectSingleNode("post");
-            XmlNode id = post.SelectSingleNode("id");
-            postID = listBox2.Text;
-            UrGrID = textBoxREP2.Text;
-            webBrowser1.Navigate("https://api.vk.com/method/wall.repost.XML?object=" + "wall" + "-" + GrID + "_" + postID + "&group_id=" + UrGrID + "&access_token=" + ACT3 + "&v=5.52");
-            DebugOK OK = new DebugOK();
-            SystemSounds.Asterisk.Play();
-            OK.Show();
+        {
+            if (textBoxREP2.Text != "" || textBoxShName.Text != "")
+            {
+                if (textBoxShName.TextLength > 14)
+                {
+                    ShortLink = textBoxShName.Text;
+                    ShortLink = ShortLink.Remove(0, 15);
+                    XmlDocument doc2 = new XmlDocument();
+                    doc2.Load("https://api.vk.com/method/utils.resolveScreenName.xml?screen_name=" + ShortLink + "&access_token=" + ACT3 + "&v=5.52");
+                    XmlNode response2 = doc2.SelectSingleNode("response");
+                    XmlNode obid = response2.SelectSingleNode("object_id");
+                    GrID = obid.InnerXml;
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load("https://api.vk.com/method/wall.get.xml?owner_id=" + "-" + GrID + "&access_token=" + ACT3 + "&v=5.52");
+                    XmlNode response = doc.SelectSingleNode("response");
+                    XmlNode items = response.SelectSingleNode("items");
+                    XmlNode post = items.SelectSingleNode("post");
+                    XmlNode id = post.SelectSingleNode("id");
+                    postID = listBox2.Text;
+                    UrGrID = textBoxREP2.Text;
+                    webBrowser1.Navigate("https://api.vk.com/method/wall.repost.XML?object=" + "wall" + "-" + GrID + "_" + postID + "&group_id=" + UrGrID + "&access_token=" + ACT3 + "&v=5.52");
+                    DebugOK OK = new DebugOK();
+                    SystemSounds.Asterisk.Play();
+                    OK.Show();
+                }
+            }
+            else
+            {
+                textBoxShName.Text = "Введите значение";
+
+            }
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -195,6 +214,7 @@ namespace vk_bot
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(textBoxShName.Text != ""){
             ShortLink = textBoxShName.Text;
             ShortLink=  ShortLink.Remove(0, 15);
             XmlDocument doc2 = new XmlDocument();
@@ -206,20 +226,23 @@ namespace vk_bot
             docPOSTS.Load("https://api.vk.com/method/wall.get.xml?owner_id=" + "-" + GrID + "&access_token=" + ACT3 + "&v=5.52");
             XmlNode response = docPOSTS.SelectSingleNode("response");
             XmlNode items = response.SelectSingleNode("items");
+                
             //XmlNode post = items.SelectSingleNode("post");
 
           //  postID = id.InnerXml;
-            foreach(XmlNode post in items.SelectNodes("post") ){
+            foreach (XmlNode post in items.SelectNodes("post"))
+            {
 
                 XmlNode id = post.SelectSingleNode("id");
-                
+
                 EachPostID = id.InnerXml;
 
 
                 listBox2.Items.AddRange(new string[]{            
                       EachPostID
-            
+      
             });
+            }
             }
             
          

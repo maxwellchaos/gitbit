@@ -14,13 +14,15 @@ namespace vk_bot
 {
     public partial class Form1 : Form
     {
-        public string access_token;
+        //создаю переменные
+        public string access_token; //для токена
         private Point mouseOffset;
         private bool isMouseDown = false;
         string userId;
 
-        //создаю переменную для хранения данных об аккаунте, 1 - бесплатная демо версия, 0 - версия с лицензией
-        public int donatveron ;
+        //**************  ******************** ДОНАТ ОГРАНИЧЕНИЕ ******************* **********************\\
+        public static bool License = false; //false - для бесплатной версии, true - включение платной версии
+        //**************  ******************** ***************** ******************* **********************\\
 
         public Form1()
         {
@@ -33,26 +35,40 @@ namespace vk_bot
 
         private void fontsProjects()
         {
+        
+
             this.font = new PrivateFontCollection();
             this.font.AddFontFile("FONTS/RLL.ttf");
             this.font.AddFontFile("FONTS/WS.ttf");   
         }
         private void fonts()
         {
-            labelLastName.Font = new Font(font.Families[0],24);
+            labelLastName.Font = new Font(font.Families[0],20);
             ORG.Font = new Font(font.Families[0], 24);
-            labelFirstName.Font = new Font(font.Families[0], 24);
+            labelFirstName.Font = new Font(font.Families[0], 36);
             delete_wall_post.Font = new Font(font.Families[0], 10);
             spam.Font = new Font(font.Families[0], 14);
             buttonChangeStatus.Font = new Font(font.Families[0], 10);
             RepFromGroupBTN.Font =  new Font(font.Families[0], 10);
             Minimize_Button.Font = new Font(font.Families[0], 24);
             Button_Exit.Font = new Font(font.Families[0], 24);
-            
+            buttonWelkom.Font = new Font(font.Families[0], 10);
+            buttonПОЗДР.Font = new Font(font.Families[0], 10);
+            but_laik.Font = new Font(font.Families[0], 10);
+            but_delprigla.Font = new Font(font.Families[0], 10);
+            but_exitgroups.Font = new Font(font.Families[0], 10);
 
+            
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            Microsoft.Win32.RegistryKey Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\",true);
+
+
+            Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
+            Key.Close();
+
+
             Opacity = 0;
            
             FADERSTART.Start();
@@ -302,6 +318,62 @@ namespace vk_bot
         }
 
         private void buttonWelkom_Click(object sender, EventArgs e)
+        {
+
+            _123 frm = new _123();
+            frm.Access_token = access_token;
+            frm.userId = userId;
+            frm.Show();
+        }
+
+        private void SlovaIstini_Click(object sender, EventArgs e)
+        {
+            SLOVA sl = new SLOVA();
+            sl.A_T = access_token;
+            sl.Show();
+        }
+
+        private void delcom_Click(object sender, EventArgs e)
+        {
+            url newForm = new url();
+            newForm.access_token = access_token;
+            newForm.Show();
+		}
+
+        private void but_exitgroups_MouseEnter_1(object sender, EventArgs e)
+        {
+            but_exitgroups.FlatAppearance.BorderSize = 2;
+
+        }
+
+        private void but_exitgroups_MouseLeave_1(object sender, EventArgs e)
+        {
+            but_exitgroups.FlatAppearance.BorderSize = 0;
+        }
+
+        private void buttonПОЗДР_MouseEnter(object sender, EventArgs e)
+        {
+            buttonПОЗДР.FlatAppearance.BorderSize = 2;
+
+        }
+
+        private void buttonПОЗДР_MouseLeave(object sender, EventArgs e)
+        {
+            buttonПОЗДР.FlatAppearance.BorderSize = 0;
+        }
+
+        private void buttonWelkom_MouseEnter(object sender, EventArgs e)
+        {
+            buttonWelkom.FlatAppearance.BorderSize = 2;
+        }
+
+        private void buttonWelkom_MouseLeave(object sender, EventArgs e)
+        {
+            buttonWelkom.FlatAppearance.BorderSize = 0;
+
+        }
+
+        private void labelLastName_Click(object sender, EventArgs e)
         {
 
         }

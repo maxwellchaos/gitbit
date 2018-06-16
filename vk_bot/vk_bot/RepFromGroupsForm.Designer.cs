@@ -174,9 +174,9 @@
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minimize_Button.Location = new System.Drawing.Point(621, -6);
+            this.Minimize_Button.Location = new System.Drawing.Point(616, -6);
             this.Minimize_Button.Name = "Minimize_Button";
-            this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
+            this.Minimize_Button.Size = new System.Drawing.Size(41, 49);
             this.Minimize_Button.TabIndex = 20;
             this.Minimize_Button.Text = "_";
             this.Minimize_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -195,7 +195,7 @@
             this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Button_Exit.Location = new System.Drawing.Point(657, -1);
             this.Button_Exit.Name = "Button_Exit";
-            this.Button_Exit.Size = new System.Drawing.Size(44, 40);
+            this.Button_Exit.Size = new System.Drawing.Size(44, 44);
             this.Button_Exit.TabIndex = 19;
             this.Button_Exit.Text = "x";
             this.Button_Exit.UseVisualStyleBackColor = false;
