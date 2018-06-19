@@ -167,7 +167,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-
     <EmbeddedResource Include="SLOVA.resx">
       <DependentUpon>SLOVA.cs</DependentUpon>
     </EmbeddedResource>

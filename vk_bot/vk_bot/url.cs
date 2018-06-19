@@ -87,6 +87,7 @@ namespace vk_bot
                         Thread.Sleep(500);
                         Application.DoEvents();
                     }
+
                 }
             }
         }

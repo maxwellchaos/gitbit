@@ -31,16 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.Button_Exit = new System.Windows.Forms.Button();
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.ORG = new System.Windows.Forms.Label();
@@ -48,18 +44,22 @@
             this.FADER = new System.Windows.Forms.Timer(this.components);
             this.FADERMINI = new System.Windows.Forms.Timer(this.components);
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.SteelBlue;
+
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Location = new System.Drawing.Point(-1, 194);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBox1.Location = new System.Drawing.Point(11, 84);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(602, 30);
+            this.textBox1.Size = new System.Drawing.Size(573, 35);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -72,28 +72,20 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(-1, 527);
+
+            this.button1.Location = new System.Drawing.Point(-1, 231);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(602, 73);
+            this.button1.Size = new System.Drawing.Size(602, 57);
             this.button1.TabIndex = 1;
             this.button1.Text = "Начать лайкать записи!";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-1, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "сообщества:";
-            // 
+
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(462, 527);
+            this.webBrowser1.Location = new System.Drawing.Point(523, 247);
+
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(20, 20);
@@ -105,9 +97,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(-1, 328);
+
+            this.label2.Location = new System.Drawing.Point(342, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 29);
+            this.label2.Size = new System.Drawing.Size(222, 29);
+
             this.label2.TabIndex = 4;
             this.label2.Text = "постов:";
             // 
@@ -116,7 +110,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label4.Location = new System.Drawing.Point(104, 328);
+
+            this.label4.Location = new System.Drawing.Point(560, 155);
+
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 29);
             this.label4.TabIndex = 9;
@@ -125,18 +121,21 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 550);
+
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(324, 57);
+
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 24;
-            this.label3.Text = "label3";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(104, 458);
+            this.label5.Location = new System.Drawing.Point(213, 155);
+
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 29);
             this.label5.TabIndex = 23;
@@ -148,44 +147,12 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(-3, 458);
+
+            this.label6.Location = new System.Drawing.Point(11, 155);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 29);
+            this.label6.Size = new System.Drawing.Size(208, 29);
             this.label6.TabIndex = 22;
             this.label6.Text = "ошибок:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(-14, 385);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(395, 73);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Количество";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(-11, 255);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(302, 73);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Найдено";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(-14, 54);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(143, 108);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "ID";
             // 
             // Button_Exit
             // 
@@ -215,9 +182,9 @@
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minimize_Button.Location = new System.Drawing.Point(515, -3);
+            this.Minimize_Button.Location = new System.Drawing.Point(523, -2);
             this.Minimize_Button.Name = "Minimize_Button";
-            this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
+            this.Minimize_Button.Size = new System.Drawing.Size(41, 44);
             this.Minimize_Button.TabIndex = 36;
             this.Minimize_Button.Text = "_";
             this.Minimize_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -266,19 +233,54 @@
             this.FADERSTART.Interval = 1;
             this.FADERSTART.Tick += new System.EventHandler(this.FADERSTART_Tick);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(393, 122);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(191, 20);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "например: 165764761";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(8, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(197, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "id сообщества:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label7.Location = new System.Drawing.Point(12, 195);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(570, 24);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Посты пользователей в нашей программе пролайкать нельзя";
+
+            // 
             // wallskanform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(600, 600);
+
+            this.ClientSize = new System.Drawing.Size(600, 287);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.Button_Exit);
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.WindowHalfBorder);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -289,8 +291,10 @@
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(600, 600);
-            this.MinimumSize = new System.Drawing.Size(600, 600);
+
+            this.MaximumSize = new System.Drawing.Size(600, 287);
+            this.MinimumSize = new System.Drawing.Size(600, 287);
+
             this.Name = "wallskanform";
             this.Text = "wallskanform";
             this.Load += new System.EventHandler(this.wallskanform_Load);
@@ -304,16 +308,12 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button Button_Exit;
         private System.Windows.Forms.Button Minimize_Button;
         private System.Windows.Forms.Label ORG;
@@ -321,6 +321,10 @@
         private System.Windows.Forms.Timer FADER;
         private System.Windows.Forms.Timer FADERMINI;
         private System.Windows.Forms.Timer FADERSTART;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+
 
     }
 }
