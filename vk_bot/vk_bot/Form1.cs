@@ -379,53 +379,6 @@ namespace vk_bot
 
         }
 
-        private void SlovaIstini_Click(object sender, EventArgs e)
-        {
-            SLOVA sl = new SLOVA();
-            sl.A_T = access_token;
-            sl.Show();
-        }
-
-        private void delcom_Click(object sender, EventArgs e)
-        {
-            url newForm = new url();
-            newForm.access_token = access_token;
-            newForm.Show();
-		}
-
-        private void but_exitgroups_MouseEnter_1(object sender, EventArgs e)
-        {
-            but_exitgroups.FlatAppearance.BorderSize = 2;
-
-        }
-
-        private void but_exitgroups_MouseLeave_1(object sender, EventArgs e)
-        {
-            but_exitgroups.FlatAppearance.BorderSize = 0;
-        }
-
-        private void buttonПОЗДР_MouseEnter(object sender, EventArgs e)
-        {
-            buttonПОЗДР.FlatAppearance.BorderSize = 2;
-
-        }
-
-        private void buttonПОЗДР_MouseLeave(object sender, EventArgs e)
-        {
-            buttonПОЗДР.FlatAppearance.BorderSize = 0;
-        }
-
-        private void buttonWelkom_MouseEnter(object sender, EventArgs e)
-        {
-            buttonWelkom.FlatAppearance.BorderSize = 2;
-        }
-
-        private void buttonWelkom_MouseLeave(object sender, EventArgs e)
-        {
-            buttonWelkom.FlatAppearance.BorderSize = 0;
-
-        }
-
 
         private void deletefriends_Click(object sender, EventArgs e)
         {
@@ -469,11 +422,6 @@ namespace vk_bot
             }
         }
 
-        private void delcom_Click(object sender, EventArgs e)
-        {
-            url newForm = new url();
-            newForm.access_token = access_token;
-            newForm.Show();
-        }
+
     }
 }

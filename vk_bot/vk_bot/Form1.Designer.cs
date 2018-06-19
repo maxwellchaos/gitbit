@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
             this.buttonПОЗДР = new System.Windows.Forms.Button();
             this.ORG = new System.Windows.Forms.Label();
@@ -52,21 +51,15 @@
             this.buttonWelkom = new System.Windows.Forms.Button();
             this.delcom = new System.Windows.Forms.Button();
             this.SlovaIstini = new System.Windows.Forms.Button();
-
             this.deletefriends = new System.Windows.Forms.Button();
             this.DeleteComments = new System.Windows.Forms.Button();
-
-
             this.label1 = new System.Windows.Forms.Label();
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
-
             this.SuspendLayout();
             // 
             // buttonПОЗДР
             // 
-
             this.buttonПОЗДР.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonПОЗДР.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.buttonПОЗДР.FlatAppearance.BorderSize = 0;
@@ -76,7 +69,6 @@
             this.buttonПОЗДР.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonПОЗДР.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonПОЗДР.Location = new System.Drawing.Point(615, 353);
-
             this.buttonПОЗДР.Name = "buttonПОЗДР";
             this.buttonПОЗДР.Size = new System.Drawing.Size(150, 150);
             this.buttonПОЗДР.TabIndex = 12;
@@ -117,10 +109,8 @@
             this.labelLastName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelLastName.Location = new System.Drawing.Point(17, 405);
-
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(98, 22);
-
             this.labelLastName.TabIndex = 1;
             this.labelLastName.Text = "фамилия";
             this.labelLastName.Click += new System.EventHandler(this.labelLastName_Click);
@@ -131,7 +121,6 @@
             this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelFirstName.Location = new System.Drawing.Point(12, 352);
-
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(47, 24);
             this.labelFirstName.TabIndex = 0;
@@ -149,7 +138,6 @@
             this.but_delprigla.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_delprigla.Image = global::vk_bot.Properties.Resources._20;
             this.but_delprigla.Location = new System.Drawing.Point(307, 353);
-
             this.but_delprigla.Name = "but_delprigla";
             this.but_delprigla.Size = new System.Drawing.Size(150, 150);
             this.but_delprigla.TabIndex = 17;
@@ -173,7 +161,6 @@
             this.but_laik.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_laik.Image = global::vk_bot.Properties.Resources._12;
             this.but_laik.Location = new System.Drawing.Point(616, 199);
-
             this.but_laik.Name = "but_laik";
             this.but_laik.Size = new System.Drawing.Size(150, 150);
             this.but_laik.TabIndex = 16;
@@ -196,7 +183,6 @@
             this.but_exitgroups.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but_exitgroups.Image = global::vk_bot.Properties.Resources._30;
             this.but_exitgroups.Location = new System.Drawing.Point(462, 199);
-
             this.but_exitgroups.Name = "but_exitgroups";
             this.but_exitgroups.Size = new System.Drawing.Size(150, 150);
             this.but_exitgroups.TabIndex = 18;
@@ -219,7 +205,6 @@
             this.RepFromGroupBTN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.RepFromGroupBTN.Image = global::vk_bot.Properties.Resources._2222;
             this.RepFromGroupBTN.Location = new System.Drawing.Point(308, 199);
-
             this.RepFromGroupBTN.Name = "RepFromGroupBTN";
             this.RepFromGroupBTN.Size = new System.Drawing.Size(150, 150);
             this.RepFromGroupBTN.TabIndex = 8;
@@ -243,7 +228,6 @@
             this.buttonChangeStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonChangeStatus.Image = global::vk_bot.Properties.Resources._10;
             this.buttonChangeStatus.Location = new System.Drawing.Point(616, 45);
-
             this.buttonChangeStatus.Name = "buttonChangeStatus";
             this.buttonChangeStatus.Size = new System.Drawing.Size(150, 150);
             this.buttonChangeStatus.TabIndex = 6;
@@ -265,9 +249,9 @@
             this.delete_wall_post.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delete_wall_post.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.delete_wall_post.Image = global::vk_bot.Properties.Resources._11;
-            this.delete_wall_post.Location = new System.Drawing.Point(256, 49);
+            this.delete_wall_post.Location = new System.Drawing.Point(308, 45);
             this.delete_wall_post.Name = "delete_wall_post";
-            this.delete_wall_post.Size = new System.Drawing.Size(148, 150);
+            this.delete_wall_post.Size = new System.Drawing.Size(150, 150);
             this.delete_wall_post.TabIndex = 5;
             this.delete_wall_post.Text = "Удаление записей со стены";
             this.delete_wall_post.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -276,7 +260,7 @@
             this.delete_wall_post.MouseEnter += new System.EventHandler(this.delete_wall_post_MouseEnter);
             this.delete_wall_post.MouseLeave += new System.EventHandler(this.delete_wall_post_MouseLeave);
             // 
-            // delcom
+            // spam
             // 
             this.spam.BackColor = System.Drawing.Color.SteelBlue;
             this.spam.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
@@ -287,7 +271,7 @@
             this.spam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.spam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.spam.Image = global::vk_bot.Properties.Resources._14;
-            this.spam.Location = new System.Drawing.Point(410, 49);
+            this.spam.Location = new System.Drawing.Point(462, 45);
             this.spam.Name = "spam";
             this.spam.Size = new System.Drawing.Size(150, 150);
             this.spam.TabIndex = 4;
@@ -303,7 +287,6 @@
             this.pictureBoxAvatar.Location = new System.Drawing.Point(12, 45);
             this.pictureBoxAvatar.Name = "pictureBoxAvatar";
             this.pictureBoxAvatar.Size = new System.Drawing.Size(292, 304);
-
             this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAvatar.TabIndex = 2;
             this.pictureBoxAvatar.TabStop = false;
@@ -332,7 +315,6 @@
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Button_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Button_Exit.Location = new System.Drawing.Point(877, -4);
-
             this.Button_Exit.Name = "Button_Exit";
             this.Button_Exit.Size = new System.Drawing.Size(44, 45);
             this.Button_Exit.TabIndex = 14;
@@ -351,7 +333,6 @@
             this.Minimize_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Minimize_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Minimize_Button.Location = new System.Drawing.Point(833, -4);
-
             this.Minimize_Button.Name = "Minimize_Button";
             this.Minimize_Button.Size = new System.Drawing.Size(41, 45);
             this.Minimize_Button.TabIndex = 15;
@@ -386,7 +367,6 @@
             this.buttonWelkom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonWelkom.ForeColor = System.Drawing.Color.White;
             this.buttonWelkom.Location = new System.Drawing.Point(461, 353);
-
             this.buttonWelkom.Name = "buttonWelkom";
             this.buttonWelkom.Size = new System.Drawing.Size(150, 150);
             this.buttonWelkom.TabIndex = 19;
@@ -408,7 +388,6 @@
             this.delcom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delcom.ForeColor = System.Drawing.Color.White;
             this.delcom.Location = new System.Drawing.Point(771, 199);
-
             this.delcom.Name = "delcom";
             this.delcom.Size = new System.Drawing.Size(150, 150);
             this.delcom.TabIndex = 23;
@@ -428,7 +407,6 @@
             this.SlovaIstini.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SlovaIstini.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SlovaIstini.Location = new System.Drawing.Point(771, 45);
-
             this.SlovaIstini.Name = "SlovaIstini";
             this.SlovaIstini.Size = new System.Drawing.Size(150, 150);
             this.SlovaIstini.TabIndex = 22;
@@ -441,9 +419,9 @@
             // 
             this.deletefriends.Location = new System.Drawing.Point(771, 414);
             this.deletefriends.Name = "deletefriends";
-            this.deletefriends.Size = new System.Drawing.Size(159, 41);
+            this.deletefriends.Size = new System.Drawing.Size(150, 41);
             this.deletefriends.TabIndex = 4;
-            this.deletefriends.Text = "Удалить Друга";
+            this.deletefriends.Text = "Удалить Заблокированного Друга";
             this.deletefriends.UseVisualStyleBackColor = true;
             this.deletefriends.Click += new System.EventHandler(this.deletefriends_Click);
             // 
@@ -451,17 +429,17 @@
             // 
             this.DeleteComments.Location = new System.Drawing.Point(771, 367);
             this.DeleteComments.Name = "DeleteComments";
-            this.DeleteComments.Size = new System.Drawing.Size(159, 41);
+            this.DeleteComments.Size = new System.Drawing.Size(150, 41);
             this.DeleteComments.TabIndex = 5;
             this.DeleteComments.Text = "Удалаять комментарии с нецензурной бранью";
             this.DeleteComments.UseVisualStyleBackColor = true;
             this.DeleteComments.Click += new System.EventHandler(this.DeleteComments_Click);
-
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(736, 514);
+            this.label1.Location = new System.Drawing.Point(785, 497);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 16);
             this.label1.TabIndex = 24;
@@ -471,10 +449,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(928, 522);
-
             this.Controls.Add(this.label1);
             this.Controls.Add(this.delcom);
             this.Controls.Add(this.SlovaIstini);
@@ -498,16 +474,13 @@
             this.Controls.Add(this.deletefriends);
             this.Controls.Add(this.pictureBoxAvatar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-
             this.MaximumSize = new System.Drawing.Size(928, 522);
             this.MinimumSize = new System.Drawing.Size(928, 522);
-
             this.Name = "Form1";
             this.Text = "VK_TUMBOCHKA";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).EndInit();
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
