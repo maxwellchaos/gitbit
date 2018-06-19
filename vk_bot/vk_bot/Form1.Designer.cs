@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.components = new System.ComponentModel.Container();
             this.buttonПОЗДР = new System.Windows.Forms.Button();
             this.ORG = new System.Windows.Forms.Label();
@@ -53,12 +54,15 @@
             this.SlovaIstini = new System.Windows.Forms.Button();
             this.deletefriends = new System.Windows.Forms.Button();
             this.DeleteComments = new System.Windows.Forms.Button();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
+
             this.SuspendLayout();
             // 
             // buttonПОЗДР
             // 
+
             this.buttonПОЗДР.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonПОЗДР.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.buttonПОЗДР.FlatAppearance.BorderSize = 0;
@@ -110,6 +114,7 @@
             this.labelLastName.Location = new System.Drawing.Point(17, 405);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(98, 22);
+
             this.labelLastName.TabIndex = 1;
             this.labelLastName.Text = "фамилия";
             // 
@@ -258,7 +263,7 @@
             this.delete_wall_post.MouseEnter += new System.EventHandler(this.delete_wall_post_MouseEnter);
             this.delete_wall_post.MouseLeave += new System.EventHandler(this.delete_wall_post_MouseLeave);
             // 
-            // spam
+            // delcom
             // 
             this.spam.BackColor = System.Drawing.Color.SteelBlue;
             this.spam.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
@@ -437,6 +442,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(928, 522);
             this.Controls.Add(this.delcom);
@@ -461,11 +467,13 @@
             this.Controls.Add(this.deletefriends);
             this.Controls.Add(this.pictureBoxAvatar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+
             this.Name = "Form1";
             this.Text = "VK_TUMBOCHKA";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).EndInit();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,8 +508,6 @@
         private System.Windows.Forms.Button buttonWelkom;
         private System.Windows.Forms.Button delcom;
         private System.Windows.Forms.Button SlovaIstini;
-
-
 
 
         private System.Windows.Forms.Button deletefriends;

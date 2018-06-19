@@ -78,7 +78,6 @@ namespace vk_bot
             webBrowser1.Dock = DockStyle.Fill;
             webBrowser1.BringToFront();
             webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&response_type=token&v=5.73");
-
        
         }
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -412,6 +411,13 @@ namespace vk_bot
                    // labelCensure.Text = "All Comments Delete";
                 }
             }
+        }
+
+        private void delcom_Click(object sender, EventArgs e)
+        {
+            url newForm = new url();
+            newForm.access_token = access_token;
+            newForm.Show();
         }
     }
 }
