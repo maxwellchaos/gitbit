@@ -9,6 +9,9 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Drawing.Text;
 using System.Threading;
+using Microsoft.Win32;
+
+
 
 namespace vk_bot
 {
@@ -20,6 +23,7 @@ namespace vk_bot
         string userId;
         static bool License = false;
         private string securitychecker;
+
 
 
         public Form1()
@@ -67,11 +71,7 @@ namespace vk_bot
         
 
 
-            Microsoft.Win32.RegistryKey Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\",true);
-
-
-            Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
-            Key.Close();
+          
 
 
             Opacity = 0;
@@ -424,6 +424,38 @@ namespace vk_bot
                 ORG.Text = "VKTUMBOCHKA";
 
             }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            RegistryKey Key;
+            if (checkBox1.Checked == true)
+            {
+
+                Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\", true);
+
+
+                Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
+                Key.Close();
+
+            }
+            else
+            {
+                Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\", true);
+                Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
+
+                Key.DeleteValue("VK_bot");
+
+                Key.Close();
+
+
+
+            }
+        }
+
+        private void AS_Tick(object sender, EventArgs e)
+       { 
+   
         }
 
        

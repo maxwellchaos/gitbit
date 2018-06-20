@@ -50,6 +50,8 @@
             this.FADERSTART = new System.Windows.Forms.Timer(this.components);
             this.buttonWelkom = new System.Windows.Forms.Button();
             this.lic = new System.Windows.Forms.Timer(this.components);
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.AS = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +94,7 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(12, 538);
+            this.webBrowser1.Location = new System.Drawing.Point(115, 288);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(20, 25);
@@ -378,12 +380,40 @@
             this.lic.Interval = 1;
             this.lic.Tick += new System.EventHandler(this.lic_Tick);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.checkBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.checkBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox1.Location = new System.Drawing.Point(10, 509);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(752, 29);
+            this.checkBox1.TabIndex = 20;
+            this.checkBox1.Text = "Разрешать автозагрузку для полного функционирования автосмены статуса";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // AS
+            // 
+            this.AS.Enabled = true;
+            this.AS.Interval = 1;
+            this.AS.Tick += new System.EventHandler(this.AS_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(780, 532);
+            this.ClientSize = new System.Drawing.Size(780, 546);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonWelkom);
             this.Controls.Add(this.but_exitgroups);
             this.Controls.Add(this.but_delprigla);
@@ -393,7 +423,6 @@
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.WindowHalfBorder);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.RepFromGroupBTN);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
@@ -401,6 +430,7 @@
             this.Controls.Add(this.delete_wall_post);
             this.Controls.Add(this.spam);
             this.Controls.Add(this.pictureBoxAvatar);
+            this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "VK_TUMBOCHKA";
@@ -440,6 +470,8 @@
         private System.Windows.Forms.Timer FADERSTART;
         private System.Windows.Forms.Button buttonWelkom;
         private System.Windows.Forms.Timer lic;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Timer AS;
 
 
     }
