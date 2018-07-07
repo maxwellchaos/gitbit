@@ -12,9 +12,6 @@ using System.Drawing.Text;
 using System.Media;
 
 
-using System.Drawing.Text;
-using System.Media;
-
 
 namespace vk_bot
 {
@@ -65,9 +62,9 @@ namespace vk_bot
             label4.Font = new Font(font.Families[0], 18);
             label5.Font = new Font(font.Families[0], 18);
             label6.Font = new Font(font.Families[0], 18);
-            label7.Font = new Font(font.Families[0], 48);
-            label8.Font = new Font(font.Families[0], 48);
-            label9.Font = new Font(font.Families[0], 72);
+            //label7.Font = new Font(font.Families[0], 48);
+            //label8.Font = new Font(font.Families[0], 48);
+            //label9.Font = new Font(font.Families[0], 72);
 
             button1.Font = new Font(font.Families[0], 36);
             Minimize_Button.Font = new Font(font.Families[0], 24);
@@ -147,9 +144,6 @@ namespace vk_bot
                 SystemSounds.Asterisk.Play();
                 OK.Show();
 
-                DebugOK OK = new DebugOK();
-                SystemSounds.Asterisk.Play();
-                OK.Show();
 
                 //считаю кол-во
                 tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
@@ -193,79 +187,6 @@ namespace vk_bot
                 }
             }
 
-        }
-
-        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
-        {
-            int xOffset;
-            int yOffset;
-
-            if (e.Button == MouseButtons.Left)
-            {
-                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
-                yOffset = -e.Y - SystemInformation.CaptionHeight -
-                    SystemInformation.FrameBorderSize.Height;
-                mouseOffset = new Point(xOffset, yOffset);
-                isMouseDown = true;
-            }
-        }
-        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (isMouseDown)
-            {
-                Point mousePos = Control.MousePosition;
-                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
-                Location = mousePos;
-            }
-        }
-        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                isMouseDown = false;
-            }
-        }
-        private void Button_Exit_Click(object sender, EventArgs e)
-        {
-            FADER.Enabled = true;
-
-        }
-        private void Minimize_Button_Click(object sender, EventArgs e)
-        {
-            FADERMINI.Enabled = true;
-        }
-
-        private void FADER_Tick(object sender, EventArgs e)
-        {
-            Opacity = Opacity -= 0.1;
-            if (this.Opacity == 0)
-            {
-
-                Close();
-            }
-        }
-
-        private void FADERMINI_Tick(object sender, EventArgs e)
-        {
-            Opacity = Opacity -= 0.1;
-            if (this.Opacity == 0)
-            {
-
-                this.WindowState = FormWindowState.Minimized;
-                FADERMINI.Stop();
-                Opacity = 1;
-            }
-
-        }
-
-        private void FADERSTART_Tick(object sender, EventArgs e)
-        {
-            Opacity = Opacity += 0.1;
-            if (Opacity == 1)
-            {
-
-                FADERSTART.Stop();
-            }
         }
 
         private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
