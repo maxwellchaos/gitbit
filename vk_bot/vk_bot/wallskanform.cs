@@ -12,6 +12,7 @@ using System.Drawing.Text;
 using System.Media;
 
 
+
 namespace vk_bot
 {
     public partial class wallskanform : Form
@@ -35,14 +36,13 @@ namespace vk_bot
 
         private Point mouseOffset;
         private bool isMouseDown = false;
+
         public string errors;
 
 
         public wallskanform()
         {
             InitializeComponent();
-
-            //Form1.License
 
             fontsProjects();
             fonts();
@@ -62,6 +62,10 @@ namespace vk_bot
             label4.Font = new Font(font.Families[0], 18);
             label5.Font = new Font(font.Families[0], 18);
             label6.Font = new Font(font.Families[0], 18);
+            //label7.Font = new Font(font.Families[0], 48);
+            //label8.Font = new Font(font.Families[0], 48);
+            //label9.Font = new Font(font.Families[0], 72);
+
             button1.Font = new Font(font.Families[0], 36);
             Minimize_Button.Font = new Font(font.Families[0], 24);
             Button_Exit.Font = new Font(font.Families[0], 24);
@@ -70,6 +74,7 @@ namespace vk_bot
         }
         private void button1_Click(object sender, EventArgs e)
         {
+
             label3.Text = "В РАБОТЕ";
 
             if (textBox1.Text == "")
@@ -92,6 +97,7 @@ namespace vk_bot
                 foreach (XmlNode utag in tager.SelectNodes("post"))
                 {
 
+
                     countlike += 1; //счёт лайков
 
                     if (Form1.License == true)
@@ -106,11 +112,13 @@ namespace vk_bot
                     XmlNode postid = utag.SelectSingleNode("id");
                     XmlDocument dopdoo = new XmlDocument();
 
+
                     textboxer = postid.InnerXml;
 
                     dopdoo.Load("https://api.vk.com/method/likes.add.xml?type=post&owner_id=-" + textBox1.Text + "&item_id=" + textboxer + "&access_token=" + access_token + "&v=5.73");
 
                     textboxer = postid.InnerXml;
+
 
                      //делаю паузу
                             Thread.Sleep(500);
@@ -132,11 +140,10 @@ namespace vk_bot
                     Application.DoEvents();
                 }
 
-                label3.Text = "ГОТОВО!";
-
                 DebugOK OK = new DebugOK();
                 SystemSounds.Asterisk.Play();
                 OK.Show();
+
 
                 //считаю кол-во
                 tags.Load("https://api.vk.com/method/wall.get.xml?&owner_id=-" + textBox1.Text + "&access_token=" + access_token + "&v=5.73");
@@ -179,6 +186,7 @@ namespace vk_bot
                     this.Close();
                 }
             }
+
         }
 
         private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
