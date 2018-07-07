@@ -59,6 +59,10 @@
 
             this.label1 = new System.Windows.Forms.Label();
 
+
+            this.lic = new System.Windows.Forms.Timer(this.components);
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.AS = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WindowHalfBorder)).BeginInit();
 
@@ -104,7 +108,7 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(12, 538);
+            this.webBrowser1.Location = new System.Drawing.Point(115, 288);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(20, 25);
@@ -397,6 +401,7 @@
             this.buttonWelkom.MouseEnter += new System.EventHandler(this.buttonWelkom_MouseEnter);
             this.buttonWelkom.MouseLeave += new System.EventHandler(this.buttonWelkom_MouseLeave);
             // 
+
             // delcom
             // 
             this.delcom.BackColor = System.Drawing.Color.SteelBlue;
@@ -466,6 +471,40 @@
             this.label1.Size = new System.Drawing.Size(131, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "Программа v. 1.5";
+
+            // lic
+            // 
+            this.lic.Enabled = true;
+            this.lic.Interval = 1;
+            this.lic.Tick += new System.EventHandler(this.lic_Tick);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.checkBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.checkBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox1.Location = new System.Drawing.Point(10, 509);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(752, 29);
+            this.checkBox1.TabIndex = 20;
+            this.checkBox1.Text = "Разрешать автозагрузку для полного функционирования автосмены статуса";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // AS
+            // 
+            this.AS.Enabled = true;
+            this.AS.Interval = 1;
+            this.AS.Tick += new System.EventHandler(this.AS_Tick);
+
             // 
             // Form1
             // 
@@ -473,11 +512,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(928, 522);
+
+            this.ClientSize = new System.Drawing.Size(928, 546);
 
             this.Controls.Add(this.label1);
             this.Controls.Add(this.delcom);
             this.Controls.Add(this.SlovaIstini);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonWelkom);
             this.Controls.Add(this.but_exitgroups);
             this.Controls.Add(this.but_delprigla);
@@ -487,7 +528,6 @@
             this.Controls.Add(this.Minimize_Button);
             this.Controls.Add(this.ORG);
             this.Controls.Add(this.WindowHalfBorder);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.RepFromGroupBTN);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labelLastName);
@@ -497,6 +537,7 @@
             this.Controls.Add(this.DeleteComments);
             this.Controls.Add(this.deletefriends);
             this.Controls.Add(this.pictureBoxAvatar);
+            this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 
             this.MaximumSize = new System.Drawing.Size(928, 522);
@@ -545,7 +586,9 @@
 
         private System.Windows.Forms.Label label1;
 
-
+        private System.Windows.Forms.Timer lic;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Timer AS;
 
         private System.Windows.Forms.Button deletefriends;
         private System.Windows.Forms.Button DeleteComments;

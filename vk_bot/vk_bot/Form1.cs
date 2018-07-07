@@ -9,6 +9,9 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Drawing.Text;
 using System.Threading;
+using Microsoft.Win32;
+
+
 
 namespace vk_bot
 {
@@ -19,6 +22,10 @@ namespace vk_bot
         private Point mouseOffset;
         private bool isMouseDown = false;
         string userId;
+        static bool License = false;
+        private string securitychecker;
+
+
 
         //**************  ******************** ДОНАТ ОГРАНИЧЕНИЕ ******************* **********************\\
         public static bool License = false; //false - для бесплатной версии, true - включение платной версии
@@ -65,11 +72,13 @@ namespace vk_bot
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            Microsoft.Win32.RegistryKey Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\",true);
 
 
-            Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
-            Key.Close();
+
+        
+
+
+          
 
 
             Opacity = 0;
@@ -84,6 +93,7 @@ namespace vk_bot
         }
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            License = true;
             string url = e.Url.ToString();
             if (url.Contains("error"))
             {
@@ -95,6 +105,15 @@ namespace vk_bot
                 access_token = url.Remove(0, IndexAccTok + 13);
                 int IndexAmp = access_token.IndexOf("&");
                 access_token = access_token.Remove(IndexAmp);
+
+                //Зпрашиваю информацию о пользователе
+
+
+              
+
+
+
+                //Создаю XML документ
 
                 XmlDocument doc = new XmlDocument();
                 doc.Load("https://api.vk.com/method/users.get.xml?fields=photo_100&access_token=" + access_token+"&v=5.73");
@@ -113,6 +132,26 @@ namespace vk_bot
 
                 pictureBoxAvatar.ImageLocation = user.SelectSingleNode("photo_100").InnerText;
                 webBrowser1.Visible = false;
+
+                XmlDocument Security = new XmlDocument();
+                Security.Load("https://api.vk.com/method/groups.get.xml?user_id=" + userId + "&access_token=" + access_token + "&v=5.73");
+                XmlNode response0 = Security.SelectSingleNode("response");
+                XmlNode items0 = response0.SelectSingleNode("items");
+                foreach (XmlNode gid in items0.SelectNodes("gid"))
+                {
+                    securitychecker = gid.InnerXml;
+                    if (securitychecker == "167736693")
+                    {
+
+                        License = true;
+                        break;
+
+                    }
+                    else {
+                        License = false;
+                    }
+                
+                }
             }
         }
         private void buttonChangeStatus_Click(object sender, EventArgs e)
@@ -372,7 +411,6 @@ namespace vk_bot
             buttonWelkom.FlatAppearance.BorderSize = 0;
 
         }
-
         private void labelLastName_Click(object sender, EventArgs e)
         {
 
@@ -475,5 +513,73 @@ namespace vk_bot
             newForm.access_token = access_token;
             newForm.Show();
         }
+
+        private void lic_Tick(object sender, EventArgs e)
+        {
+            if (License == false)
+            {
+
+                but_delprigla.Enabled = false;
+                but_exitgroups.Enabled = false;
+                but_laik.Enabled = false;
+                buttonChangeStatus.Enabled = false;
+                buttonWelkom.Enabled = false;
+                buttonПОЗДР.Enabled = false;
+                RepFromGroupBTN.Enabled = false;
+                spam.Enabled = false;
+                delete_wall_post.Enabled = false;
+                ORG.Text = "У ВАС НЕТ ЛИЦЕНЗИИ";
+
+            }
+            if (License ==true)
+            {
+
+                but_delprigla.Enabled = true;
+                but_exitgroups.Enabled = true;
+                but_laik.Enabled =true;
+                buttonChangeStatus.Enabled = true;
+                buttonWelkom.Enabled = true;
+                buttonПОЗДР.Enabled = true;
+                RepFromGroupBTN.Enabled = true;
+                spam.Enabled = true;
+                delete_wall_post.Enabled = true;
+                ORG.Text = "VKTUMBOCHKA";
+
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            RegistryKey Key;
+            if (checkBox1.Checked == true)
+            {
+
+                Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\", true);
+
+
+                Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
+                Key.Close();
+
+            }
+            else
+            {
+                Key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey("SOFTWARE\\MIcrosoft\\Windows\\CurrentVersion\\Run\\", true);
+                Key.SetValue("VK_bot", Application.StartupPath + "\\vk_bot.exe");
+
+                Key.DeleteValue("VK_bot");
+
+                Key.Close();
+
+
+
+            }
+        }
+
+        private void AS_Tick(object sender, EventArgs e)
+       { 
+   
+        }
+
+       
     }
 }
