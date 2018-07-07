@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\bin\Debug\vk_bot.exe
 C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\bin\Debug\vk_bot.pdb
 C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
@@ -17,8 +16,6 @@ C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projec
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
@@ -51,8 +48,6 @@ C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateReso
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csprojResolveAssemblyReference.cache
 C:\Users\Иван\Desktop\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormChangeStatus.resources
 C:\Users\Иван\Desktop\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
-=======
->>>>>>> pr/21
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot._123.resources
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.delgroups.resources
@@ -72,7 +67,6 @@ C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.cspro
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-<<<<<<< HEAD
 y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
 y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 y:\Documents\Visual Studio 2010\Projects\vk_bot\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
@@ -111,8 +105,6 @@ C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\
 C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
 C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
 C:\Users\Иван\Desktop\Новая папка (2)\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.GenerateResource.Cache
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormSpam_DR.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resources
 C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
 C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\bin\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
@@ -126,8 +118,6 @@ C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot
 C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.csproj.CoreCompileInputs.cache
 C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Users\Иван\Desktop\gitbit-d086310afcdb1dce9f8fd72fe316f0f56c472cc0\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.DebugOK.resources
-C:\Users\Иван\Desktop\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.LOGO.resources
 c:\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe.config
 c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
@@ -197,7 +187,6 @@ c:\gitbit-master_main\vk_bot\vk_bot\obj\x86\Debug\vk_bot.RepFromGroupsForm.resou
 c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot._123.resources
 c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.SLOVA.resources
 c:\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.url.resources
-=======
 \\mac\home\documents\visual studio 2010\Projects\vk_bot\vk_bot\obj\x86\Debug\vk_bot.FormYa.resources
 C:\Documents and Settings\Администратор\Мои документы\Downloads\gitbit-master (1)\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Documents and Settings\Администратор\Мои документы\Downloads\gitbit-master (1)\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
@@ -209,17 +198,6 @@ C:\Documents and Settings\Администратор\Мои документы\D
 C:\Documents and Settings\Администратор\Мои документы\Downloads\gitbit-master (1)\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\Администратор\Мои документы\Downloads\gitbit-master (1)\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
 C:\Documents and Settings\Администратор\Мои документы\Downloads\gitbit-master (1)\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
->>>>>>> pr/17
-=======
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.exe
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\bin\Debug\vk_bot.pdb
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Form1.resources
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.Properties.Resources.resources
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\Администратор\Рабочий стол\gitbit-master\vk_bot\vk_bot\obj\x86\Debug\vk_bot.url.resources
 C:\Documents and Settings\Администратор\Рабочий стол\vk_bot\vk_bot\obj\x86\Debug\vk_bot.exe
 C:\Documents and Settings\Администратор\Рабочий стол\vk_bot\vk_bot\obj\x86\Debug\vk_bot.pdb
@@ -231,6 +209,4 @@ C:\Documents and Settings\Администратор\Рабочий стол\vk_
 C:\Documents and Settings\Администратор\Рабочий стол\vk_bot\vk_bot\obj\x86\Debug\vk_bot.url.resources
 C:\Documents and Settings\Администратор\Рабочий стол\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Documents and Settings\Администратор\Рабочий стол\vk_bot\vk_bot\obj\x86\Debug\GenerateResource.write.1.tlog
->>>>>>> pr/20
-=======
->>>>>>> pr/21
+

@@ -22,7 +22,6 @@ namespace vk_bot
         private Point mouseOffset;
         private bool isMouseDown = false;
         string userId;
-        static bool License = false;
         private string securitychecker;
 
 
@@ -72,20 +71,9 @@ namespace vk_bot
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
-
-        
-
-
-          
-
-
             Opacity = 0;
            
             FADERSTART.Start();
-
-       
             webBrowser1.Dock = DockStyle.Fill;
             webBrowser1.BringToFront();
             webBrowser1.Navigate("https://oauth.vk.com/authorize?client_id=6410347&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&response_type=token&v=5.73");
@@ -107,10 +95,6 @@ namespace vk_bot
                 access_token = access_token.Remove(IndexAmp);
 
                 //Зпрашиваю информацию о пользователе
-
-
-              
-
 
 
                 //Создаю XML документ
@@ -459,12 +443,7 @@ namespace vk_bot
                 }
             }
         }
-        private void delcom_Click(object sender, EventArgs e)
-        {
-            url newForm = new url();
-            newForm.access_token = access_token;
-            newForm.Show();
-        }
+
 
         private void lic_Tick(object sender, EventArgs e)
         {
